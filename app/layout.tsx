@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const TITLE = "CodersGPT";
+const TITLE = "AgentForge-AI";
 const DESCRIPTION = "chatbot for coders";
 const BASE_URL = "http://localhost:3000";
 
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
       url: BASE_URL,
     },
   ],
-  creator: "codersgyan",
+  creator: "Tanishq Jaiswal",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
     title: TITLE,
     description: DESCRIPTION,
-    siteName: "CodersGPT",
+    siteName: "ChatGpt",
     images: [
       {
         url: `${BASE_URL}/og.jpg`,
@@ -71,17 +71,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="dark"
-      suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#212121] text-[#ececec]`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#212121] text-[#ececec]`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          disableTransitionOnChange>
+          disableTransitionOnChange
+        >
           {children}
           <Toaster />
         </ThemeProvider>

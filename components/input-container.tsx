@@ -12,7 +12,6 @@ import {
 import { SpeechInput } from "@/components/ai-elements/speech-input";
 
 function InputContainer() {
-
   return (
     <div className="flex flex-col items-center w-full max-w-200 mx-auto pb-6">
       <PromptInput
@@ -41,9 +40,7 @@ function InputContainer() {
           <div className="flex items-center gap-2 shrink-0 mb-0.5">
             <SpeechInput
               className="shrink-0  h-10 w-10 bg-transparent text-white"
-              onTranscriptionChange={(text) => {
-                
-              }}
+              onTranscriptionChange={(text) => {}}
               size="icon-lg"
               variant="ghost"
             />
