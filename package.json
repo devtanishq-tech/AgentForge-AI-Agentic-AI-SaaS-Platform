@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "migration:generate": "npx drizzle-kit generate",
-    "migration:migrate": "npx drizzle-kit migrate"
+    "migration:generate": "npx drizzle-kit generate --config=drizzle.config.ts",
+    "migration:migrate": "npx drizzle-kit migrate --config=drizzle.config.ts"
   },
   "dependencies": {
     "@radix-ui/react-use-controllable-state": "^1.2.2",

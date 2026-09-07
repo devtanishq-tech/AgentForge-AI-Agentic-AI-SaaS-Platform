@@ -27,6 +27,8 @@ import { Input } from "@/components/ui/input";
 import { FieldError, FieldGroup } from "@/components/ui/field";
 
 import { GithubIcon, GoogleIcon } from "../icons";
+import { authClient } from "@/lib/auth-client";
+import { email } from "better-auth";
 
 const signupSchema = z.object({
   username: z.string().min(3, "Username must be at least 3 characters"),
@@ -47,7 +49,17 @@ export default function SignupForm() {
     validators: {
       onChange: signupSchema,
     },
-    onSubmit: async ({ value }) => {},
+    onSubmit: async ({ value }) => {
+      console.log(`form has been Submitted  `);
+      console.log(value);
+      const { data, error } = await authClient.signUp.email({
+        email: value.email,
+        password: value.password,
+        name: value.username,
+        callbackURL: "http://localhost:3000",
+      });
+      console.log(data);
+    },
   });
 
   return (
