@@ -28,7 +28,7 @@ import { FieldError, FieldGroup } from "@/components/ui/field";
 
 import { GithubIcon, GoogleIcon } from "../icons";
 import { authClient } from "@/lib/auth-client";
-import { email } from "better-auth";
+import { boolean, email } from "better-auth";
 
 const signupSchema = z.object({
   username: z.string().min(3, "Username must be at least 3 characters"),
@@ -39,6 +39,7 @@ const signupSchema = z.object({
 type SocialProvider = "google" | "github";
 
 export default function SignupForm() {
+  const [isloading, setisloading] = useState<boolean>(false);
   const router = useRouter();
   const [pendingProvider, setPendingProvider] = useState<SocialProvider | null>(
     null,
@@ -51,13 +52,32 @@ export default function SignupForm() {
     },
     onSubmit: async ({ value }) => {
       console.log(`form has been Submitted  `);
+
       console.log(value);
-      const { data, error } = await authClient.signUp.email({
-        email: value.email,
-        password: value.password,
-        name: value.username,
-        callbackURL: "http://localhost:3000",
-      });
+      const { data, error } = await authClient.signUp.email(
+        {
+          email: value.email,
+          password: value.password,
+          name: value.username,
+          callbackURL: "/",
+        },
+        {
+          onRequest: (ctx) => {
+            setisloading(true);
+          },
+          onSuccess: (ctx) => {
+            //redirect to the dashboard or sign in page
+            setisloading(false);
+            toast.success("SuccessFully singn up 🖕");
+            router.push("/");
+          },
+          onError: (ctx) => {
+            // display the error message
+            setisloading(false);
+            toast.error(ctx.error.message);
+          },
+        },
+      );
       console.log(data);
     },
   });
@@ -246,7 +266,7 @@ export default function SignupForm() {
                     className="mt-2 h-13 w-full rounded-full bg-[#ececec] text-[16px] font-semibold text-black hover:bg-white disabled:opacity-50"
                     disabled={!canSubmit || !isDirty}
                   >
-                    {isSubmitting ? (
+                    {isSubmitting && isloading ? (
                       <Loader2 className="size-5 animate-spin" />
                     ) : (
                       "Sign Up"

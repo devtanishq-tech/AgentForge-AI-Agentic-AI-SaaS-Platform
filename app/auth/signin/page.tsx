@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Loader2 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -29,8 +30,12 @@ const formSchema = z.object({
 type SocialProvider = "google" | "github";
 import { useState } from "react";
 import { useForm } from "@tanstack/react-form";
+import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
+  const [isloading, setisloading] = useState<boolean>(false);
+  const router = useRouter();
   const [pendingProvider, setPendingProvider] = useState<SocialProvider | null>(
     null,
   );
@@ -40,7 +45,35 @@ export default function LoginForm() {
     validators: {
       onChange: formSchema,
     },
-    onSubmit: async ({ value }) => {},
+
+    onSubmit: async ({ value }) => {
+      const { data, error } = await authClient.signIn.email(
+        {
+          email: value.email,
+          password: value.password,
+          callbackURL: "/",
+          rememberMe: false,
+        },
+        {
+          onRequest: (ctx) => {
+            setisloading(true);
+          },
+          onSuccess: (ctx) => {
+            //redirect to the dashboard or sign in page
+            setisloading(false);
+            toast.success("SuccessFullt Sign in  🖕");
+            router.push("/");
+          },
+          onError: (ctx) => {
+            // display the error message
+            setisloading(false);
+            toast.error(ctx.error.message);
+          },
+        },
+      );
+      console.log(`on submit has been clicked `);
+      console.log(data);
+    },
   });
 
   return (
@@ -201,7 +234,7 @@ export default function LoginForm() {
                     className="mt-2 h-13 w-full rounded-full bg-[#ececec] text-[16px] font-semibold text-black hover:bg-white active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#ececec]"
                     disabled={!canSubmit || !isDirty}
                   >
-                    {isSubmitting ? (
+                    {isSubmitting && isloading ? (
                       <Loader2 className="size-5 animate-spin" />
                     ) : (
                       "Continue"
