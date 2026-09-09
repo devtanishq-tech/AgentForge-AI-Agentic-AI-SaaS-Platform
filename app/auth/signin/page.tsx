@@ -72,9 +72,25 @@ export default function LoginForm() {
         },
       );
       console.log(`on submit has been clicked `);
-      console.log(data);
     },
   });
+  const handleSocailLogin = async (provider: SocialProvider) => {
+    try {
+      const signin = await authClient.signIn.social(
+        {
+          provider: provider,
+        },
+        {
+          onError: (ctx) => {
+            toast.error(ctx.error.message);
+          },
+        },
+      );
+    } catch (err) {
+      console.log(err);
+      toast.error("some error occur at handelLoginSide ");
+    }
+  };
 
   return (
     <div className="flex items-center justify-center h-dvh">
@@ -104,7 +120,9 @@ export default function LoginForm() {
               variant="outline"
               disabled={false}
               className="h-13 w-full rounded-xl border-[#424242] bg-transparent text-[15px] font-normal transition-colors hover:bg-[#2f2f2f] hover:text-white disabled:opacity-70"
-              onClick={() => {}}
+              onClick={() => {
+                handleSocailLogin("google");
+              }}
             >
               {pendingProvider === "google" ? (
                 <Loader2 className="mr-2 size-5 animate-spin" />
