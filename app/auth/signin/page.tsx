@@ -105,7 +105,7 @@ export default function LoginForm() {
             alt="CodersGPT"
           />
           <CardTitle className="text-[32px] font-semibold tracking-tight text-[#ececec]">
-            Log in CodersGPT
+            Log in AgentForge
           </CardTitle>
           <CardDescription className="mx-auto max-w-80 text-[15px] leading-relaxed text-[#b4b4b4]">
             You&apos;ll get smarter responses and can upload files, images, and

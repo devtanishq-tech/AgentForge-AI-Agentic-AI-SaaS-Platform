@@ -113,7 +113,7 @@ export default function SignupForm() {
             Create an account
           </CardTitle>
           <CardDescription className="mx-auto max-w-80 text-[15px] leading-relaxed text-[#b4b4b4]">
-            Join CodersGPT to get smarter responses and start building today.
+            Join AgentForge to get smarter responses and start building today.
           </CardDescription>
         </CardHeader>
 
