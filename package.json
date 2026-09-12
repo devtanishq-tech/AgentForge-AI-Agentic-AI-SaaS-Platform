@@ -11,6 +11,9 @@
     "migration:migrate": "npx drizzle-kit migrate --config=drizzle.config.ts"
   },
   "dependencies": {
+    "@langchain/core": "^1.2.10",
+    "@langchain/groq": "^1.3.1",
+    "@langchain/langgraph": "^1.4.14",
     "@radix-ui/react-use-controllable-state": "^1.2.2",
     "@rive-app/react-webgl2": "^4.27.0",
     "@streamdown/cjk": "^1.0.2",
