@@ -11,6 +11,9 @@ importers:
       '@langchain/core':
         specifier: ^1.2.10
         version: 1.2.10(@opentelemetry/api@1.9.0)
+      '@langchain/google-genai':
+        specifier: ^2.3.2
+        version: 2.3.2(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))
       '@langchain/groq':
         specifier: ^1.3.1
         version: 1.3.1(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))
@@ -814,6 +817,10 @@ packages:
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
+  '@google/generative-ai@0.24.1':
+    resolution: {integrity: sha512-MqO+MLfM6kjxcKoy0p1wRzG3b4ZZXtPI+z2IE26UogS2Cm/XHO+7gGRBh6gcJsOiIVoH93UwKvW4HdgiOZCy9Q==}
+    engines: {node: '>=18.0.0'}
+
   '@hono/node-server@1.19.9':
     resolution: {integrity: sha512-vHL6w3ecZsky+8P5MD+eFfaGTyCeOHUIFYMGpQGbrBTSmNNoxv0if69rEZ5giu36weC5saFuznL411gRX7bJDw==}
     engines: {node: '>=18.14.1'}
@@ -1053,6 +1060,12 @@ packages:
   '@langchain/core@1.2.10':
     resolution: {integrity: sha512-skr9zkyidZSzhoqhWINdULRstPT5aMD+w3tWtE3puxffWH7wxAp8tx1gMqadjKZwlgo6exlK0nHncFJv6m+3Cg==}
     engines: {node: '>=20'}
+
+  '@langchain/google-genai@2.3.2':
+    resolution: {integrity: sha512-wiiHx3aBJmWJcKmYs/4xZo5KNRICYjdbwegtmH8ega7liYFKBY6e1F4ocMNL+ylApaRIYeO54ceAHNbKmRVHeQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@langchain/core': ^1.2.11
 
   '@langchain/groq@1.3.1':
     resolution: {integrity: sha512-ImxfGBis4FEHpZdeT6dot6V6l09uBLYm/1BHQ6x3XEQmJFF7aKwbOeSOV5h/h5IeRx+2gaInR+LfyYoqT8satQ==}
@@ -6398,6 +6411,8 @@ snapshots:
 
   '@floating-ui/utils@0.2.10': {}
 
+  '@google/generative-ai@0.24.1': {}
+
   '@hono/node-server@1.19.9(hono@4.12.1)':
     dependencies:
       hono: 4.12.1
@@ -6584,6 +6599,11 @@ snapshots:
       - '@opentelemetry/sdk-trace-base'
       - openai
       - ws
+
+  '@langchain/google-genai@2.3.2(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))':
+    dependencies:
+      '@google/generative-ai': 0.24.1
+      '@langchain/core': 1.2.10(@opentelemetry/api@1.9.0)
 
   '@langchain/groq@1.3.1(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))':
     dependencies:

@@ -5,10 +5,12 @@ import {
   type GraphNode,
 } from "@langchain/langgraph";
 import { messageState } from "./state";
-import { model } from "./model";
+// import { model } from "./model";
+import { getMODEL } from "./model";
 import { MemorySaver } from "@langchain/langgraph";
 
 const llmNode: GraphNode<typeof messageState> = async (state) => {
+  const model = getMODEL("openai/gpt-oss-120b");
   const llmresponse = await model.invoke(state.message);
   return {
     message: [llmresponse],
