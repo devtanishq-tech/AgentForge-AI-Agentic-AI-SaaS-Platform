@@ -10,7 +10,7 @@ import { getMODEL } from "./model";
 import { MemorySaver } from "@langchain/langgraph";
 
 const llmNode: GraphNode<typeof messageState> = async (state) => {
-  const model = getMODEL("openai/gpt-oss-120b");
+  const model = getMODEL("gemini-3.1-pro-preview");
   const llmresponse = await model.invoke(state.message);
   return {
     message: [llmresponse],

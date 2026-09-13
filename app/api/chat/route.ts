@@ -6,7 +6,8 @@ export async function POST(request: Request) {
     {
       message: {
         role: "human",
-        content: "tell me  when was covid 19  first case come , which year? ",
+        content:
+          "tell me on which date 9/11 attack occured , any Specific DATE?",
       },
     },
     {
