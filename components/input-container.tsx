@@ -11,15 +11,35 @@ import {
 import { SpeechInput } from "@/components/ai-elements/speech-input";
 import { useState } from "react";
 import { useChat } from "@ai-sdk/react";
+import { DefaultChatTransport } from "ai";
 
 function InputContainer() {
   const [inputText, setinputText] = useState("");
-  const { messages, sendMessage } = useChat();
+  const { messages, sendMessage } = useChat({
+    transport: new DefaultChatTransport({
+      api: "/api/chat",
+      prepareSendMessagesRequest: ({ id, messages, messageId }) => {
+        const lastMesage = messages.slice(-1); // fetching only last message data
+        let messageContent = "";
+        if (lastMesage[0].parts[0].type === "text") {
+          //checking  doeslast message type if text , cuz it can be voice , file from input section of frontend side
+          messageContent = lastMesage[0].parts[0].text;
+        }
+        return {
+          body: {
+            messaegTextBodyContent: messageContent, // Only send  first message if type if text only
+            messageId,
+          },
+        };
+      },
+    }),
+  });
   return (
     <div className="flex flex-col items-center w-full max-w-200 mx-auto pb-6">
       <PromptInput
         className="w-full bg-[#2f2f2f] rounded-[32px]"
         onSubmit={(message) => {
+          console.log("----------------------");
           console.log(message);
           sendMessage({ text: inputText });
           setinputText("");

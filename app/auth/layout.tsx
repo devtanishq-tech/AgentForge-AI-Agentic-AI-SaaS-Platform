@@ -7,6 +7,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  //==============================Fetching the session  coming from frontend side , when user is looked in
   const sessionDATA = await auth.api.getSession({
     headers: await headers(),
   });

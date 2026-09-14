@@ -3,13 +3,15 @@ import { finalGraph } from "./graph";
 
 export async function POST(request: Request) {
   const requestMessage = await request.json();
-  console.log(requestMessage.messages[0].parts);
+  console.log({ requestMessage });
+  const userMessage = requestMessage.messaegTextBodyContent;
+  console.log(userMessage);
+  // console.log(requestMessage.)'
   const result = await finalGraph.invoke(
     {
       message: {
         role: "human",
-        content:
-          "tell me on which date 9/11 attack occured , any Specific DATE?",
+        content: userMessage,
       },
     },
     {
