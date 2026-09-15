@@ -13,13 +13,13 @@ import { useState } from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { uuid } from "better-auth";
-
+const id = uuidv4();
 function InputContainer() {
   const [inputText, setinputText] = useState("");
   const { messages, sendMessage } = useChat({
     transport: new DefaultChatTransport({
       api: "/api/chat",
-      prepareSendMessagesRequest: ({ id, messages, messageId }) => {
+      prepareSendMessagesRequest: ({ messages, messageId }) => {
         const lastMesage = messages.slice(-1); // fetching only last message data
         let messageContent = "";
         if (lastMesage[0].parts[0].type === "text") {
@@ -28,7 +28,7 @@ function InputContainer() {
         }
         return {
           body: {
-            id: uuidv4(),
+            threadID: id,
             messaegTextBodyContent: messageContent, // Only send  first message if type if text only
             messageId,
           },
