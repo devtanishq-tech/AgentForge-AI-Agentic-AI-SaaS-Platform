@@ -12,6 +12,7 @@ import { SpeechInput } from "@/components/ai-elements/speech-input";
 import { useState } from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
+import { uuid } from "better-auth";
 
 function InputContainer() {
   const [inputText, setinputText] = useState("");
@@ -27,6 +28,7 @@ function InputContainer() {
         }
         return {
           body: {
+            id: uuidv4(),
             messaegTextBodyContent: messageContent, // Only send  first message if type if text only
             messageId,
           },
