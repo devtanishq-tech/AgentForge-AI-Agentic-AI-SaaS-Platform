@@ -26,8 +26,8 @@ export async function POST(request: Request) {
   // again check if user id of thread , does not match the actual user id then
 
   const userid = getSession?.user.id;
+  // means thread does not exist , it means is a new message then we are creating the new thread here
   if (!threadDataArray) {
-    // means we need to create the contents for database
     const title = messaegTextBodyContent.trim().slice(0, 20);
     await db
       .insert(thread)

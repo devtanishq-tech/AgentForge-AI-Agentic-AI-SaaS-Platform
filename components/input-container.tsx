@@ -12,9 +12,12 @@ import { SpeechInput } from "@/components/ai-elements/speech-input";
 import { useState } from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
-import { uuid } from "better-auth";
-const id = uuidv4();
+import { threadId } from "worker_threads";
 function InputContainer() {
+  const route = useRouter();
+  const params = useParams();
+  const finalThreadIDURL = params.threadID;
+  const finalThreadID = finalThreadIDURL || uuidv4();
   const [inputText, setinputText] = useState("");
   const { messages, sendMessage } = useChat({
     transport: new DefaultChatTransport({
@@ -23,12 +26,12 @@ function InputContainer() {
         const lastMesage = messages.slice(-1); // fetching only last message data
         let messageContent = "";
         if (lastMesage[0].parts[0].type === "text") {
-          //checking  doeslast message type if text , cuz it can be voice , file from input section of frontend side
+          //checking  doeslast message type ifs text , cuz it can be voice , file from input section of frontend side
           messageContent = lastMesage[0].parts[0].text;
         }
         return {
           body: {
-            threadID: id,
+            threadID: finalThreadID,
             messaegTextBodyContent: messageContent, // Only send  first message if type if text only
             messageId,
           },
@@ -44,6 +47,10 @@ function InputContainer() {
           console.log("----------------------");
           console.log(message);
           sendMessage({ text: inputText });
+          // means we are at home page , where id does not exist pass the id to this path
+          if (!finalThreadIDURL) {
+            route.push(`/chat/${finalThreadID}`);
+          }
           setinputText("");
         }}
       >

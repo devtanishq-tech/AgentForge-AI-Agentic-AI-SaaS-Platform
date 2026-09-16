@@ -7,9 +7,10 @@ export default async function Page({
   params: Promise<{ [key: string]: string | string[] | undefined }>;
 }>) {
   const { thread_id } = await params;
+  console.log(thread_id);
   return (
     <>
-      <ChatInterfaceNew  />
+      <ChatInterfaceNew />
     </>
   );
 }
