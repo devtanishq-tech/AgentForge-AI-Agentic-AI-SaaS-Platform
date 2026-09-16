@@ -16,7 +16,7 @@ export async function POST(request: Request) {
     .limit(1);
   //=====================================================================//
   let threadDataArray = threadsFromsDB[0];
-  //===================Extracting user id //==============================//
+  //===================Extracting user id //=== ===========================//
   const getSession = await auth.api.getSession({
     headers: await headers(),
   });
@@ -51,6 +51,15 @@ export async function POST(request: Request) {
   );
   console.log(`Human -`, result.message[0].content);
   console.log("Ai message-", result.message[result.message.length - 1].content);
+  const aiMessage = result.message[result.message.length - 1].content;
 
-  return Response.json("okay");
+  return Response.json({
+    role: "assistant",
+    parts: [
+      {
+        type: "text",
+        text: aiMessage,
+      },
+    ],
+  });
 }
