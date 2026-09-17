@@ -3,10 +3,13 @@ import { finalGraph } from "./graph";
 import { thread } from "@/db/schema/chat-schema";
 import { db } from "@/db";
 import { eq } from "drizzle-orm";
-import { Users } from "lucide-react";
 import { user } from "@/db/schema/auth-schema";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
+import { createUIMessageStreamResponse } from "ai";
+import { toUIMessageStream } from "@ai-sdk/langchain";
+import { HumanMessage } from "@langchain/core/messages";
+import { version } from "os";
 export async function POST(request: Request) {
   let { threadID, messaegTextBodyContent } = await request.json();
   const threadsFromsDB = await db
@@ -38,28 +41,16 @@ export async function POST(request: Request) {
     });
   }
 
-  const result = await finalGraph.invoke(
+  const streamm = await finalGraph.streamEvents(
     {
-      message: {
-        role: "human",
-        content: messaegTextBodyContent,
-      },
+      message: new HumanMessage(messaegTextBodyContent),
     },
     {
-      configurable: { thread_id: "1-1-1--1" },
+      version: "v2",
     },
   );
-  console.log(`Human -`, result.message[0].content);
-  console.log("Ai message-", result.message[result.message.length - 1].content);
-  const aiMessage = result.message[result.message.length - 1].content;
 
-  return Response.json({
-    role: "assistant",
-    parts: [
-      {
-        type: "text",
-        text: aiMessage,
-      },
-    ],
+  return createUIMessageStreamResponse({
+    stream: toUIMessageStream(streamm),
   });
 }
