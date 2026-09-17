@@ -10,7 +10,6 @@ function cretaeChAT() {
     transport: new DefaultChatTransport({
       api: "/api/chat",
       prepareSendMessagesRequest: ({ messages, messageId, body }) => {
-        console.log(messages);
         const lastMesage = messages.slice(-1); // fetching only last message data
         let messageContent = "";
         if (lastMesage[0].parts[0].type === "text") {

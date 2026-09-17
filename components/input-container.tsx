@@ -28,8 +28,6 @@ function InputContainer() {
       <PromptInput
         className="w-full bg-[#2f2f2f] rounded-[32px]"
         onSubmit={(message) => {
-          console.log("----------------------");
-          console.log(message);
           sendMessage(message, {
             body: {
               threadId: finalThreadID,
