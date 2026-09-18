@@ -16,7 +16,7 @@ import { RefreshCcwIcon, CopyIcon } from "lucide-react";
 //telling typescript  what the type of message
 function NewConversation({ messages }: { messages: UIMessage[] }) {
   return (
-    <Conversation>
+    <Conversation className="h-full">
       <ConversationContent>
         {messages.map((message, messageIndex) => (
           <Fragment key={message.id}>
