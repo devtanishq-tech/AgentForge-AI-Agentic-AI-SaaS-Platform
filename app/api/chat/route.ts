@@ -41,12 +41,13 @@ export async function POST(request: Request) {
     });
   }
 
-  const streamm = await finalGraph.streamEvents(
+  const streamm = await finalGraph.invoke(
     {
       message: new HumanMessage(messaegTextBodyContent),
     },
     {
-      version: "v2",
+      // version: "v2",
+      configurable: { thread_id: threadID },
     },
   );
 

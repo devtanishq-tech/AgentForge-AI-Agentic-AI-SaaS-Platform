@@ -14,11 +14,11 @@ const llmNode: GraphNode<typeof messageState> = async (state) => {
   const llmresponse = await model.invoke(state.message);
   return {
     message: [llmresponse],
-    llmcalls: 1,
   };
 };
+const checkpointer = new MemorySaver();
 const graph = new StateGraph(messageState)
   .addNode("llmNode", llmNode)
   .addEdge("__start__", "llmNode")
   .addEdge("llmNode", "__end__");
-export const finalGraph = graph.compile({ checkpointer: new MemorySaver() });
+export const finalGraph = graph.compile({ checkpointer });
