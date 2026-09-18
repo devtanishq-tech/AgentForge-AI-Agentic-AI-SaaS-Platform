@@ -15,6 +15,16 @@ import {
 import { RefreshCcwIcon, CopyIcon } from "lucide-react";
 //telling typescript  what the type of message
 function NewConversation({ messages }: { messages: UIMessage[] }) {
+  {
+    /*-
+    
+    ------------------------------------------
+    ISSUE  UI COMPONENT RENDER , THEN AUTOSCROLL HAPPENS FROM THAT COMPONENT
+    WHAT REALLY NEED TO HAPPEN - AS MESSAGE GOES DOWN , AUTOSCROOL HAPPEN 
+    
+    */
+  }
+
   return (
     <Conversation className="h-full">
       <ConversationContent>
