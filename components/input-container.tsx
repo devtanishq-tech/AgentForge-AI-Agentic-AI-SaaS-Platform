@@ -11,13 +11,11 @@ import {
 import { SpeechInput } from "@/components/ai-elements/speech-input";
 import { useState } from "react";
 import { useChat } from "@ai-sdk/react";
-import { DefaultChatTransport } from "ai";
-import { threadId } from "worker_threads";
 import { useChatStore } from "@/store/data-store";
 function InputContainer() {
   const route = useRouter();
   const params = useParams();
-  const finalThreadIDURL = params.threadID;
+  const finalThreadIDURL = params.thread_id;
   //============================================//
   const finalThreadID = finalThreadIDURL || uuidv4();
   const [inputText, setinputText] = useState("");

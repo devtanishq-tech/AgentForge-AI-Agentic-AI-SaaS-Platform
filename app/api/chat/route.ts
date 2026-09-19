@@ -1,4 +1,3 @@
-import { threadId } from "worker_threads";
 import { finalGraph } from "./graph";
 import { thread } from "@/db/schema/chat-schema";
 import { db } from "@/db";
@@ -9,7 +8,6 @@ import { headers } from "next/headers";
 import { createUIMessageStreamResponse } from "ai";
 import { toUIMessageStream } from "@ai-sdk/langchain";
 import { HumanMessage } from "@langchain/core/messages";
-import { version } from "os";
 export async function POST(request: Request) {
   let { threadID, messaegTextBodyContent } = await request.json();
   const threadsFromsDB = await db
@@ -40,14 +38,33 @@ export async function POST(request: Request) {
       status: 403,
     });
   }
+  //===================================================================//
 
-  const streamm = await finalGraph.invoke(
+  const config = {
+    configurable: {
+      thread_id: threadID,
+      checkpoint_ns: "",
+    },
+  };
+
+  const restoredState = await finalGraph.getState(config);
+
+  console.log(
+    "Restored state:",
+    restoredState.values.message?.map((message: any) => ({
+      type: message.type,
+      content: message.content,
+    })),
+  );
+  //====================================================================//
+
+  const streamm = await finalGraph.streamEvents(
     {
-      message: new HumanMessage(messaegTextBodyContent),
+      message: [new HumanMessage(messaegTextBodyContent)],
     },
     {
-      // version: "v2",
-      configurable: { thread_id: threadID },
+      version: "v2",
+      configurable: { thread_id: threadID, checkpoint_ns: "" },
     },
   );
 

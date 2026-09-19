@@ -5,6 +5,7 @@ import {
   type GraphNode,
 } from "@langchain/langgraph";
 import { messageState } from "./state";
+import { PostgresSaver } from "@langchain/langgraph-checkpoint-postgres";
 // import { model } from "./model";
 import { getMODEL } from "./model";
 import { MemorySaver } from "@langchain/langgraph";
@@ -16,7 +17,10 @@ const llmNode: GraphNode<typeof messageState> = async (state) => {
     message: [llmresponse],
   };
 };
-const checkpointer = new MemorySaver();
+//================this done the fetching of data from database and sending back to llm =====
+const checkpointer = PostgresSaver.fromConnString(process.env.DATABASE_URL!);
+//======================================================================================//
+await checkpointer.setup();
 const graph = new StateGraph(messageState)
   .addNode("llmNode", llmNode)
   .addEdge("__start__", "llmNode")
