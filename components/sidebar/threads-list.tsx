@@ -8,9 +8,10 @@ import {
   SidebarMenuItem,
 } from "../ui/sidebar";
 
-
 import { cn } from "@/lib/utils";
 import { Skeleton } from "../ui/skeleton";
+import { useQuery } from "@tanstack/react-query";
+import { getThreads } from "@/lib/threadData";
 
 type Thread = {
   title: string;
@@ -18,9 +19,15 @@ type Thread = {
 };
 
 export function ThreadsLists() {
+  const { data, error, isLoading } = useQuery({
+    queryKey: ["thread"],
+    queryFn: getThreads,
+  });
+  console.log(`Data :`, data);
+  //===========================================//
   const threadMenuContent = (
     <>
-      {[1, 2, 3, 4, 5].map((item) => {
+      {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => {
         return (
           <SidebarMenuItem
             key={item}

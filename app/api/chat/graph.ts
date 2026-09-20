@@ -20,7 +20,8 @@ const llmNode: GraphNode<typeof messageState> = async (state) => {
 //================this done the fetching of data from database and sending back to llm =====
 const checkpointer = PostgresSaver.fromConnString(process.env.DATABASE_URL!);
 //======================================================================================//
-await checkpointer.setup();
+// await checkpointer.setup();
+//=====================================================================================//
 const graph = new StateGraph(messageState)
   .addNode("llmNode", llmNode)
   .addEdge("__start__", "llmNode")

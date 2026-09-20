@@ -38,26 +38,6 @@ export async function POST(request: Request) {
       status: 403,
     });
   }
-  //===================================================================//
-
-  const config = {
-    configurable: {
-      thread_id: threadID,
-      checkpoint_ns: "",
-    },
-  };
-
-  const restoredState = await finalGraph.getState(config);
-
-  console.log(
-    "Restored state:",
-    restoredState.values.message?.map((message: any) => ({
-      type: message.type,
-      content: message.content,
-    })),
-  );
-  //====================================================================//
-
   const streamm = await finalGraph.streamEvents(
     {
       message: [new HumanMessage(messaegTextBodyContent)],

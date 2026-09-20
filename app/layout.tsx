@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
+import { QueryProvider } from "./queryProvider";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const geistSans = Geist({
@@ -22,10 +23,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: TITLE,
   description: DESCRIPTION,
-  keywords: "CodersGPT,codersgpt",
+  keywords: "AgentForge-AI",
   authors: [
     {
-      name: "codersgyan",
+      name: "AgentForge-AI",
       url: BASE_URL,
     },
   ],
@@ -81,8 +82,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
-          <Toaster />
+          <QueryProvider>
+            <Toaster />
+            {children}
+          </QueryProvider>
         </ThemeProvider>
       </body>
     </html>
