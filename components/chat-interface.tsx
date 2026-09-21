@@ -4,13 +4,20 @@ import { useChatStore } from "@/store/data-store";
 
 import InputContainer from "./input-container";
 import NewConversation from "./ai-elements/newConversation";
+import { BaseMessage, StoredMessage } from "@langchain/core/messages";
+import { convertLangChainToUI } from "@/lib/convertorfile";
 
-export const ChatInterfaceNew = () => {
+export const ChatInterfaceNew = ({
+  oldmessages = [],
+}: {
+  oldmessages: StoredMessage[];
+}) => {
   const { chatinstance } = useChatStore();
-  const { messages } = useChat({ chat: chatinstance });
+  const { messages } = useChat({ chat: chatinstance }); // coming from vercel AI SDK useChat
+  const convertedMESSAGE = convertLangChainToUI(oldmessages);
   return (
     <>
-      {messages.length === 0 ? (
+      {convertedMESSAGE.length === 0 && messages.length === 0 ? (
         <div className="flex flex-col flex-1 h-full w-full min-h-0 overflow-y-scroll">
           <main className="h-full flex flex-col items-center  justify-end md:justify-center max-w-4xl mx-auto w-full px-4 -mt-20">
             <h1 className="text-3xl font-normal mb-8 tracking-tight text-white">
@@ -23,6 +30,7 @@ export const ChatInterfaceNew = () => {
         <div className="flex flex-col flex-1 h-full w-full min-h-0 overflow-hidden">
           <div className="flex flex-col h-full w-full">
             <div className="flex-1 min-h-0">
+              <NewConversation messages={convertedMESSAGE} />
               <NewConversation messages={messages} />
             </div>
             <div>

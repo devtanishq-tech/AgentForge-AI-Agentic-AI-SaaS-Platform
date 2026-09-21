@@ -25,7 +25,6 @@ export function ThreadsLists() {
     queryKey: ["thread"],
     queryFn: getThreads,
   });
-  console.log(`Data :`, data);
   {
     /*----------------------------------MEANS Loading Exist -----------------------------*/
   }
