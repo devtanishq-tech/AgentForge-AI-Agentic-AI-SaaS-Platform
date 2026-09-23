@@ -8,7 +8,7 @@ import { convertLangChainToUI } from "@/lib/convertorfile";
 import { Conversation, ConversationContent } from "./ai-elements/conversation";
 
 export const ChatInterfaceNew = ({
-  oldmessages = [],
+  oldmessages,
 }: {
   oldmessages: StoredMessage[];
 }) => {

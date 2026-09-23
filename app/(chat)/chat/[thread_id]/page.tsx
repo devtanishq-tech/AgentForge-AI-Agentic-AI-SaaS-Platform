@@ -1,4 +1,3 @@
-import { Agent } from "@/components/ai-elements/agent";
 import { ChatInterfaceNew } from "@/components/chat-interface";
 import { getthreadHistory } from "@/lib/conversationHistory";
 import { finalGraph } from "@/app/api/chat/graph";
@@ -25,13 +24,6 @@ export default async function Page({
     threadID: thread_id as string,
     userID: userid,
   });
-  console.log(
-    `-==============================================================`,
-  );
-  console.log(JSON.stringify(conversationHistory, null, 2));
-  console.log(
-    `-==============================================================`,
-  );
   return (
     <>
       <ChatInterfaceNew oldmessages={conversationHistory} />
