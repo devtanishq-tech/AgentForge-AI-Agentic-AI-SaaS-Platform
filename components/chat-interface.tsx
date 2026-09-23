@@ -1,11 +1,11 @@
 "use client";
 import { useChat } from "@ai-sdk/react";
 import { useChatStore } from "@/store/data-store";
-
 import InputContainer from "./input-container";
 import NewConversation from "./ai-elements/newConversation";
-import { BaseMessage, StoredMessage } from "@langchain/core/messages";
+import { StoredMessage } from "@langchain/core/messages";
 import { convertLangChainToUI } from "@/lib/convertorfile";
+import { Conversation, ConversationContent } from "./ai-elements/conversation";
 
 export const ChatInterfaceNew = ({
   oldmessages = [],
@@ -30,8 +30,12 @@ export const ChatInterfaceNew = ({
         <div className="flex flex-col flex-1 h-full w-full min-h-0 overflow-hidden">
           <div className="flex flex-col h-full w-full">
             <div className="flex-1 min-h-0">
-              <NewConversation messages={convertedMESSAGE} />
-              <NewConversation messages={messages} />
+              <Conversation className="h-full">
+                <ConversationContent>
+                  <NewConversation messages={convertedMESSAGE} />
+                  <NewConversation messages={messages} />
+                </ConversationContent>
+              </Conversation>
             </div>
             <div>
               <InputContainer />

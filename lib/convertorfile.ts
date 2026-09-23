@@ -76,7 +76,6 @@ export function convertLangChainToUI(
       // for UIMessage strictly uses parts
     } as UIMessage);
   });
-  console.log(`knsknfksn`);
 
   return uiMessages;
 }

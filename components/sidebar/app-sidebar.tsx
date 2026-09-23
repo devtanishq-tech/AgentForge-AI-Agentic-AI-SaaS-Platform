@@ -84,7 +84,7 @@ export async function AppSidebar({
         </SidebarGroup>
 
         {/* <Suspense fallback={<Loader2 />}> */}
-          <ThreadsLists />
+        <ThreadsLists />
         {/* </Suspense> */}
       </SidebarContent>
 

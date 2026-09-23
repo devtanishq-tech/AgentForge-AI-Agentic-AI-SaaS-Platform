@@ -8,7 +8,6 @@ import { messageState } from "./state";
 import { PostgresSaver } from "@langchain/langgraph-checkpoint-postgres";
 // import { model } from "./model";
 import { getMODEL } from "./model";
-import { MemorySaver } from "@langchain/langgraph";
 
 const llmNode: GraphNode<typeof messageState> = async (state) => {
   const model = getMODEL("openai/gpt-oss-120b");
