@@ -28,7 +28,7 @@ export async function getthreadHistory({
   }
   const config = { configurable: { thread_id: threadID } };
   const getstateData = await graph.getState(config);
-  const messages = getstateData?.values?.message as BaseMessage[];
+  const messages = getstateData?.values?.messages as BaseMessage[];
   // and this  function used to conver the based Message to StoredMESSAFE , check docs of langchain
   const storedMessage = mapChatMessagesToStoredMessages(messages);
   return storedMessage;

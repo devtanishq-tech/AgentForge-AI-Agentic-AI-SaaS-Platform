@@ -40,7 +40,7 @@ export async function POST(request: Request) {
   }
   const streamm = await finalGraph.streamEvents(
     {
-      message: [new HumanMessage(messaegTextBodyContent)],
+      messages: [new HumanMessage(messaegTextBodyContent)],
     },
     {
       version: "v2",

@@ -2,6 +2,6 @@ import { MessagesValue, StateSchema } from "@langchain/langgraph";
 import { z } from "zod";
 
 export const messageState = new StateSchema({
-  message: MessagesValue,
+  messages: MessagesValue,
   llmcalls: z.number(),
 });
