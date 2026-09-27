@@ -1,6 +1,17 @@
 import { tool } from "@langchain/core/tools";
 import * as z from "zod";
 import { getJson } from "serpapi";
+import { TavilySearch } from "@langchain/tavily";
+import { Search } from "lucide-react";
+import { da } from "zod/v4/locales";
+import { title } from "process";
+import { string } from "better-auth";
+const tavilySearch = new TavilySearch({
+  maxResults: 3,
+  topic: "general",
+  tavilyApiKey: process.env.TAVILY_SEARCH_API,
+});
+
 type productFromAPI = {
   product_id: string;
   title: string;
@@ -13,6 +24,96 @@ type productFromAPI = {
   product_link: string;
   source_icon: string;
 };
+type resultData = {
+  title: string;
+  content: string;
+  url: string;
+};
+type WeatherResponse = {
+  location: {
+    name: string;
+    region: string;
+    country: string;
+  };
+  temperature: number;
+  feelsLike: number;
+  condition: {
+    text: string;
+    icon: string;
+  };
+  humidity: number;
+  wind: {
+    speed: number;
+    direction: string;
+  };
+  precipitation: number;
+  rainChance: number;
+  visibility: number;
+  uvIndex: number;
+  isDay: number;
+  lastUpdated: string;
+};
+export const webSearchTool = tool(
+  async ({ query }) => {
+    const responeData = await tavilySearch.invoke({ query });
+    return JSON.stringify(responeData);
+  },
+  {
+    name: "web_search",
+    description:
+      "Search the web for current, recent, or real-time information. Use this when the user asks about latest news, recent events, current facts, changing information, or anything that may require up-to-date internet results. Do not use it for simple general knowledge if the answer is already known from conversation context or model knowledge.",
+    schema: z.object({
+      query: z
+        .string()
+        .describe(
+          "A focused web search query containing the exact topic, person, company, event, location, or question to look up online.",
+        ),
+    }),
+  },
+);
+export const weatherTool = tool(
+  async ({ location }) => {
+    const url = new URL("http://api.weatherapi.com/v1/current.json");
+    url.searchParams.set("key", process.env.WEATHER_API_KEY!);
+    url.searchParams.set("q", location);
+    const response = await fetch(url);
+    console.log(`Weather tools is called `);
+    const responseData = await response.json();
+    const weatherResponse: WeatherResponse = {
+      location: {
+        name: responseData.location.name,
+        region: responseData.location.region,
+        country: responseData.location.country,
+      },
+      temperature: responseData.current.temp_c,
+      feelsLike: responseData.current.feelslike_c,
+      condition: {
+        text: responseData.current.condition.text,
+        icon: responseData.current.condition.icon,
+      },
+      humidity: responseData.current.humidity,
+      wind: {
+        speed: responseData.current.wind_kph,
+        direction: responseData.current.wind_dir,
+      },
+      precipitation: responseData.current.precip_mm,
+      rainChance: responseData.current.chance_of_rain,
+      visibility: responseData.current.vis_km,
+      uvIndex: responseData.current.uv,
+      isDay: responseData.current.is_day,
+      lastUpdated: responseData.current.last_updated,
+    };
+    console.log(weatherResponse);
+    return weatherResponse;
+  },
+  {
+    name: "weather_Search",
+    description: "Get the current weather information for a given location.",
+    schema: z.object({
+      location: z.string().describe("City or location name"),
+    }),
+  },
+);
 export const producttool = tool(
   async ({ query, location = "India" }) => {
     try {
@@ -32,9 +133,6 @@ export const producttool = tool(
           products: [],
         };
       }
-      console.log(`--------------------------------------------`);
-      console.log(response);
-      console.log(`-----------------------------------------`);
       const products = response.shopping_results
         .slice(0, 6)
         .map((current: productFromAPI, index: number) => {
@@ -52,7 +150,6 @@ export const producttool = tool(
             source_image_Link: current.source_icon,
           };
         });
-      console.log(`response`, products);
       //
       return {
         query,
@@ -69,14 +166,14 @@ export const producttool = tool(
   {
     name: "productTool",
     description:
-      "Search Google Shopping for products, prices, and availability.",
+      "Use this tool when the user asks about a specific purchasable product — prices, availability, comparisons across sellers, ratings, or shopping links. Returns structured product data (title, price, source, rating, reviews, link) via Google Shopping. Use web_search instead for general or real-time info not tied to a specific product.",
     schema: z.object({
       query: z.string().describe("Product search query"),
       location: z
         .string()
         .optional()
         .describe(
-          "Search location, like for location used if  location is come from query and if not use deafult location India ",
+          "Search location; use the location from the query if given, otherwise default to India",
         ),
     }),
   },

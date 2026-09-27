@@ -14,6 +14,7 @@ import {
 } from "./message";
 import { RefreshCcwIcon, CopyIcon } from "lucide-react";
 import { ProductCarousel } from "../genui/productcrousal";
+import { WeatherCard, WeatherCardData } from "../genui/WeatherCard";
 //telling typescript  what the type of message
 function NewConversation({ messages }: { messages: UIMessage[] }) {
   {
@@ -32,7 +33,7 @@ function NewConversation({ messages }: { messages: UIMessage[] }) {
         <Fragment key={message.id}>
           {message.parts.map((part, i) => {
             switch (part.type) {
-              case "text":
+              case "text": {
                 const isLastMessage = messageIndex === messages.length - 1;
                 return (
                   <Fragment key={`${message.id}-${i}`}>
@@ -62,11 +63,10 @@ function NewConversation({ messages }: { messages: UIMessage[] }) {
                     )}
                   </Fragment>
                 );
-              // case "dynamic-tool":
-              //   return <h1>Dynamic tools of product tool called </h1>;
-              case "dynamic-tool":
+              }
+              case "dynamic-tool": {
                 switch (part.toolName) {
-                  case "productTool":
+                  case "productTool": {
                     if (part.state === "output-available") {
                       const toolData = (part.output as any).kwargs.content;
                       const parsedData = JSON.parse(toolData);
@@ -79,7 +79,24 @@ function NewConversation({ messages }: { messages: UIMessage[] }) {
                         </div>
                       );
                     }
+                    return null;
+                  }
+                  case "weather_Search": {
+                    if (part.state === "output-available") {
+                      const toolData = (part.output as any).kwargs.content;
+                      const parsedData: WeatherCardData = JSON.parse(toolData);
+                      return (
+                        <div key={part.toolCallId}>
+                          <WeatherCard data={parsedData} />
+                        </div>
+                      );
+                    }
+                    return null;
+                  }
+                  default:
+                    return null;
                 }
+              }
               default:
                 return null;
             }

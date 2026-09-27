@@ -29,6 +29,9 @@ importers:
       '@langchain/langgraph-checkpoint-postgres':
         specifier: ^1.0.5
         version: 1.0.5(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))(@langchain/langgraph-checkpoint@1.1.5(@langchain/core@1.2.10(@opentelemetry/api@1.9.0)))
+      '@langchain/tavily':
+        specifier: ^1.2.0
+        version: 1.2.0(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))
       '@radix-ui/react-use-controllable-state':
         specifier: ^1.2.2
         version: 1.2.2(@types/react@19.2.14)(react@19.2.3)
@@ -1150,6 +1153,12 @@ packages:
 
   '@langchain/protocol@0.0.19':
     resolution: {integrity: sha512-9hKcRrH7cBX6gfutdfXPoft1OCchHe4FEpALoDJMl5Qu+n/YG5ynZmyu8+8cxORlPwHBoKTxggvXz+76M1yX1Q==}
+
+  '@langchain/tavily@1.2.0':
+    resolution: {integrity: sha512-aPLPgtw8+b/Rnr3H+X8H8z98T/Y7JuCE4B5eqRDHoEWgZvMDUFF7divqwQqCTMq2deQttlVrm5bN5JbKaAR7/w==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@langchain/core': ^1.0.0
 
   '@mermaid-js/parser@1.0.0':
     resolution: {integrity: sha512-vvK0Hi/VWndxoh03Mmz6wa1KDriSPjS2XMZL/1l19HFwygiObEEoEwSDxOqyLzzAI6J2PU3261JjTMTO7x+BPw==}
@@ -6794,6 +6803,11 @@ snapshots:
       - react-dom
 
   '@langchain/protocol@0.0.19': {}
+
+  '@langchain/tavily@1.2.0(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))':
+    dependencies:
+      '@langchain/core': 1.2.10(@opentelemetry/api@1.9.0)
+      zod: 4.5.4
 
   '@mermaid-js/parser@1.0.0':
     dependencies:
