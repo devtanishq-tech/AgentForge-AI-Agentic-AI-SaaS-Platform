@@ -13,6 +13,7 @@ import {
   MessageResponse,
 } from "./message";
 import { RefreshCcwIcon, CopyIcon } from "lucide-react";
+import { ProductCarousel } from "../genui/productcrousal";
 //telling typescript  what the type of message
 function NewConversation({ messages }: { messages: UIMessage[] }) {
   {
@@ -61,6 +62,24 @@ function NewConversation({ messages }: { messages: UIMessage[] }) {
                     )}
                   </Fragment>
                 );
+              // case "dynamic-tool":
+              //   return <h1>Dynamic tools of product tool called </h1>;
+              case "dynamic-tool":
+                switch (part.toolName) {
+                  case "productTool":
+                    if (part.state === "output-available") {
+                      const toolData = (part.output as any).kwargs.content;
+                      const parsedData = JSON.parse(toolData);
+                      return (
+                        <div key={part.toolCallId}>
+                          <ProductCarousel
+                            query={parsedData.query}
+                            products={parsedData.products}
+                          />
+                        </div>
+                      );
+                    }
+                }
               default:
                 return null;
             }

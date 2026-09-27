@@ -49,7 +49,7 @@ export const producttool = tool(
             source_image_Link: current.source_image_Link,
           };
         });
-      console.log(`response`, response);
+      console.log(`response`, products);
       //
       return {
         query,
