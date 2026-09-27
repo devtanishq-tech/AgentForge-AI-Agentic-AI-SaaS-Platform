@@ -7,9 +7,13 @@ export interface Product {
   title: string;
   description: string;
   price: number;
+  extracted_price: number;
+  source: string;
   rating: number;
+  reviews: number;
   thumbnail: string;
-  product_link?: string;
+  product_Link?: string;
+  source_image_Link: string;
 }
 
 export interface ProductCarouselProps {
@@ -39,12 +43,16 @@ export function ProductCarousel({
     );
   }
 
-  // Helper to render stars like Google Shopping
-  const renderStars = (rating: number) => {
+  const renderStars = (rating: number, reviews: number) => {
     return (
       <div className="flex items-center gap-0.5">
         <Star className="size-3.5 fill-yellow-400 text-yellow-400" />
         <span className="text-xs font-medium ml-1">{rating.toFixed(1)}</span>
+        {reviews > 0 && (
+          <span className="text-xs text-muted-foreground ml-1">
+            ({reviews.toLocaleString()})
+          </span>
+        )}
       </div>
     );
   };
@@ -64,17 +72,14 @@ export function ProductCarousel({
         </Badge>
       </div>
 
-      {/* Scrollable container setup for the carousel */}
       <div className="flex  overflow-x-auto snap-x snap-mandatory hide-scrollbar -mx-1 px-1 gap-x-4">
         {products.map((product) => (
           <Card
             key={product.id}
             className="shrink-0 w-55 sm:w-60 snap-start flex flex-col overflow-hidden hover:shadow-lg transition-all duration-300 border-border/50 group cursor-pointer bg-card p-0"
           >
-            {/* Image Container - White background to act like a lightbox for product images */}
-            <a href={product.product_link} target="_blank">
+            <a href={product.product_Link} target="_blank">
               <div className="relative h-45 w-full bg-white flex items-center justify-center p-6 border-b border-border/50 overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={product.thumbnail}
                   alt={product.title}
@@ -83,7 +88,6 @@ export function ProductCarousel({
               </div>
             </a>
 
-            {/* Content Area */}
             <CardContent className="p-4 flex flex-col flex-1 gap-1.5">
               <h4
                 className="font-medium text-sm leading-tight line-clamp-2 text-foreground group-hover:text-primary transition-colors"
@@ -93,7 +97,9 @@ export function ProductCarousel({
               </h4>
 
               {product.rating > 0 && (
-                <div className="mt-0.5">{renderStars(product.rating)}</div>
+                <div className="mt-0.5">
+                  {renderStars(product.rating, product.reviews)}
+                </div>
               )}
 
               <div className="mt-auto pt-3">
@@ -105,9 +111,18 @@ export function ProductCarousel({
                     })}
                   </span>
                 </div>
-                {/* Store Name (Description mapped to source in the tool) */}
-                <div className="text-xs text-muted-foreground font-medium mt-1 truncate">
-                  {product.description}
+
+                <div className="flex items-center gap-1.5 mt-1">
+                  {product.source_image_Link && (
+                    <img
+                      src={product.source_image_Link}
+                      alt={product.description}
+                      className="size-3.5 rounded-sm shrink-0"
+                    />
+                  )}
+                  <span className="text-xs text-muted-foreground font-medium truncate">
+                    {product.description}
+                  </span>
                 </div>
               </div>
             </CardContent>

@@ -10,8 +10,8 @@ type productFromAPI = {
   rating: number;
   reviews: number;
   thumbnail: string;
-  product_Link: string;
-  source_image_Link: string;
+  product_link: string;
+  source_icon: string;
 };
 export const producttool = tool(
   async ({ query, location = "India" }) => {
@@ -32,6 +32,9 @@ export const producttool = tool(
           products: [],
         };
       }
+      console.log(`--------------------------------------------`);
+      console.log(response);
+      console.log(`-----------------------------------------`);
       const products = response.shopping_results
         .slice(0, 6)
         .map((current: productFromAPI, index: number) => {
@@ -45,8 +48,8 @@ export const producttool = tool(
             reviews: current.reviews,
             thumbnail: current.thumbnail,
             product_Link:
-              current.product_Link + `&utm_source=agentforge-ai.com`,
-            source_image_Link: current.source_image_Link,
+              current.product_link + `&utm_source=agentforge-ai.com`,
+            source_image_Link: current.source_icon,
           };
         });
       console.log(`response`, products);
