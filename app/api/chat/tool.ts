@@ -2,57 +2,13 @@ import { tool } from "@langchain/core/tools";
 import * as z from "zod";
 import { getJson } from "serpapi";
 import { TavilySearch } from "@langchain/tavily";
-import { Search } from "lucide-react";
-import { da } from "zod/v4/locales";
-import { title } from "process";
-import { string } from "better-auth";
+import { productFromAPI, WeatherResponse } from "./type";
 const tavilySearch = new TavilySearch({
   maxResults: 3,
   topic: "general",
   tavilyApiKey: process.env.TAVILY_SEARCH_API,
 });
 
-type productFromAPI = {
-  product_id: string;
-  title: string;
-  price: string;
-  extracted_price: number;
-  source: string;
-  rating: number;
-  reviews: number;
-  thumbnail: string;
-  product_link: string;
-  source_icon: string;
-};
-type resultData = {
-  title: string;
-  content: string;
-  url: string;
-};
-type WeatherResponse = {
-  location: {
-    name: string;
-    region: string;
-    country: string;
-  };
-  temperature: number;
-  feelsLike: number;
-  condition: {
-    text: string;
-    icon: string;
-  };
-  humidity: number;
-  wind: {
-    speed: number;
-    direction: string;
-  };
-  precipitation: number;
-  rainChance: number;
-  visibility: number;
-  uvIndex: number;
-  isDay: number;
-  lastUpdated: string;
-};
 export const webSearchTool = tool(
   async ({ query }) => {
     const responeData = await tavilySearch.invoke({ query });
