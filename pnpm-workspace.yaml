@@ -1,9 +1,6 @@
 allowBuilds:
   esbuild: false
   msw: false
-  protobufjs: set this to true or false
+  protobufjs: false
   sharp: true
   unrs-resolver: true
-ignoredBuiltDependencies:
-  - sharp
-  - unrs-resolver

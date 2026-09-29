@@ -4,7 +4,8 @@ import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 type modelId =
   | "openai/gpt-oss-120b"
   | "gemini-3.1-pro-preview"
-  | "Claude 4 Sonnet";
+  | "Claude 4 Sonnet"
+  | "openai/gpt-oss-20b";
 type modelProvider = "groq" | "google" | "anthropic";
 type modelTier = "free" | "subscription";
 type ReasoningEffort = "low" | "high" | "default";
@@ -20,6 +21,11 @@ type modelConfig = {
 //=================================================Model Registry //=======================================//
 const MODELREGISTRY: Record<modelId, modelConfig> = {
   "openai/gpt-oss-120b": {
+    provider: "groq",
+    tier: "free",
+    options: { reasoningEffort: "low", temperature: 0 },
+  },
+  "openai/gpt-oss-20b": {
     provider: "groq",
     tier: "free",
     options: { reasoningEffort: "low", temperature: 0 },
@@ -73,6 +79,7 @@ export function getMODEL(modelId: modelId) {
   }
   return createModel(modelId, config);
 }
+// will implement  this later
 function name() {
   return new ChatGoogleGenerativeAI({
     model: "",

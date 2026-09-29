@@ -8,7 +8,6 @@ import { producttool, weatherTool, webSearchTool } from "./tool";
 import { AIMessage, SystemMessage } from "@langchain/core/messages";
 const tools = [producttool, webSearchTool, weatherTool];
 const toolNode = new ToolNode(tools);
-//======================================//
 const getSystemPrompt =
   () => `Today's date: ${new Date().toISOString().slice(0, 10)}.
 
@@ -18,6 +17,12 @@ Web search results can be outdated or conflicting. Check dates before trusting a
 
 Only state facts, prices, or quotes that literally appear in tool output — never fill gaps from memory.`;
 //=======================================//
+async function RouterNode() {
+  // 1st llm call
+  const model = getMODEL("openai/gpt-oss-120b");
+  const routerResponse = await model.invoke([]);
+}
+//=============================================================//
 const llmNode: GraphNode<typeof messageState> = async (state) => {
   const model = getMODEL("openai/gpt-oss-120b").bindTools(tools);
   const llmresponse = await model.invoke([
@@ -29,11 +34,8 @@ const llmNode: GraphNode<typeof messageState> = async (state) => {
   };
 };
 
-//================this done the fetching of data from database and sending back to llm =====
 const checkpointer = PostgresSaver.fromConnString(process.env.DATABASE_URL!);
-//======================================================================================//
 // await checkpointer.setup();
-//=====================================================================================//
 function shouldContinue(state: typeof messageState.State) {
   const lastMessage = state.messages.at(-1);
   if (!lastMessage || !AIMessage.isInstance(lastMessage)) {
