@@ -1,9 +1,9 @@
 import { GraphNode } from "@langchain/langgraph";
 import { messageState } from "../state";
 import { getMODEL } from "../model";
-import { z } from "better-auth";
 import { RouterPrompt } from "../prompts";
 import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import z from "zod";
 
 const routeSchema = z.object({
   route: z
@@ -18,6 +18,7 @@ export const routerNode: GraphNode<typeof messageState> = async (state) => {
         HumanMessage.isInstance(m) ||
         (AIMessage.isInstance(m) && !m.tool_calls?.length),
     )
+    .slice(-6)
     .map((m) => {
       const role = HumanMessage.isInstance(m) ? "user" : "assistant";
       const text =
@@ -31,7 +32,13 @@ export const routerNode: GraphNode<typeof messageState> = async (state) => {
     const response = await model.invoke(
       `${RouterPrompt}\n\nConversation:\n${recent}`,
     );
+    console.log(
+      `-------------------------------------------------------------------`,
+    );
     console.log(`Route response`, response.route);
+    console.log(
+      `---------------------------------------------------------------------`,
+    );
     return {
       route: response.route,
     };

@@ -1,6 +1,6 @@
 import { pgTable, text, timestamp } from "drizzle-orm/pg-core";
 import { schema } from "./auth-schema";
-
+// postsql auto deleted thread data if user data are get delected
 export const thread = pgTable("theread", {
   id: text("id").primaryKey(),
   title: text("title").notNull(),
