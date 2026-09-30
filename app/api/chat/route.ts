@@ -12,11 +12,14 @@ import { HumanMessage } from "@langchain/core/messages";
 // controller is used to control  the new output stream
 // controller.enqueue(event);, here we are saying
 //send this event as a output stream event , final response event stream
+
+//=----------------------=this Set function is called collectionn------------------------------
 const hiddenNOde = new Set([
   "routerNode",
   "queryRewritterNode",
   "evaulationNode",
 ]);
+//====================we are making this collection , basically we checking things based on these =============
 function hideNODE<T extends { event: string; metadata: Record<string, any> }>(
   source: AsyncIterable<T>,
 ) {
