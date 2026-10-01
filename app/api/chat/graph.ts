@@ -1,29 +1,11 @@
 import { StateGraph, type GraphNode } from "@langchain/langgraph";
 import { messageState } from "./state";
 import { PostgresSaver } from "@langchain/langgraph-checkpoint-postgres";
-// import { model } from "./model";
-import { getMODEL } from "./model";
-import { ToolNode } from "@langchain/langgraph/prebuilt";
-import { producttool, weatherTool, webSearchTool } from "./tool";
-import { AIMessage, SystemMessage } from "@langchain/core/messages";
+import { AIMessage } from "@langchain/core/messages";
 import { routerNode } from "./nodes/router";
-import { getSystemPrompt } from "./prompts";
 import { toolPlannerNode } from "./nodes/tool_Planner";
 import { generatorNode } from "./nodes/generator";
 import { mcpToolNode } from "./nodes/mcpToolNode";
-
-//=======================================/
-//=============================================================//
-// const llmNode: GraphNode<typeof messageState> = async (state) => {
-//   const model = getMODEL("openai/gpt-oss-120b").bindTools(tools);
-//   const llmresponse = await model.invoke([
-//     new SystemMessage(getSystemPrompt()),
-//     ...state.messages,
-//   ]);
-//   return {
-//     messages: [llmresponse],
-//   };
-// };
 
 const checkpointer = PostgresSaver.fromConnString(process.env.DATABASE_URL!);
 // await checkpointer.setup();
