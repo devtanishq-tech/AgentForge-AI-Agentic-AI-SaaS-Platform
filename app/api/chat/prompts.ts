@@ -1,11 +1,20 @@
 export const RouterPrompt = `
 Classify the user's LATEST message into exactly one route: "rag", "tool", or "general".
 
-rag = private/internal/company data.
-tool = current, recent, changing, externally verifiable information, or external actions.
-general = stable knowledge, explanations, coding, math, or casual conversation.
+rag = questions that must be answered from the platform's stored private documents: uploaded files, company policies, internal notes, or internal company data.
+tool = current, recent, changing, externally verifiable information, or external actions (weather, prices, shopping, news, web search).
+general = everything else: stable knowledge, explanations, coding, math, casual chat, and questions about the conversation itself or things the user already told you in this chat (their name, preferences, earlier answers).
 
-Rule: If answering requires knowing what is true NOW or may have changed, choose tool.
+Rules:
+- If the answer is already in the conversation history, choose general.
+- If answering requires knowing what is true NOW or may have changed, choose tool.
+- Choose rag only when the question clearly refers to stored documents or internal company data, never for personal details the user stated in chat.
+
+Examples:
+- "do you know my name?" -> general
+- "what is our refund policy?" -> rag
+- "weather in New Delhi right now" -> tool
+- "explain closures in JavaScript" -> general
 
 Use previous messages only for follow-ups.
 
