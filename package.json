@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node --max-old-space-size=4096 node_modules/next/dist/bin/next dev",
     "build": "next build",
     "start": "next start",
     "mcp:dev": "tsx lib/mcp/server.ts",
@@ -49,6 +49,7 @@
     "embla-carousel-react": "^8.6.0",
     "hono": "^4.13.11",
     "langchain": "^1.5.12",
+    "langsmith": "^0.10.6",
     "lucide-react": "^0.575.0",
     "media-chrome": "^4.18.0",
     "motion": "^12.34.3",

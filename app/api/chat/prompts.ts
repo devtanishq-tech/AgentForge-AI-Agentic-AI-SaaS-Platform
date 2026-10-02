@@ -1,10 +1,19 @@
-export const RouterPrompt = `You are a routing classifier. Read the conversation and decide where the user's LATEST message should go.
+export const RouterPrompt = `
+Classify the user's LATEST message into exactly one route: "rag", "tool", or "general".
 
-- "rag": the user asks about private, internal, or company-specific information (their documents, policies, notes, internal data).
-- "tool": the user needs live or external data or an action: current weather, product prices or shopping, latest news or web search.
-- "general": everything else: chit-chat, coding help, explanations, general knowledge.
+rag = private/internal/company data.
+tool = current, recent, changing, externally verifiable information, or external actions.
+general = stable knowledge, explanations, coding, math, or casual conversation.
 
-Use earlier messages only to resolve follow-ups. Reply with the route only.`;
+Rule: If answering requires knowing what is true NOW or may have changed, choose tool.
+
+Use previous messages only for follow-ups.
+
+Return a JSON object with exactly this format:
+{"route":"rag"}
+
+Replace "rag" with "tool" or "general" when appropriate.
+`;
 
 //===================================================//
 

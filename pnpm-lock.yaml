@@ -119,6 +119,9 @@ importers:
       langchain:
         specifier: ^1.5.12
         version: 1.5.12(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))(@opentelemetry/api@1.9.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      langsmith:
+        specifier: ^0.10.6
+        version: 0.10.6(@opentelemetry/api@1.9.0)
       lucide-react:
         specifier: ^0.575.0
         version: 0.575.0(react@19.2.3)
@@ -4540,8 +4543,8 @@ packages:
     resolution: {integrity: sha512-zu9QWmjpzJcomzdJQAHgDVhLGq5bLosVak1KVa40NzQHXfqr4eAHupvnPOVXEoLkg6Ocefvf/93d//SB7du4YQ==}
     engines: {node: '>=20.10.0', npm: '>=10.2.3'}
 
-  langsmith@0.10.2:
-    resolution: {integrity: sha512-9iqIcEPBMlRT+vvijcjCo4AeHlJHUZjxwbPtDdvQPpGgvo7nYxhsQ7jVd53zXkPstiPfjRhexfnIe0vLltVFmg==}
+  langsmith@0.10.6:
+    resolution: {integrity: sha512-+xlWGOa0Ob9BQxpiavPEHUC4E/1t+HKA8d+/leGF9ZsDdS3wRmZ4n71iIIvGMv9Joadr5loreQNb457miA0I2g==}
     peerDependencies:
       '@opentelemetry/api': '*'
       '@opentelemetry/exporter-trace-otlp-proto': '*'
@@ -7069,7 +7072,7 @@ snapshots:
       '@cfworker/json-schema': 4.1.1
       '@standard-schema/spec': 1.1.0
       js-tiktoken: 1.0.21
-      langsmith: 0.10.2(@opentelemetry/api@1.9.0)
+      langsmith: 0.10.6(@opentelemetry/api@1.9.0)
       mustache: 4.2.0
       p-queue: 6.6.2
       zod: 4.5.4
@@ -10664,7 +10667,7 @@ snapshots:
       '@langchain/core': 1.2.10(@opentelemetry/api@1.9.0)
       '@langchain/langgraph': 1.4.14(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(zod@4.5.4)
       '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.10(@opentelemetry/api@1.9.0))
-      langsmith: 0.10.2(@opentelemetry/api@1.9.0)
+      langsmith: 0.10.6(@opentelemetry/api@1.9.0)
       zod: 4.5.4
     transitivePeerDependencies:
       - '@opentelemetry/api'
@@ -10683,7 +10686,7 @@ snapshots:
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
 
-  langsmith@0.10.2(@opentelemetry/api@1.9.0):
+  langsmith@0.10.6(@opentelemetry/api@1.9.0):
     dependencies:
       p-queue: 6.6.2
     optionalDependencies:

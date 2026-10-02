@@ -8,7 +8,7 @@ type modelId =
   | "openai/gpt-oss-20b";
 type modelProvider = "groq" | "google" | "anthropic";
 type modelTier = "free" | "subscription";
-type ReasoningEffort = "low" | "high" | "default";
+type ReasoningEffort = "low" | "high" | "medium";
 type modelConfig = {
   provider: modelProvider;
   tier: modelTier;
@@ -23,12 +23,12 @@ const MODELREGISTRY: Record<modelId, modelConfig> = {
   "openai/gpt-oss-120b": {
     provider: "groq",
     tier: "free",
-    options: { reasoningEffort: "low", temperature: 0 },
+    options: { reasoningEffort: "medium", temperature: 0 },
   },
   "openai/gpt-oss-20b": {
     provider: "groq",
     tier: "free",
-    options: { reasoningEffort: "low", temperature: 0 },
+    options: { reasoningEffort: "medium", temperature: 0 },
   },
   "Claude 4 Sonnet": {
     provider: "anthropic",

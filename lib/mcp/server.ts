@@ -12,7 +12,6 @@ const server = new McpServer({
   name: "AgentWork-FLow",
   version: "17-13",
 });
-
 server.registerTool(
   "web_searchTool",
   {
@@ -24,14 +23,17 @@ server.registerTool(
   },
   async ({ query, topic }) => {
     const response = await webSearchTool.invoke({ query, topic });
+
+    const toTime = (d?: string) => {
+      const t = d ? new Date(d).getTime() : NaN;
+      return Number.isNaN(t) ? 0 : t;
+    };
+
     const source = (response.results ?? [])
       .sort(
-        (
-          a: any,
-          b: any, // this is the part i needed to undertsand most
-        ) => (b.published_date ?? "").localeCompare(a.published_date ?? ""),
+        (a: any, b: any) => toTime(b.published_date) - toTime(a.published_date),
       )
-      .slice(0, 4)
+      .slice(0, 5)
       .map(
         (
           current: WebSearchSource & {
@@ -42,16 +44,21 @@ server.registerTool(
           title: current.title,
           url: current.url,
           date: current.published_date ?? "unknown",
-          content: current.content.slice(0, 600),
+          score: current.score,
+          content: current.content.slice(0, 1200),
         }),
       );
+    console.log(`-`.repeat(100));
+    console.log(source);
+    console.log(`-`.repeat(100));
+
     return {
       content: [
         {
           type: "text",
           text: JSON.stringify({
             query,
-            note: `Prefer the newest dated source. If sources conflict or none clearly confirm, say it is unconfirmed and cite the sources. Do not guess.`,
+            note: `Today is ${new Date().toISOString().slice(0, 10)}. Search results override your training knowledge, which is outdated. Before using a source, check it is about the exact person or entity asked, not a relative or namesake (e.g. father vs son with the same surname). Sources about different people are not a conflict. Say "unconfirmed" only if sources about the same subject disagree or are silent. Cite sources.`,
             date: new Date().toISOString().slice(0, 10),
             source,
           }),
