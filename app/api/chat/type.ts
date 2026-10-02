@@ -39,3 +39,8 @@ export type WeatherResponse = {
   isDay: number;
   lastUpdated: string;
 };
+export type WebSearchSource = {
+  title: string;
+  url: string;
+  content: string;
+};

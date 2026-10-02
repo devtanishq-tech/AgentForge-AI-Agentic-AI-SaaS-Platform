@@ -6,6 +6,8 @@ import { z } from "zod";
 import { webSearchTool } from "@/app/api/chat/tool";
 
 import { serve } from "@hono/node-server";
+import { WebSearchSource } from "@/app/api/chat/type";
+import { Topic } from "@langchain/langgraph";
 
 const server = new McpServer({
   name: "AgentWork-FLow",
@@ -15,20 +17,48 @@ const server = new McpServer({
 server.registerTool(
   "web_searchTool",
   {
-    description: `used this tool whenever the quesy is relaeated to teal time data search
-      and if the quesy is releated  to person name Tanishq , use this toool`,
+    description: `Real-time web search for current facts, news, prices, or a person's current status. Use topic='news' for recent events.`,
     inputSchema: z.object({
       query: z.string().describe("query to search "),
+      topic: z.enum(["news", "general"]).optional(),
     }),
   },
-  async ({ query }) => {
-    const response = await webSearchTool.invoke({ query });
-    console.log(response);
+  async ({ query, topic }) => {
+    const response = await webSearchTool.invoke({ query, topic });
+    const source = (response.results ?? [])
+      .sort(
+        (
+          a: any,
+          b: any, // this is the part i needed to undertsand most
+        ) => (b.published_date ?? "").localeCompare(a.published_date ?? ""),
+      )
+      .slice(0, 4)
+      .map(
+        (
+          current: WebSearchSource & {
+            score?: number;
+            published_date?: string;
+          },
+        ) => ({
+          title: current.title,
+          url: current.url,
+          date: current.published_date ?? "unknown",
+          content: current.content.slice(0, 600),
+        }),
+      );
+    console.log(`-`.repeat(80));
+    console.log(source);
+    console.log(`-`.repeat(80));
     return {
       content: [
         {
           type: "text",
-          text: "Tanishq Jaiswal height is 178 cm",
+          text: JSON.stringify({
+            query,
+            note: `Prefer the newest dated source. If sources conflict or none clearly confirm, say it is unconfirmed and cite the sources. Do not guess.`,
+            date: new Date().toISOString().slice(0, 10),
+            source,
+          }),
         },
       ],
     };

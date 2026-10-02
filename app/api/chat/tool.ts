@@ -3,27 +3,33 @@ import * as z from "zod";
 import { getJson } from "serpapi";
 import { TavilySearch } from "@langchain/tavily";
 import { productFromAPI, WeatherResponse } from "./type";
+import { Topic } from "@langchain/langgraph";
 const tavilySearch = new TavilySearch({
-  maxResults: 3,
-  topic: "general",
+  maxResults: 6,
+  searchDepth: "advanced",
+  includeAnswer: false,
   tavilyApiKey: process.env.TAVILY_SEARCH_API,
 });
 
 export const webSearchTool = tool(
-  async ({ query }) => {
-    const responeData = await tavilySearch.invoke({ query });
-    return JSON.stringify(responeData);
+  async ({ query, topic }) => {
+    const timeRange = topic === "news" ? "month" : undefined;
+    const responeData = await tavilySearch.invoke({
+      query,
+      topic: topic ?? "general",
+      timeRange,
+    });
+    return responeData;
   },
   {
     name: "web_search",
-    description:
-      "Search the web for current, recent, or real-time information. Use this when the user asks about latest news, recent events, current facts, changing information, or anything that may require up-to-date internet results. Do not use it for simple general knowledge if the answer is already known from conversation context or model knowledge.",
+    description: "Search the web for current or real-time information.",
     schema: z.object({
-      query: z
-        .string()
-        .describe(
-          "A focused web search query containing the exact topic, person, company, event, location, or question to look up online.",
-        ),
+      query: z.string().describe("Focused search query."),
+      topic: z
+        .enum(["general", "news"])
+        .optional()
+        .describe("Use 'news' for recent events or a person's current status."),
     }),
   },
 );
