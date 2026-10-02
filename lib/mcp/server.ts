@@ -103,42 +103,6 @@ server.registerTool(
   },
   async ({ query, location }) => {
     const result = await producttool.invoke({ query, location });
-    const products = (result.products ?? []).map(
-      ({ thumbnail, source_image_Link, extracted_price, ...rest }: any) => rest,
-    );
-    return {
-      content: [
-        {
-          type: "text",
-          text: JSON.stringify({
-            query,
-            note: products.length
-              ? "Use only these prices and sellers. Do not invent or estimate any."
-              : "No results found. Say so; do not guess prices.",
-            products,
-          }),
-        },
-      ],
-    };
-  },
-);
-server.registerTool(
-  "productTool",
-  {
-    description:
-      "Google Shopping search for a specific product: price, seller, rating, reviews, buy link. Not for general info or news.",
-    inputSchema: z.object({
-      query: z
-        .string()
-        .describe("Product name with key specs, e.g. 'iPhone 15 128GB'"),
-      location: z
-        .string()
-        .optional()
-        .describe("Country or city for pricing. Defaults to India."),
-    }),
-  },
-  async ({ query, location }) => {
-    const result = await producttool.invoke({ query, location });
     const products = result.products ?? [];
     return {
       content: [
