@@ -1,6 +1,5 @@
 "use client";
 
-import { v4 as uuidv4 } from "uuid";
 import { useParams, useRouter } from "next/navigation";
 import { Plus, AudioLines, ArrowUp } from "lucide-react";
 import {
@@ -10,30 +9,50 @@ import {
 } from "@/components/ai-elements/prompt-input";
 import { SpeechInput } from "@/components/ai-elements/speech-input";
 import { useState } from "react";
-import { useChat } from "@ai-sdk/react";
-import { useChatStore } from "@/store/data-store";
-function InputContainer() {
+import { Chat } from "@ai-sdk/react";
+import { UIMessage } from "ai";
+import { useQueryClient } from "@tanstack/react-query";
+
+type Thread = { title: string; id: string; createdAt: Date };
+
+function InputContainer({
+  chat,
+  threadId,
+}: {
+  chat: Chat<UIMessage>;
+  threadId: string;
+}) {
   const route = useRouter();
   const params = useParams();
   const finalThreadIDURL = params.thread_id;
-  //============================================//
-  const finalThreadID = finalThreadIDURL || uuidv4();
   const [inputText, setinputText] = useState("");
-  const { chatinstance } = useChatStore();
-  const { messages, sendMessage } = useChat({ chat: chatinstance });
+  const queryClient = useQueryClient();
   return (
     <div className="flex flex-col items-center w-full max-w-200 mx-auto pb-6">
       <PromptInput
         className="w-full bg-[#2f2f2f] rounded-[32px]"
         onSubmit={(message) => {
-          sendMessage(message, {
+          chat.sendMessage(message, {
             body: {
-              threadId: finalThreadID,
+              threadId: threadId,
             },
           });
           // means we are at home page , where id does not exist pass the id to this path
           if (!finalThreadIDURL) {
-            route.push(`/chat/${finalThreadID}`);
+            // show the new thread in the sidebar instantly (same 25-char title as the server)
+            queryClient.setQueryData<Thread[]>(["thread"], (old = []) =>
+              old.some((t) => t.id === threadId)
+                ? old
+                : [
+                    {
+                      id: threadId,
+                      title: (message.text ?? "").trim().slice(0, 25),
+                      createdAt: new Date(),
+                    },
+                    ...old,
+                  ],
+            );
+            route.push(`/chat/${threadId}`);
           }
           setinputText("");
         }}

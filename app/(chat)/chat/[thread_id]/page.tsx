@@ -26,7 +26,11 @@ export default async function Page({
   });
   return (
     <>
-      <ChatInterfaceNew oldmessages={conversationHistory} />
+      <ChatInterfaceNew
+        key={thread_id as string}
+        threadId={thread_id as string}
+        oldmessages={conversationHistory}
+      />
     </>
   );
 }

@@ -1,12 +1,11 @@
-import { create } from "zustand";
 import { Chat } from "@ai-sdk/react";
 import { DefaultChatTransport, UIMessage } from "ai";
-type chatStoreState = {
-  chatinstance: Chat<UIMessage>;
-};
-function cretaeChAT() {
-  // method used to create the Chat instance which has properties and function like messages,sendMessages,Status --Similar to use Chat \
+
+function createChat(threadId: string, initialMessages: UIMessage[]) {
+  // method used to create the Chat instance which has properties and function like messages,sendMessages,Status --Similar to use Chat
   return new Chat<UIMessage>({
+    id: threadId,
+    messages: initialMessages,
     transport: new DefaultChatTransport({
       api: "/api/chat",
       prepareSendMessagesRequest: ({ messages, messageId, body }) => {
@@ -28,6 +27,26 @@ function cretaeChAT() {
   });
 }
 
-export const useChatStore = create<chatStoreState>((set) => ({
-  chatinstance: cretaeChAT(),
-}));
+// One Chat per thread id. Lives in the browser only.
+const chatRegistry = new Map<string, Chat<UIMessage>>();
+
+export function getOrCreateChat(
+  threadId: string,
+  initialMessages: UIMessage[],
+): Chat<UIMessage> {
+  // On the server (SSR) never cache, otherwise chats could leak between users
+  if (typeof window === "undefined") {
+    return createChat(threadId, initialMessages);
+  }
+  let chat = chatRegistry.get(threadId);
+  if (!chat) {
+    chat = createChat(threadId, initialMessages);
+    chatRegistry.set(threadId, chat);
+  }
+  return chat;
+}
+
+// call this on logout so the next user does not see old chats in memory
+export function clearChatRegistry() {
+  chatRegistry.clear();
+}

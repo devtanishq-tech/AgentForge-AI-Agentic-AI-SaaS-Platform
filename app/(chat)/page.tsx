@@ -1,5 +1,5 @@
-import { ChatInterfaceNew } from "@/components/chat-interface";
+import NewChat from "@/components/new-chat";
 
 export default function HomePage() {
-  return <ChatInterfaceNew oldmessages={[]} />;
+  return <NewChat />;
 }
