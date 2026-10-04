@@ -13,6 +13,7 @@ function getEmbeeder() {
   return embeederPromise;
 }
 export async function denseEmbedder(texts: string[]): Promise<number[][]> {
+  // text is array of chunks that already get splitted into pieces and stored in an array -
   const embedder = await getEmbeeder();
   const result: number[][] = [];
   for (let i = 0; i < texts.length; i += 32) {

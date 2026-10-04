@@ -1,49 +1,75 @@
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
-import { pineconeINdex } from "./pineconeD";
-import { embeeder } from "./embeeding";
-export type VectorRecord = {
+import { pineconeINdex, pineconeSparseIndex, userNamespace } from "./pineconeD";
+import { denseEmbedder, sparsedEmbedder } from "./embeeding";
+import { v4 as uuidv4 } from "uuid";
+
+export type VectorDatabaseType = {
   id: string;
   values: number[];
   metadata: {
     text: string;
     source: string;
+    docId: string;
+    chunkIndex: number;
   };
 };
+type ingestFileType = {
+  file: Blob;
+  fileName: string;
+  userId: string;
+};
 
-export async function ingestion(filepath: string) {
-  const loader = new PDFLoader(filepath, { splitPages: false });
-  const docs = await loader.load();
-  const pageContents = docs[0].pageContent;
-  //========================chunking of the document //==========================
+async function upsertIndexFunction(index: any, records: any[]) {
+  for (let i = 0; i < records.length; i += 100)
+    await index.upsert({ records: records.slice(i, i + 100) });
+}
+export async function ingestion({ file, fileName, userId }: ingestFileType) {
+  const pdfparser = new PDFLoader(file, { splitPages: false });
+  const docs = await pdfparser.load();
+  const pageContent = docs[0].pageContent ?? "";
+  if (!pageContent.trim()) {
+    throw new Error(
+      "Page Content does exist ,there is not text , not able to split page  ",
+    );
+  }
   const splitter = new RecursiveCharacterTextSplitter({
     chunkSize: 500,
     chunkOverlap: 100,
   });
-  const text = await splitter.splitText(pageContents);
-  const record: VectorRecord[] = [];
-  //======================emebedding conversion //=============================
-
-  for (let i = 0; i < text.length; i++) {
-    const chunks = text[i];
-    const output = await embeeder(chunks, {
-      pooling: "mean",
-      normalize: true,
-    });
-    record.push({
-      id: `${Date.now()}chunks-${i}`,
-      values: Array.from(output.data), // this where vector array will get stored
-      metadata: {
-        text: chunks,
-        source: "../Nexora_Internal_KB_RAG.pdf",
-      },
-    });
-    //==================Stroing vectors inside the vectors //=================
-  }
-  await pineconeINdex.upsert({
-    records: record,
+  const chunks = await splitter.splitText(pageContent); // this is array of chunks
+  // here we are using this promuse.all so that telling we need to execute this function then
+  // run parallel manner ashynchronously
+  const [dense, sparse] = await Promise.all([
+    denseEmbedder(chunks),
+    sparsedEmbedder(chunks, "passage"),
+  ]);
+  const docId = uuidv4();
+  const metadata = (i: number) => ({
+    text: chunks[i],
+    source: fileName,
+    docId,
+    chunkIndex: i,
   });
-  console.log(
-    `data has been successfully inserted , check pinecone databse...`,
-  );
+  const denseRecords: VectorDatabaseType[] = chunks.map((_, i) => ({
+    id: `${docId}#${i}`,
+    values: dense[i],
+    metadata: metadata(i),
+  }));
+  const sparseRecords = chunks.map((_, i) => ({
+    id: `${docId}#${i}`,
+    sparseValues: sparse[i],
+    metadata: metadata(i),
+  }));
+  const nameSpace = userNamespace(userId);
+  await Promise.all([
+    await upsertIndexFunction(pineconeINdex.namespace(nameSpace), denseRecords),
+    await upsertIndexFunction(
+      pineconeINdex.namespace(nameSpace),
+      sparseRecords,
+    ),
+  ]);
+  return { docId, fileName, chunks: chunks.length };
+  // this retun will going to be used in uploads.route.ts file where
+  // file data comes from backend side
 }
