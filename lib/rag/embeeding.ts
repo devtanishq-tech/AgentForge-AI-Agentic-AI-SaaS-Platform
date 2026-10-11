@@ -1,15 +1,10 @@
 import { pipeline } from "@xenova/transformers";
 import { pinecone } from "./pineconeD";
 
-export type sparseVectorType = { indices: number[]; value: number[] };
-
-export const embeeder = await pipeline(
-  "feature-extraction",
-  "Xenova/all-MiniLM-L6-v2",
-);
+export type sparseVectorType = { indices: number[]; values: number[] };
 let embeederPromise: Promise<any> | null = null;
 function getEmbeeder() {
-  embeederPromise ?? pipeline("feature-extraction", "Xenova/all-MiniLM-L6-v2");
+  embeederPromise ??= pipeline("feature-extraction", "Xenova/all-MiniLM-L6-v2");
   return embeederPromise;
 }
 export async function denseEmbedder(texts: string[]): Promise<number[][]> {
@@ -38,7 +33,7 @@ export async function sparsedEmbedder(
       parameters: { inputType, truncate: "END" },
     } as any);
     for (let data of output.data as any[]) {
-      result.push({ indices: data.sparseIndices, value: data.sparseValues });
+      result.push({ indices: data.sparseIndices, values: data.sparseValues });
       // here sparseIndices and data.sparseValues come from output.data their type is not defined
       // if want to verify need google them use pinecone docs
     }

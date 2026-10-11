@@ -6,6 +6,7 @@ import { routerNode } from "./nodes/router";
 import { toolPlannerNode } from "./nodes/tool_Planner";
 import { generatorNode } from "./nodes/generator";
 import { mcpToolNode } from "./nodes/mcpToolNode";
+import { hYbridretrivalNode } from "./nodes/hybridRetrieval";
 
 const checkpointer = PostgresSaver.fromConnString(process.env.DATABASE_URL!);
 // await checkpointer.setup();
@@ -25,6 +26,9 @@ function shouldContinue2(state: typeof messageState.State) {
   if (state.route === "tool") {
     return "toolPlannerNode";
   }
+  if (state.route === "rag") {
+    return "hybridRetrivalNode";
+  }
   return "generatorNode";
 }
 //=================================================================================//
@@ -33,14 +37,17 @@ const graph = new StateGraph(messageState)
   .addNode("routerNode", routerNode)
   .addNode("toolPlannerNode", toolPlannerNode)
   .addNode("mcpToolnode", mcpToolNode)
+  .addNode("hybridRetrivalNode", hYbridretrivalNode)
   .addNode("generatorNode", generatorNode)
 
   //========================================x==============//
   .addEdge("__start__", "routerNode")
   .addEdge("mcpToolnode", "generatorNode")
+  .addEdge("hybridRetrivalNode", "generatorNode")
   .addEdge("generatorNode", "__end__")
   .addConditionalEdges("routerNode", shouldContinue2, {
     toolPlannerNode: "toolPlannerNode",
+    hybridRetrivalNode: "hybridRetrivalNode",
     generatorNode: "generatorNode",
   })
   .addConditionalEdges("toolPlannerNode", shouldContinue);

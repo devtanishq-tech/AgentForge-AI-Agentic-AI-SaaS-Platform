@@ -5,4 +5,5 @@ export const messageState = new StateSchema({
   messages: MessagesValue,
   llmcalls: z.number(),
   route: z.enum(["rag", "tool", "general"]).optional(),
+  context: z.string().optional(),
 });

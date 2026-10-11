@@ -11,13 +11,32 @@ import {
 import { SpeechInput } from "@/components/ai-elements/speech-input";
 import { useState } from "react";
 import { Chat } from "@ai-sdk/react";
-import { UIMessage } from "ai";
+import { UIMessage, type FileUIPart } from "ai";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { AttachmentChips } from "./attachment-chips";
 
 type Thread = { title: string; id: string; createdAt: Date };
+
+// Sends each attached PDF to the ingestion route, one at a time
+async function uploadFiles(files: FileUIPart[]) {
+  for (const f of files) {
+    const blob = await (await fetch(f.url)).blob();
+    const body = new FormData();
+    body.append(
+      "file",
+      new File([blob], f.filename ?? "document.pdf", {
+        type: "application/pdf",
+      }),
+    );
+    const res = await fetch("/api/uploads", { method: "POST", body });
+    if (!res.ok) {
+      const data = await res.json().catch(() => ({}));
+      throw new Error(data.error ?? `Upload failed for ${f.filename}`);
+    }
+  }
+}
 
 // Must live INSIDE <PromptInput> because it uses the attachments hook.
 function InputBody({
@@ -113,7 +132,25 @@ function InputContainer({
         maxFiles={5}
         maxFileSize={10 * 1024 * 1024}
         onError={(err) => toast.error(err.message)}
-        onSubmit={(message) => {
+        onSubmit={async (message) => {
+          // 1) ingest attached PDFs first, so retrieval can find them
+          const files = message.files ?? [];
+          if (files.length > 0) {
+            const toastId = toast.loading("Processing document...");
+            try {
+              await uploadFiles(files);
+              toast.success("Document ready", { id: toastId });
+            } catch (err) {
+              toast.error(
+                err instanceof Error ? err.message : "Upload failed",
+                { id: toastId },
+              );
+              return;
+            }
+            // files only, no question: nothing to send to the chat
+            if (!(message.text ?? "").trim()) return;
+          }
+
           chat.sendMessage(message, {
             body: {
               threadId: threadId,

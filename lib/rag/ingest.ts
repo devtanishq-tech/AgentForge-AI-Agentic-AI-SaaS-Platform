@@ -65,7 +65,7 @@ export async function ingestion({ file, fileName, userId }: ingestFileType) {
   await Promise.all([
     await upsertIndexFunction(pineconeINdex.namespace(nameSpace), denseRecords),
     await upsertIndexFunction(
-      pineconeINdex.namespace(nameSpace),
+      pineconeSparseIndex.namespace(nameSpace),
       sparseRecords,
     ),
   ]);

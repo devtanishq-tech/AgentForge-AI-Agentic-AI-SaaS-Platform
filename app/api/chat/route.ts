@@ -75,13 +75,19 @@ export async function POST(request: Request) {
       status: 403,
     });
   }
+  console.log(`-`.repeat(100));
+  console.log(`Graph Identity `, {
+    thread_id: threadID,
+    userId: userid,
+  });
+  console.log(`-`.repeat(100));
   const streamm = await finalGraph.streamEvents(
     {
       messages: [new HumanMessage(messaegTextBodyContent)],
     },
     {
       version: "v2",
-      configurable: { thread_id: threadID, checkpoint_ns: "" },
+      configurable: { thread_id: threadID, checkpoint_ns: "", userId: userid },
     },
   );
   return createUIMessageStreamResponse({
