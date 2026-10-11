@@ -46,7 +46,7 @@ function hideNODE<T extends { event: string; metadata: Record<string, any> }>(
   });
 }
 export async function POST(request: Request) {
-  let { threadID, messaegTextBodyContent } = await request.json();
+  let { threadID, messaegTextBodyContent, filename } = await request.json();
   const threadsFromsDB = await db
     .select()
     .from(thread)
@@ -83,7 +83,12 @@ export async function POST(request: Request) {
   console.log(`-`.repeat(100));
   const streamm = await finalGraph.streamEvents(
     {
-      messages: [new HumanMessage(messaegTextBodyContent)],
+      messages: [
+        new HumanMessage({
+          content: messaegTextBodyContent,
+          additional_kwargs: { fileNames: filename ?? [] },
+        }),
+      ],
     },
     {
       version: "v2",

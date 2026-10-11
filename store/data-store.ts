@@ -10,16 +10,18 @@ function createChat(threadId: string, initialMessages: UIMessage[]) {
       api: "/api/chat",
       prepareSendMessagesRequest: ({ messages, messageId, body }) => {
         const lastMesage = messages.slice(-1); // fetching only last message data
-        let messageContent = "";
-        if (lastMesage[0].parts[0].type === "text") {
-          //checking  doeslast message type ifs text , cuz it can be voice , file from input section of frontend side
-          messageContent = lastMesage[0].parts[0].text;
-        }
+        let messageContent = lastMesage[0].parts
+          .flatMap((current) => (current.type === "text" ? [current.text] : []))
+          .join("\n");
+        const filename = lastMesage[0].parts.flatMap((part) =>
+          part.type === "file" ? (part.filename ?? "document.pdf") : [],
+        );
         return {
           body: {
             threadID: body?.threadId,
             messaegTextBodyContent: messageContent, // Only send  first message if type if text only
             messageId,
+            filename,
           },
         };
       },

@@ -12,7 +12,7 @@ import {
   MessageContent,
   MessageResponse,
 } from "./message";
-import { RefreshCcwIcon, CopyIcon } from "lucide-react";
+import { RefreshCcwIcon, CopyIcon, FileTextIcon } from "lucide-react";
 import { ProductCarousel } from "../genui/productcrousal";
 import { WeatherCard, WeatherCardData } from "../genui/WeatherCard";
 //telling typescript  what the type of message
@@ -33,6 +33,22 @@ function NewConversation({ messages }: { messages: UIMessage[] }) {
         <Fragment key={message.id}>
           {message.parts.map((part, i) => {
             switch (part.type) {
+              case "file": {
+                // attached file card, shown above the user's question
+                return (
+                  <Message key={`${message.id}-${i}`} from={message.role}>
+                    <div className="flex w-fit max-w-xs items-center gap-3 self-end rounded-2xl border border-zinc-700 bg-[#2f2f2f] px-4 py-3">
+                      <FileTextIcon className="size-6 shrink-0 text-red-400" />
+                      <div className="min-w-0">
+                        <p className="truncate text-sm font-medium text-zinc-100">
+                          {part.filename ?? "Document"}
+                        </p>
+                        <p className="text-xs text-zinc-400">PDF</p>
+                      </div>
+                    </div>
+                  </Message>
+                );
+              }
               case "text": {
                 const isLastMessage = messageIndex === messages.length - 1;
                 return (

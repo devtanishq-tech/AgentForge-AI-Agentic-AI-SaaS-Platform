@@ -37,7 +37,20 @@ export function convertLangChainToUI(
 
     const parts: any[] = [];
 
-    // 3. Extract Text Content
+    // 3a. Rebuild attached-file cards (saved by the chat route as fileNames)
+    const fileNames = (m.data as any).additional_kwargs?.fileNames;
+    if (m.type === "human" && Array.isArray(fileNames)) {
+      fileNames.forEach((name: string) => {
+        parts.push({
+          type: "file",
+          mediaType: "application/pdf",
+          filename: name,
+          url: "", // the card only shows the file name, the PDF itself is not stored here
+        });
+      });
+    }
+
+    // 3b. Extract Text Content
     if (typeof m.data.content === "string" && m.data.content.trim() !== "") {
       parts.push({
         type: "text",
