@@ -24,11 +24,13 @@ export const hYbridretrivalNode: GraphNode<typeof messageState> = async (
   console.log(`-`.repeat(100));
   console.log(`Query:`, query);
   console.log(`-`.repeat(100));
-  const result = await hybridSearchFunction({ query, userId, topK: 8 });
+  const result = await hybridSearchFunction({ query, userId, topK: 15 });
   console.log(`Hybrid retrieval: ${result.length} chunks for "${query}"`);
   const context = result
     .map((c, i) => `[${i + 1}] (${c.source})\n${c.text}`)
     .join("\n\n");
-  console.log(`Context:`, context);
-  return { context };
+
+  console.log(context);
+
+  return { chunks: result };
 };

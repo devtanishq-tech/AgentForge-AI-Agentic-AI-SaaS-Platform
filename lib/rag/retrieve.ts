@@ -19,7 +19,7 @@ export type SearchInput = {
 export async function hybridSearchFunction({
   query,
   userId,
-  topK = 8,
+  topK = 15,
   candidates = 20,
 }: SearchInput): Promise<Chunk[]> {
   // telling that it will return an array of chunk

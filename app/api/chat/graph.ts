@@ -7,6 +7,7 @@ import { toolPlannerNode } from "./nodes/tool_Planner";
 import { generatorNode } from "./nodes/generator";
 import { mcpToolNode } from "./nodes/mcpToolNode";
 import { hYbridretrivalNode } from "./nodes/hybridRetrieval";
+import { reRankerNode } from "./nodes/reranker";
 
 const checkpointer = PostgresSaver.fromConnString(process.env.DATABASE_URL!);
 // await checkpointer.setup();
@@ -39,11 +40,13 @@ const graph = new StateGraph(messageState)
   .addNode("mcpToolnode", mcpToolNode)
   .addNode("hybridRetrivalNode", hYbridretrivalNode)
   .addNode("generatorNode", generatorNode)
+  .addNode("reRankerNOde", reRankerNode)
 
   //========================================x==============//
   .addEdge("__start__", "routerNode")
   .addEdge("mcpToolnode", "generatorNode")
-  .addEdge("hybridRetrivalNode", "generatorNode")
+  .addEdge("hybridRetrivalNode", "reRankerNOde")
+  .addEdge("reRankerNOde", "generatorNode")
   .addEdge("generatorNode", "__end__")
   .addConditionalEdges("routerNode", shouldContinue2, {
     toolPlannerNode: "toolPlannerNode",
