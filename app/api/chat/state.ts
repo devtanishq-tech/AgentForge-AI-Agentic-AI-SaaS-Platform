@@ -6,6 +6,7 @@ export const messageState = new StateSchema({
   llmcalls: z.number(),
   route: z.enum(["rag", "tool", "general"]).optional(),
   context: z.string().optional(),
+  queries: z.array(z.string()).optional(),
   chunks: z
     .array(
       z.object({

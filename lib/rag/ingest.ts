@@ -34,8 +34,9 @@ export async function ingestion({ file, fileName, userId }: ingestFileType) {
     );
   }
   const splitter = new RecursiveCharacterTextSplitter({
-    chunkSize: 500,
-    chunkOverlap: 100,
+    chunkSize: 800,
+    chunkOverlap: 150,
+    separators: ["\n\n", "\n", ". ", " ", ""],
   });
   const chunks = await splitter.splitText(pageContent); // this is array of chunks
   // here we are using this promuse.all so that telling we need to execute this function then

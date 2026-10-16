@@ -1,9 +1,9 @@
 // actual hybrid retrival happen -
 
-import { HumanMessage, SystemMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@langchain/core/messages";
 import { GraphNode } from "@langchain/langgraph";
 import { messageState } from "../state";
-import { hybridSearchFunction } from "@/lib/rag/retrieve";
+import { hybridSearchFunction, type Chunk } from "@/lib/rag/retrieve";
 
 export const hYbridretrivalNode: GraphNode<typeof messageState> = async (
   state,
@@ -13,24 +13,47 @@ export const hYbridretrivalNode: GraphNode<typeof messageState> = async (
   if (!userId) {
     throw new Error("User id not existed in the config , unauthorized access ");
   }
-  // now we need lastMessage from
   const lastMessage = [...state.messages]
     .reverse()
     .find((m) => HumanMessage.isInstance(m));
-  // only want the human message from the states
-
-  const query =
+  const original =
     typeof lastMessage?.content === "string" ? lastMessage.content : "";
-  console.log(`-`.repeat(100));
-  console.log(`Query:`, query);
-  console.log(`-`.repeat(100));
-  const result = await hybridSearchFunction({ query, userId, topK: 15 });
-  console.log(`Hybrid retrieval: ${result.length} chunks for "${query}"`);
-  const context = result
-    .map((c, i) => `[${i + 1}] (${c.source})\n${c.text}`)
-    .join("\n\n");
+  const queries = state.queries?.length ? state.queries : [original];
 
-  console.log(context);
+  const results = await Promise.all(
+    queries.map((query) => hybridSearchFunction({ query, userId, topK: 15 })),
+  );
 
-  return { chunks: result };
+  // pool all candidates, no duplicates
+  const pool = new Map<string, Chunk>();
+  for (const list of results) {
+    for (const c of list) if (!pool.has(c.id)) pool.set(c.id, c);
+  }
+  console.log();
+  console.log(
+    `Hybrid retrieval: ${pool.size} unique chunks for ${queries.length} queries`,
+  );
+  //===================================================================================
+  //===================================================================================
+  //===================================================================================
+  const finalChunks = [...pool.values()];
+
+  console.log("\n" + "=".repeat(100));
+  console.log(`HYBRID RETRIEVAL: ${finalChunks.length} UNIQUE CHUNKS`);
+  console.log("Queries:", queries);
+  console.log("=".repeat(100));
+
+  finalChunks.forEach((chunk, index) => {
+    console.log(`\n[CHUNK ${index + 1}]`);
+    console.log("ID:", chunk.id);
+    console.log("Source:", chunk.source);
+    console.log("Hybrid Score (RRF):", chunk.score);
+    console.log("Text:\n", chunk.text);
+    console.log("-".repeat(100));
+  });
+
+  console.log("\n" + "=".repeat(100));
+  console.log("END OF HYBRID RETRIEVAL");
+  console.log("=".repeat(100));
+  return { chunks: [...pool.values()] };
 };

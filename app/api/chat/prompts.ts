@@ -64,3 +64,11 @@ export const getRagPrompt = (context: string) =>
 
 Excerpts:
 ${context || "(none found)"}`;
+
+export const QueryRewriterPrompt = `
+Rewrite the user's latest message into 1-3 short, self-contained search queries for searching their uploaded documents.
+- Fix typos and drop filler such as "from this pdf" or "tell me".
+- Use earlier messages to resolve follow-ups like "what about the second one".
+- If the message asks several things, write one query per thing.
+Return only JSON: {"queries":["..."]}
+`;

@@ -1,43 +1,54 @@
-import { AudioWaveform } from "lucide-react";
+import { pinecone } from "./pineconeD";
 import type { Chunk } from "./retrieve";
-import {
-  AutoTokenizer,
-  AutoModelForSequenceClassification,
-} from "@xenova/transformers";
-import { Arya } from "next/font/google";
-import { array } from "better-auth";
-let MODEL = "Xenova/ms-marco-MiniLM-L-6-v2";
-let loaderReRANKER: Promise<{ tokenizer: any; model: any }> | null = null;
-function load() {
-  loaderReRANKER ??= Promise.all([
-    AutoTokenizer.from_pretrained(MODEL),
-    AutoModelForSequenceClassification.from_pretrained(MODEL),
-  ]).then(([tokenizer, model]) => ({ tokenizer, model }));
-  return loaderReRANKER;
-}
-// this function do the intializing token
+
+const RERANKER_MODEL = "bge-reranker-v2-m3";
+
 export async function ReRankerFunction(
   query: string,
   chunks: Chunk[],
-  topN = 4, // here default value is 4
+  topN = 6,
 ): Promise<Chunk[]> {
-  if (chunks.length === 0) {
-    return [];
-  }
-  const { tokenizer, model } = await load();
-  const input = tokenizer(new Array(chunks.length).fill(query), {
-    text_pair: chunks.map((c) => c.text),
-    padding: true,
-    truncation: true,
+  if (chunks.length === 0) return [];
+
+  const response = await pinecone.inference.rerank({
+    model: RERANKER_MODEL,
+    query,
+    documents: chunks.map((chunk) => ({
+      text: chunk.text,
+    })),
+    rankFields: ["text"],
+    topN: Math.min(topN, chunks.length),
+    returnDocuments: false,
   });
-  const { logits } = await model(input);
-  const perItem = logits.dims?.[1] ?? 1;
-  const data = Array.from(logits.data as Float32Array);
-  return chunks
-    .map((c, i) => ({
-      ...c,
-      score: data[i * perItem + (perItem - 1)],
-    }))
-    .sort((a, b) => b.score - a.score)
-    .slice(0, topN);
+
+  const rankedChunks: Chunk[] = response.data.map((item) => {
+    const originalChunk = chunks[item.index];
+
+    if (!originalChunk) {
+      throw new Error(`Invalid reranker document index: ${item.index}`);
+    }
+
+    return {
+      ...originalChunk,
+      score: item.score,
+    };
+  });
+
+  console.log("\n" + "=".repeat(100));
+  console.log("PINECONE CLOUD RERANKER:", RERANKER_MODEL);
+  console.log("Query:", query);
+  console.log("Input candidates:", chunks.length);
+  console.log("Returned chunks:", rankedChunks.length);
+
+  rankedChunks.forEach((chunk, index) => {
+    console.log(`\n[ RANK ${index + 1} ]`);
+    console.log("ID:", chunk.id);
+    console.log("Score:", chunk.score);
+    console.log("Source:", chunk.source);
+    console.log("Text:", chunk.text);
+  });
+
+  console.log("=".repeat(100));
+
+  return rankedChunks;
 }
