@@ -7,6 +7,7 @@ import { headers } from "next/headers";
 import { createUIMessageStreamResponse } from "ai";
 import { toUIMessageStream } from "@ai-sdk/langchain";
 import { HumanMessage } from "@langchain/core/messages";
+import { trackTokenUsuageFunction } from "@/lib/polar/trackTokenusuage";
 //()start function means , that we are start processing the event
 // controller.enqueue(event);
 // controller is used to control  the new output stream
@@ -47,6 +48,9 @@ function hideNODE<T extends { event: string; metadata: Record<string, any> }>(
 }
 export async function POST(request: Request) {
   let { threadID, messaegTextBodyContent, filename } = await request.json();
+  //==============// todo need to implement dynamic model that we receieve from frontend side
+  const selectedModel = "openai/gpt-oss-120b";
+  //============================================================
   const threadsFromsDB = await db
     .select()
     .from(thread)
@@ -95,7 +99,8 @@ export async function POST(request: Request) {
       configurable: { thread_id: threadID, checkpoint_ns: "", userId: userid },
     },
   );
+  const trackStream = trackTokenUsuageFunction(streamm, userid, selectedModel);
   return createUIMessageStreamResponse({
-    stream: toUIMessageStream(hideNODE(streamm)),
+    stream: toUIMessageStream(hideNODE(trackStream)),
   });
 }
