@@ -2,38 +2,41 @@ import { GraphNode } from "@langchain/langgraph";
 import { HumanMessage } from "@langchain/core/messages";
 import { messageState } from "../state";
 import { ReRankerFunction } from "@/lib/rag/reranker";
-import type { Chunk } from "@/lib/rag/retrieve";
 
 export const reRankerNode: GraphNode<typeof messageState> = async (state) => {
   const chunks = state.chunks ?? [];
+
   const lastMessage = [...state.messages]
     .reverse()
-    .find((current) => HumanMessage.isInstance(current));
-  const original =
-    typeof lastMessage?.content === "string" ? lastMessage.content : "";
-  const queries = state.queries?.length ? state.queries : [original];
+    .find((message) => HumanMessage.isInstance(message));
 
-  // best 3 chunks for each sub-query, merged without duplicates
-  const seen = new Set<string>();
-  const merged: Chunk[] = [];
-  for (const query of queries) {
-    const top = await ReRankerFunction(query, chunks, 10);
-    for (const c of top) {
-      if (!seen.has(c.id)) {
-        seen.add(c.id);
-        merged.push(c);
-      }
-    }
+  const originalQuery =
+    typeof lastMessage?.content === "string" ? lastMessage.content : "";
+
+  if (!originalQuery.trim() || chunks.length === 0) {
+    return { context: "" };
   }
-  const final = merged.slice(0, 8);
-  const context = final
-    .map((c, i) => `[${i + 1}] (${c.source})\n${c.text}`)
-    .join("\n\n");
-  console.log(`-`.repeat(100));
-  console.log(
-    `Reranker kept ${final.length} chunks for ${queries.length} queries`,
+
+  // Rank the complete candidate pool against the actual question.
+  const ranked = await ReRankerFunction(
+    originalQuery,
+    chunks,
+    Math.min(10, chunks.length),
   );
-  console.log(`Context:`, context);
-  console.log(`-`.repeat(100));
+
+  // Keep only the most relevant chunks.
+  const finalChunks = ranked.slice(0, 8);
+
+  const context = finalChunks
+    .map(
+      (chunk, index) =>
+        `[${index + 1}] (Source: ${chunk.source})\n${chunk.text}`,
+    )
+    .join("\n\n");
+
+  console.log("Original query:", originalQuery);
+  console.log("Candidates:", chunks.length);
+  console.log("Final chunks:", finalChunks.length);
+
   return { context };
 };
