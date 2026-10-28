@@ -1,0 +1,690 @@
+{
+  "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+  "fileName": "Nexora_Internal_KB_RAG.pdf",
+  "namespace": "user_P6tBj3LslPWelvFZ2blbghKU1H1y7vZS",
+  "totalChunks": 62,
+  "chunks": [
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#0",
+      "chunkIndex": 0,
+      "textLength": 740,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 0
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 1\nNEXORA DYNAMICS\nINTERNAL OPERATIONS, FINANCE, HR,\nSECURITY AND PROJECT KNOWLEDGE BASE\nCorporate Knowledge Repository — RAG Optimized Edition\nVersion NDK-2026.09 | Created 28 September 2026 | Confidential\nNotice: Nexora Dynamics Pvt. Ltd. is a fictional company. Every name, figure, date, policy and client in this\ndocument is synthetic and was generated only for testing retrieval-augmented generation (RAG) pipelines,\nchunking strategies, embedding models and vector database indexing. It does not describe any real organization\nor person.\n1. Document Overview & Knowledge Base Scope"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#1",
+      "chunkIndex": 1,
+      "textLength": 778,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 1
+      },
+      "text": "or person.\n1. Document Overview & Knowledge Base Scope\nThis document is a synthetic internal knowledge repository for Nexora Dynamics Pvt. Ltd., a fictional mid-size\nenterprise software company. It consolidates corporate identity, leadership, departments, products, technology\narchitecture, finance, sales, human resources, IT security, incident history, customer support procedures,\nprocurement, internal projects, roadmap, compliance and risk into a single structured reference artifact.\nPurpose: To act as a realistic test corpus for RAG pipelines, LangChain and LangGraph retrievers, vector store\npopulation, semantic search evaluation and AI agent context injection.\nScope: Company profile, org structure, product catalog, engineering standards, FY2025-26 financials, sales"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#2",
+      "chunkIndex": 2,
+      "textLength": 737,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 2
+      },
+      "text": "Scope: Company profile, org structure, product catalog, engineering standards, FY2025-26 financials, sales\naccounts, HR policy, security policy, incident postmortem, support SLAs, vendors, projects, OKRs, compliance\nand risk registers, and a frequently asked questions section.\nIntended Usage: Chunking experiments, top-k retrieval tests, hybrid search evaluation, reranker benchmarking,\ncitation and grounding checks, and question-answering evaluation sets.\nVersion: NDK-2026.09 — initial release, 28 September 2026.\nOrganization Strategy: Every numbered section is self-contained and repeats the entity name it describes, so a\nchunk retrieved in isolation still carries enough context to be answered from.\n1.1 How to Read This Document"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#3",
+      "chunkIndex": 3,
+      "textLength": 492,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 3
+      },
+      "text": "chunk retrieved in isolation still carries enough context to be answered from.\n1.1 How to Read This Document\n• Sections 2 to 4 describe the organization: who the company is, who leads it and how teams are structured.\n• Sections 5 and 6 describe what the company sells and how it is built.\n• Sections 7 and 8 contain financial and commercial figures suitable for numeric question answering.\n• Sections 9 to 17 contain policies and operational records; Section 18 contains evaluation questions."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#4",
+      "chunkIndex": 4,
+      "textLength": 785,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 4
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 2\n2. Company Profile & Corporate Information\nLegal Name: Nexora Dynamics Private Limited\nShort Name: Nexora\nFounded: 14 March 2016, Pune, India\nHeadquarters: Tower B, Skyline Business Park, Baner Road, Pune 411045\nCorporate Identity Number (synthetic): U72900MH2016PTC000417\nIndustry: Enterprise SaaS — workflow automation, analytics and AI assistants\nEmployees: 612 full-time employees as of 31 August 2026\nAnnual Revenue FY2025-26: INR 486 crore (approximately USD 58 million)\nFiscal Year: 1 April to 31 March\nStock Status: Privately held; Series C funding closed in November 2024\nWebsite (synthetic): www.nexora-dynamics.example"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#5",
+      "chunkIndex": 5,
+      "textLength": 766,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 5
+      },
+      "text": "Stock Status: Privately held; Series C funding closed in November 2024\nWebsite (synthetic): www.nexora-dynamics.example\n2.1 Mission and Vision\nMission: To help mid-market organizations replace manual back-office work with reliable, auditable automation\nthat people trust.\nVision: By 2030, every repetitive business process at a Nexora customer should be either automated or assisted\nby an AI agent with a full audit trail.\n2.2 Core Values\n• Customer first: Decisions are tested against the question, does this reduce customer effort?\n• Own the outcome: Every incident and project has a single named owner.\n• Write it down: Decisions, designs and postmortems are documented in the internal wiki.\n• Secure by default: Security review is part of the definition of done."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#6",
+      "chunkIndex": 6,
+      "textLength": 567,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 6
+      },
+      "text": "• Secure by default: Security review is part of the definition of done.\n• Simple over clever: Prefer boring, maintainable solutions.\n2.3 Office Locations\nLocation Type Headcount Primary Function\nPune, India Headquarters 312 Engineering, Product, Finance, HR\nBengaluru, India Development center 148 Platform engineering, AI research\nGurugram, India Sales office 54 Enterprise sales, customer success\nSingapore Regional office 38 APAC sales and partnerships\nAustin, USA Regional office 42 North America sales and support\nRemote Distributed 18 Various roles across India"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#7",
+      "chunkIndex": 7,
+      "textLength": 746,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 7
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 3\n3. Leadership Team & Organizational Structure\nThe Nexora Dynamics executive leadership team consists of seven officers who report to the Board of Directors.\nThe chief executive officer chairs the weekly executive staff meeting held every Monday at 10:00 IST.\nRole Name (fictional) Joined Reports To\nChief Executive Officer Aarav Menon 2016 Board of Directors\nChief Technology Officer Ishita Kulkarni 2016 CEO\nChief Financial Officer Rohan Bhatt 2019 CEO\nChief Product Officer Meera Raghavan 2020 CEO\nChief People Officer Farhan Sheikh 2021 CEO\nChief Revenue Officer Daniel Whitmore 2022 CEO"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#8",
+      "chunkIndex": 8,
+      "textLength": 719,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 8
+      },
+      "text": "Chief Product Officer Meera Raghavan 2020 CEO\nChief People Officer Farhan Sheikh 2021 CEO\nChief Revenue Officer Daniel Whitmore 2022 CEO\nChief Information Security Officer Kavya Nair 2023 CTO\n3.1 Board of Directors\nThe Board has five members: two founders, two investor representatives from the Series C lead investor (Halcyon\nGrowth Partners, fictional) and one independent director, Dr. Sunita Ghosh. The Board meets quarterly, and the\nAudit Committee meets before each quarterly meeting.\n3.2 Reporting Lines and Decision Rights\n• Spending above INR 50 lakh requires CFO approval; above INR 2 crore requires CEO approval.\n• Hiring of any role at director level or above requires CEO and Chief People Officer sign-off."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#9",
+      "chunkIndex": 9,
+      "textLength": 799,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 9
+      },
+      "text": "• Hiring of any role at director level or above requires CEO and Chief People Officer sign-off.\n• Production architecture changes require an Architecture Review Board (ARB) decision chaired by the CTO.\n• Product roadmap changes affecting committed customer dates require CPO and CRO agreement.\n• Security exceptions can only be granted by the CISO and expire after 90 days.\n3.3 Committees\nCommittee Chair Cadence Purpose\nArchitecture Review Board Ishita Kulkarni Weekly, Thursday Approve technical designs\nPricing Council Daniel Whitmore Monthly Approve discounts and packaging\nSecurity Steering Group Kavya Nair Monthly Review risk and audit findings\nPeople Council Farhan Sheikh Monthly Compensation and policy\ndecisions\nChange Advisory Board VP Engineering Twice weekly Approve production changes"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#10",
+      "chunkIndex": 10,
+      "textLength": 774,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 10
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 4\n4. Departments, Headcount & Budget\nNexora Dynamics is organized into eight departments. Headcount below is as of 31 August 2026 and the budget\nfigures are approved operating budgets for fiscal year 2026-27, expressed in INR crore.\nDepartment Head Headcount FY26-27 Budget (INR cr)\nEngineering Ishita Kulkarni (CTO) 238 142.0\nProduct and Design Meera Raghavan 46 31.5\nSales Daniel Whitmore 84 58.4\nCustomer Success and Support Priya Deshmukh 96 37.2\nMarketing Ankit Sethi 31 24.8\nFinance and Legal Rohan Bhatt 27 14.6\nPeople and Culture Farhan Sheikh 22 11.9\nSecurity and IT Kavya Nair 68 29.3\n4.1 Engineering Sub-Teams"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#11",
+      "chunkIndex": 11,
+      "textLength": 713,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 11
+      },
+      "text": "Finance and Legal Rohan Bhatt 27 14.6\nPeople and Culture Farhan Sheikh 22 11.9\nSecurity and IT Kavya Nair 68 29.3\n4.1 Engineering Sub-Teams\nThe Engineering department has 238 employees split into six sub-teams, each led by an engineering manager.\nTeams follow a two-week sprint cycle with sprint planning on alternate Mondays.\nSub-Team Headcount Responsibility\nPlatform 52 Core services, APIs, multi-tenant infrastructure\nWorkflow Engine 44 Automation designer and execution runtime\nAI and Data 39 LLM assistant, retrieval, analytics models\nFrontend 41 Web application and design system\nMobile 24 iOS and Android applications\nQuality and Reliability 38 Test automation, SRE, observability\n4.2 Attrition and Hiring"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#12",
+      "chunkIndex": 12,
+      "textLength": 411,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 12
+      },
+      "text": "Mobile 24 iOS and Android applications\nQuality and Reliability 38 Test automation, SRE, observability\n4.2 Attrition and Hiring\nVoluntary attrition for FY2025-26 was 11.8 percent, down from 14.2 percent in FY2024-25. The company hired\n174 people during FY2025-26, of whom 62 were engineering roles. The hiring plan for FY2026-27 targets 120 net\nnew roles, prioritizing AI and Data, Security and Customer Success."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#13",
+      "chunkIndex": 13,
+      "textLength": 786,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 13
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 5\n5. Product Catalog — Nexora Product Suite\nNexora Dynamics sells three core products and two add-on modules. Each product is documented below with\npurpose, key capabilities, target customer and pricing model.\n5.1 FlowForge — Workflow Automation Platform\nLaunched: September 2017\nPurpose: A low-code platform for designing, running and monitoring business process automations such as\ninvoice approval, employee onboarding and purchase order routing.\n• Visual drag-and-drop designer with over 140 prebuilt connectors.\n• Human-in-the-loop approval steps with escalation timers.\n• Versioned workflows with rollback and full audit logs."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#14",
+      "chunkIndex": 14,
+      "textLength": 785,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 14
+      },
+      "text": "• Human-in-the-loop approval steps with escalation timers.\n• Versioned workflows with rollback and full audit logs.\n• Runs 2.4 billion workflow steps per month across all tenants (August 2026).\nPricing: INR 2,400 per user per month for the Business tier; custom pricing for Enterprise.\n5.2 InsightBoard — Analytics and Reporting\nLaunched: June 2019\nPurpose: A self-service analytics product that connects to customer databases and produces dashboards,\nscheduled reports and anomaly alerts.\n• Semantic layer for governed metrics definitions.\n• Natural-language query support powered by the Nexora AI Assistant.\n• Row-level security tied to customer identity providers.\nPricing: Per-workspace subscription starting at INR 90,000 per month.\n5.3 Sahayak — AI Assistant\nLaunched: March 2024"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#15",
+      "chunkIndex": 15,
+      "textLength": 736,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 15
+      },
+      "text": "Pricing: Per-workspace subscription starting at INR 90,000 per month.\n5.3 Sahayak — AI Assistant\nLaunched: March 2024\nPurpose: An AI assistant embedded across FlowForge and InsightBoard that answers questions, drafts\nworkflows and summarizes reports using retrieval-augmented generation over each customer's own data.\n• Per-tenant vector index; customer data is never used to train shared models.\n• Citations shown for every answer, linking to the source record.\n• Supports English, Hindi, Marathi and Tamil.\n• Average end-to-end response latency of 2.1 seconds at the 95th percentile.\nPricing: Usage-based: INR 0.85 per assistant conversation beyond an included monthly allowance.\n5.4 Add-on Modules\nModule Works With Description Price"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#16",
+      "chunkIndex": 16,
+      "textLength": 226,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 16
+      },
+      "text": "5.4 Add-on Modules\nModule Works With Description Price\nCompliance Vault FlowForge Immutable audit archive with 8-year retention INR 35,000 / month\nConnector Pack Plus FlowForge Premium ERP and CRM connectors INR 20,000 / month"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#17",
+      "chunkIndex": 17,
+      "textLength": 751,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 17
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 6\n6. Technology Stack & Platform Architecture\nThis section documents the engineering standards and architecture of the Nexora platform. All services are\ndeployed on Kubernetes across two cloud regions, Mumbai as primary and Singapore as disaster recovery.\n6.1 Core Technology Choices\nLayer Technology Notes\nFrontend React, TypeScript, Vite Shared design system named Prism\nBackend services Go and Node.js Go for the workflow runtime, Node.js for APIs\nPrimary database PostgreSQL 16 Managed, multi-AZ, logical tenant isolation\nCache and queues Redis and Apache Kafka Kafka retains events for 7 days"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#18",
+      "chunkIndex": 18,
+      "textLength": 736,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 18
+      },
+      "text": "Primary database PostgreSQL 16 Managed, multi-AZ, logical tenant isolation\nCache and queues Redis and Apache Kafka Kafka retains events for 7 days\nSearch and vectors OpenSearch and pgvector Hybrid keyword plus semantic retrieval\nObservability Prometheus, Grafana, OpenTelemetry Central logs retained 30 days\nCI/CD GitHub Actions and ArgoCD Trunk-based development with feature flags\n6.2 Sahayak RAG Architecture\nThe Sahayak assistant uses a retrieval-augmented generation pipeline. Documents are ingested nightly and on\nchange events, split into chunks of roughly 500 tokens with 80 tokens of overlap, embedded, and stored in a\nper-tenant pgvector collection. At query time the user question is embedded, the top 20 chunks are retrieved"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#19",
+      "chunkIndex": 19,
+      "textLength": 762,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 19
+      },
+      "text": "per-tenant pgvector collection. At query time the user question is embedded, the top 20 chunks are retrieved\nusing hybrid search that combines BM25 keyword scores with cosine similarity, and a reranker narrows the set to\nthe best 5 chunks that are placed in the prompt.\n• Embedding model: 768-dimensional multilingual sentence embeddings, self-hosted.\n• Reranker: cross-encoder model, adds about 120 ms to each query.\n• Generation: external large language model accessed through an internal gateway with prompt logging.\n• Guardrails: answers must cite at least one retrieved chunk, otherwise the assistant says it does not know.\n• Evaluation: a nightly regression suite of 1,200 question-answer pairs; target faithfulness score of 0.92.\n6.3 Engineering Standards"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#20",
+      "chunkIndex": 20,
+      "textLength": 777,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 20
+      },
+      "text": "• Evaluation: a nightly regression suite of 1,200 question-answer pairs; target faithfulness score of 0.92.\n6.3 Engineering Standards\n• All code changes require one peer review and passing automated tests before merge.\n• Minimum unit test coverage of 80 percent on new services.\n• API changes must be backward compatible for at least two release cycles.\n• Every service publishes an owner, runbook link and service level objective in the service catalog.\n• Database migrations must be reversible and are applied by the pipeline, never manually.\n6.4 Service Level Objectives\nService Availability SLO Latency SLO (p95) Error Budget / Month\nFlowForge API 99.95% 300 ms 21.6 minutes\nWorkflow Runtime 99.99% n/a (asynchronous) 4.3 minutes\nInsightBoard Query 99.9% 2.5 s 43.2 minutes"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#21",
+      "chunkIndex": 21,
+      "textLength": 179,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 21
+      },
+      "text": "FlowForge API 99.95% 300 ms 21.6 minutes\nWorkflow Runtime 99.99% n/a (asynchronous) 4.3 minutes\nInsightBoard Query 99.9% 2.5 s 43.2 minutes\nSahayak Assistant 99.5% 2.1 s 3.6 hours"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#22",
+      "chunkIndex": 22,
+      "textLength": 753,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 22
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 7\n7. Financial Summary — FY2025-26\nThis section summarizes Nexora Dynamics financial performance for the fiscal year ending 31 March 2026. All\nfigures are in INR crore unless stated otherwise and are synthetic.\nMetric FY2024-25 FY2025-26 Change\nTotal revenue 372.4 486.0 +30.5%\nSubscription revenue 331.8 437.9 +32.0%\nProfessional services revenue 40.6 48.1 +18.5%\nGross profit 268.1 359.6 +34.1%\nGross margin 72.0% 74.0% +2.0 pts\nOperating expenses 251.7 312.9 +24.3%\nOperating profit (EBIT) 16.4 46.7 +184.8%\nNet profit 9.1 33.2 +264.8%\nCash and equivalents 141.0 228.5 +62.1%\n7.1 Key SaaS Metrics"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#23",
+      "chunkIndex": 23,
+      "textLength": 793,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 23
+      },
+      "text": "Operating profit (EBIT) 16.4 46.7 +184.8%\nNet profit 9.1 33.2 +264.8%\nCash and equivalents 141.0 228.5 +62.1%\n7.1 Key SaaS Metrics\nAnnual Recurring Revenue (ARR): INR 512 crore as of 31 March 2026\nNet Revenue Retention: 117 percent\nGross Revenue Retention: 93 percent\nCustomer Count: 1,184 paying customers\nAverage Contract Value: INR 37 lakh per year\nCustomer Acquisition Cost Payback: 16 months\nRule of 40 Score: 44 (30.5 percent growth plus 13.5 percent free cash flow margin)\n7.2 Revenue by Product\nProduct Revenue (INR cr) Share of Total\nFlowForge 296.4 61.0%\nInsightBoard 112.8 23.2%\nSahayak AI Assistant 38.9 8.0%\nAdd-on modules 29.8 6.1%\nOther 8.1 1.7%\n7.3 Revenue by Region\nIndia contributed 58 percent of revenue, North America 19 percent, Asia-Pacific excluding India 15 percent and"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#24",
+      "chunkIndex": 24,
+      "textLength": 298,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 24
+      },
+      "text": "Other 8.1 1.7%\n7.3 Revenue by Region\nIndia contributed 58 percent of revenue, North America 19 percent, Asia-Pacific excluding India 15 percent and\nthe rest of the world 8 percent. Sahayak was the fastest growing product with revenue growth of 340 percent over\nthe previous year, from a small base."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#25",
+      "chunkIndex": 25,
+      "textLength": 787,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 25
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 8\n8. Sales Pipeline & Key Customer Accounts\nThe Sales department is led by Chief Revenue Officer Daniel Whitmore. Sales targets for FY2026-27 are INR 640\ncrore of new and expansion bookings. The table lists the top ten customer accounts by annual contract value. All\ncustomers are fictional.\nCustomer Industry Products ACV (INR cr) Renewal\nVeridian Logistics Logistics FlowForge, Sahayak 9.8 Jan 2027\nAuralis Health Group Healthcare FlowForge, Vault 8.4 Jun 2027\nKestrel Financial Banking InsightBoard, Sahayak 7.9 Mar 2027\nBrightwave Retail Retail FlowForge, InsightBoard 6.7 Sep 2026\nSolano Motors Automotive FlowForge 6.1 Nov 2026"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#26",
+      "chunkIndex": 26,
+      "textLength": 796,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 26
+      },
+      "text": "Brightwave Retail Retail FlowForge, InsightBoard 6.7 Sep 2026\nSolano Motors Automotive FlowForge 6.1 Nov 2026\nTidewater Energy Energy InsightBoard 5.6 Apr 2027\nMarigold Foods FMCG FlowForge, Connector Pack 5.2 Aug 2027\nPinnacle Insurance Insurance FlowForge, Sahayak 4.9 Feb 2027\nHarbor & Vale Legal Legal services Sahayak, Vault 4.4 Dec 2026\nZenith Telecom Telecom InsightBoard 4.1 May 2027\n8.1 Pipeline Stages and Conversion\nStage Definition Historic Win Rate\nQualified Budget, authority, need and timeline confirmed 22%\nSolution Fit Technical validation completed 38%\nProposal Commercial proposal delivered 54%\nNegotiation Legal and pricing under discussion 78%\nClosed Won Signed order form received 100%\n8.2 Discount Policy\n• Account executives may discount up to 10 percent without approval."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#27",
+      "chunkIndex": 27,
+      "textLength": 785,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 27
+      },
+      "text": "Closed Won Signed order form received 100%\n8.2 Discount Policy\n• Account executives may discount up to 10 percent without approval.\n• Discounts between 10 and 20 percent require Sales Director approval.\n• Discounts above 20 percent require Pricing Council approval and a written business justification.\n• Multi-year prepayment discounts are limited to 8 percent for two years and 12 percent for three years.\n8.3 Customer Health Scoring\nCustomer Success assigns each account a health score from 0 to 100 based on product usage, support ticket\nvolume, executive engagement and payment history. Accounts scoring below 60 are marked at risk and reviewed\nin the weekly retention meeting. As of 31 August 2026, 87 accounts were at risk, representing INR 41 crore of\nannual recurring revenue."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#28",
+      "chunkIndex": 28,
+      "textLength": 754,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 28
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 9\n9. Human Resources Policy — Leave, Working Hours & Conduct\nThis section is the authoritative summary of Nexora Dynamics people policies for India-based employees. Policies\nfor other countries follow local law and are maintained separately by People and Culture.\n9.1 Working Hours and Hybrid Policy\n• Standard working hours are 9:30 to 18:30 IST with core collaboration hours from 11:00 to 16:00.\n• The hybrid model requires employees to be in the office at least three days per week, Tuesday to Thursday.\n• Fully remote work is allowed only for roles approved as remote by the Chief People Officer."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#29",
+      "chunkIndex": 29,
+      "textLength": 787,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 29
+      },
+      "text": "• Fully remote work is allowed only for roles approved as remote by the Chief People Officer.\n• Employees may work from another city for up to 20 days per calendar year with manager approval.\n9.2 Leave Entitlements\nLeave Type Annual Entitlement Rules\nCasual leave 8 days Cannot be carried forward\nEarned (privilege) leave 18 days Up to 30 days can be carried forward\nSick leave 10 days Medical certificate needed after 3 consecutive days\nMaternity leave 26 weeks As per statutory provisions\nPaternity leave 15 days Must be taken within 6 months of birth\nBereavement leave 5 days For immediate family\nVolunteer leave 2 days For approved community service\n9.3 Company Holidays 2026\nNexora observes 12 paid holidays in 2026: Republic Day (26 January), Holi (4 March), Good Friday (3 April),"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#30",
+      "chunkIndex": 30,
+      "textLength": 729,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 30
+      },
+      "text": "9.3 Company Holidays 2026\nNexora observes 12 paid holidays in 2026: Republic Day (26 January), Holi (4 March), Good Friday (3 April),\nMaharashtra Day (1 May), Independence Day (15 August), Ganesh Chaturthi (14 September), Gandhi Jayanti (2\nOctober), Dussehra (20 October), Diwali (9 November), Bhai Dooj (11 November), Guru Nanak Jayanti (24\nNovember) and Christmas Day (25 December).\n9.4 Code of Conduct\nAll employees must treat colleagues, customers and partners with respect. Harassment, discrimination and\nretaliation are prohibited and can result in termination. Concerns can be raised with a manager, People and\nCulture, or anonymously through the Ethics Helpline, which is operated by an external provider and available 24"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#31",
+      "chunkIndex": 31,
+      "textLength": 516,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 31
+      },
+      "text": "Culture, or anonymously through the Ethics Helpline, which is operated by an external provider and available 24\nhours a day. The Internal Complaints Committee investigates complaints of workplace harassment and must\ncomplete its inquiry within 90 days.\n9.5 Performance Reviews\nNexora runs two review cycles per year, in April and October. Ratings use a five-point scale: Exceptional,\nExceeds, Meets, Partially Meets and Does Not Meet. Managers must hold a calibration session with peers before\nratings are finalized."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#32",
+      "chunkIndex": 32,
+      "textLength": 791,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 32
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 10\n10. Compensation Bands, Benefits & Learning\nCompensation at Nexora is organized into job levels L1 to L9. The bands below are synthetic annual cash\ncompensation ranges for India in INR lakh and are used only for illustrating tabular retrieval.\nLevel Typical Title Band Minimum Band Maximum\nL2 Associate Engineer 8 13\nL3 Software Engineer 13 22\nL4 Senior Software Engineer 22 36\nL5 Staff Engineer / Engineering Manager 36 58\nL6 Principal Engineer / Senior Manager 56 84\nL7 Director 80 120\nL8 Vice President 115 180\n10.1 Benefits Summary\n• Health insurance: group cover of INR 10 lakh for the employee, spouse, two children and parents."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#33",
+      "chunkIndex": 33,
+      "textLength": 743,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 33
+      },
+      "text": "L8 Vice President 115 180\n10.1 Benefits Summary\n• Health insurance: group cover of INR 10 lakh for the employee, spouse, two children and parents.\n• Term life cover: five times annual fixed pay, up to INR 2 crore.\n• Provident fund: 12 percent employer contribution on basic salary.\n• Wellness allowance: INR 24,000 per year for gym, mental wellness or sports.\n• Meal cards: INR 2,200 per month, tax-free.\n• Home office grant: one-time INR 25,000 for employees on hybrid or remote schedules.\n10.2 Learning and Development\nEach employee receives an annual learning budget of INR 60,000 for courses, certifications and conferences.\nEngineers can also apply for a 5-day learning sabbatical after every three years of service. The internal academy,"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#34",
+      "chunkIndex": 34,
+      "textLength": 760,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 34
+      },
+      "text": "Engineers can also apply for a 5-day learning sabbatical after every three years of service. The internal academy,\ncalled Nexora Learn, offers 140 courses, and 78 percent of employees completed at least one course in\nFY2025-26.\n10.3 Employee Stock Option Plan\nEligible employees at L4 and above receive stock options under the ESOP 2021 plan. Options vest over four\nyears with a one-year cliff: 25 percent after the first year and the remainder in equal monthly installments over the\nnext 36 months. The exercise window after leaving the company is 90 days.\n10.4 Referral Program\nEmployees who refer a candidate that is hired and completes six months receive a referral bonus: INR 40,000 for\nL2 to L3, INR 75,000 for L4 to L5 and INR 1,50,000 for L6 and above."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#35",
+      "chunkIndex": 35,
+      "textLength": 703,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 35
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 11\n11. Information Security Policy\nThis policy is owned by Chief Information Security Officer Kavya Nair and applies to all employees, contractors\nand systems at Nexora Dynamics. It is reviewed annually and was last updated on 1 July 2026.\n11.1 Access Control\n• Access follows the principle of least privilege and is granted through role-based groups.\n• Multi-factor authentication is mandatory for all corporate applications and production access.\n• Privileged production access is granted just-in-time for a maximum of 4 hours and is fully logged."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#36",
+      "chunkIndex": 36,
+      "textLength": 783,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 36
+      },
+      "text": "• Privileged production access is granted just-in-time for a maximum of 4 hours and is fully logged.\n• Access reviews are performed quarterly by system owners; unused access is removed after 45 days.\n• Departing employees lose all access within 2 hours of their last working day being recorded.\n11.2 Password and Device Rules\n• Passwords must be at least 14 characters and are checked against breached-password lists.\n• Company laptops use full-disk encryption and must receive security patches within 14 days of release.\n• Personal devices may access email only through the managed mobile application.\n• USB mass storage is disabled on all company laptops by default.\n11.3 Data Classification\nClass Examples Handling Requirement\nPublic Marketing pages, published docs No restriction"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#37",
+      "chunkIndex": 37,
+      "textLength": 733,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 37
+      },
+      "text": "11.3 Data Classification\nClass Examples Handling Requirement\nPublic Marketing pages, published docs No restriction\nInternal Wiki pages, org charts Share only inside the company\nConfidential Contracts, financials, source code Encrypted, need-to-know access\nRestricted Customer production data, secrets Encrypted, logged, approval required\n11.4 Vulnerability Management\nCritical vulnerabilities must be remediated within 7 days, high within 30 days, medium within 90 days and low\nwithin 180 days. External penetration tests are performed twice per year, and the results are tracked to closure by\nthe Security Steering Group. The company also runs a private bug bounty program with rewards from USD 200 to\nUSD 5,000.\n11.5 Certifications"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#38",
+      "chunkIndex": 38,
+      "textLength": 453,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 38
+      },
+      "text": "the Security Steering Group. The company also runs a private bug bounty program with rewards from USD 200 to\nUSD 5,000.\n11.5 Certifications\nNexora holds ISO 27001:2022 certification (renewed August 2026), SOC 2 Type II attestation (report period 1\nOctober 2025 to 30 September 2026 in progress) and is compliant with India's Digital Personal Data Protection\nAct requirements for data fiduciaries. GDPR data processing addendums are available on request."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#39",
+      "chunkIndex": 39,
+      "textLength": 771,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 39
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 12\n12. Incident Response Procedure & Postmortem Record\nNexora classifies production incidents by severity. The on-call engineer declares an incident, and the Incident\nCommander coordinates the response until resolution.\nSeverity Definition Response Time Update Cadence\nSEV1 Full outage or data integrity risk for many customers 5 minutes Every 30 minutes\nSEV2 Major feature degraded for many customers 15 minutes Every hour\nSEV3 Minor degradation or single customer impact 1 hour Every 4 hours\nSEV4 Cosmetic issue with workaround Next business day On resolution\n12.1 Postmortem — INC-2026-0417: Workflow Runtime Delay"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#40",
+      "chunkIndex": 40,
+      "textLength": 787,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 40
+      },
+      "text": "SEV4 Cosmetic issue with workaround Next business day On resolution\n12.1 Postmortem — INC-2026-0417: Workflow Runtime Delay\nDate: 17 April 2026, 02:14 to 05:52 IST\nSeverity: SEV1\nIncident Commander: Sanjay Iyer\nCustomer Impact: Approximately 310 customers experienced workflow execution delays of up to 3 hours. No\ndata was lost.\nRoot Cause: A Kafka consumer group rebalance loop was triggered by a configuration change that lowered the\nsession timeout from 30 seconds to 6 seconds. Under a nightly batch load, consumers missed heartbeats,\nrepeatedly restarted and could not commit offsets.\nDetection: Automated alert on consumer lag exceeding 500,000 messages fired at 02:19 IST.\nResolution: The session timeout was restored to 30 seconds and the consumer group was scaled from 12 to 20"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#41",
+      "chunkIndex": 41,
+      "textLength": 795,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 41
+      },
+      "text": "Resolution: The session timeout was restored to 30 seconds and the consumer group was scaled from 12 to 20\npods to drain the backlog.\n12.2 Corrective Actions\n• Add a configuration validation rule that blocks session timeouts below 20 seconds (owner: Platform, done 30\nApril 2026).\n• Require canary rollout for all Kafka configuration changes (owner: SRE, done 15 May 2026).\n• Add consumer lag dashboards to the customer status page (owner: Reliability, done 10 June 2026).\n• Run a quarterly game day simulating consumer failures (owner: SRE, first held 24 July 2026).\n12.3 Incident Statistics for 2026 (January to August)\nThere were 2 SEV1 incidents, 9 SEV2 incidents and 41 SEV3 incidents. Mean time to detect was 4.6 minutes and\nmean time to resolve for SEV1 and SEV2 incidents was 96 minutes."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#42",
+      "chunkIndex": 42,
+      "textLength": 738,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 42
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 13\n13. Customer Support Operations & Service Level Agreements\nCustomer Support at Nexora Dynamics is led by Priya Deshmukh and operates across three time zones to\nprovide 24x5 coverage, with 24x7 coverage for Enterprise customers on the Premier support plan.\n13.1 Support Plans and Response Targets\nPriority Standard Plan (first response) Premier Plan (first response) Resolution Target\nP1 Critical 1 hour 15 minutes 4 hours\nP2 High 4 hours 1 hour 1 business day\nP3 Medium 1 business day 4 hours 5 business days\nP4 Low 2 business days 1 business day Next release\n13.2 Support Channels"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#43",
+      "chunkIndex": 43,
+      "textLength": 712,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 43
+      },
+      "text": "P3 Medium 1 business day 4 hours 5 business days\nP4 Low 2 business days 1 business day Next release\n13.2 Support Channels\n• In-app chat, staffed 24x5 and answered first by the Sahayak assistant.\n• Email at support@nexora-dynamics.example.\n• Phone hotline, available to Premier customers only.\n• Customer community forum, moderated by the Customer Success team.\n13.3 Ticket Handling Procedure\n• Step 1: Acknowledge the ticket and confirm the priority with the customer.\n• Step 2: Reproduce the issue in the support sandbox and capture logs.\n• Step 3: If unresolved within 30 minutes for P1 or P2, escalate to the on-call engineer.\n• Step 4: Post updates in the ticket at the cadence defined by the severity table."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#44",
+      "chunkIndex": 44,
+      "textLength": 780,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 44
+      },
+      "text": "• Step 4: Post updates in the ticket at the cadence defined by the severity table.\n• Step 5: On closure, send a satisfaction survey and link a knowledge article if one applies.\n13.4 Support Performance, August 2026\nMetric Target Actual\nTickets received n/a 9,412\nFirst response within SLA 95% 96.8%\nResolution within SLA 90% 91.3%\nCustomer satisfaction (CSAT) 4.5 / 5 4.62 / 5\nTickets resolved by Sahayak without agent n/a 38%\nAverage handle time n/a 27 minutes\n13.5 SLA Credits\nIf Nexora misses the monthly availability commitment of 99.9 percent, customers receive service credits: 10\npercent of the monthly fee if availability is between 99.0 and 99.9 percent, 25 percent between 95.0 and 99.0\npercent, and 50 percent below 95.0 percent. Credits must be claimed within 30 days."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#45",
+      "chunkIndex": 45,
+      "textLength": 755,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 45
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 14\n14. Procurement Policy & Approved Vendor Register\nNexora Dynamics procurement is managed by the Finance and Legal department. All purchases must follow the\napproval matrix and use approved vendors wherever one exists.\n14.1 Purchase Approval Matrix\nPurchase Value (INR) Approver Additional Requirement\nUp to 1 lakh Department manager None\n1 lakh to 10 lakh Department head Two quotations\n10 lakh to 50 lakh Department head and Finance controller Three quotations and vendor security\nreview\n50 lakh to 2 crore CFO Formal RFP and legal review\nAbove 2 crore CEO Board notification\n14.2 Approved Vendors"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#46",
+      "chunkIndex": 46,
+      "textLength": 798,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 46
+      },
+      "text": "review\n50 lakh to 2 crore CFO Formal RFP and legal review\nAbove 2 crore CEO Board notification\n14.2 Approved Vendors\nVendor (fictional) Category Annual Spend (INR lakh) Contract Ends\nStratus Cloud Services Cloud infrastructure 1,240 Mar 2028\nLumenlogic Observability Monitoring platform 185 Jun 2027\nCipherline Security Penetration testing 62 Dec 2026\nTalentrise Recruiters Recruitment agency 148 Rolling\nLedgerwise Audit LLP Statutory audit 54 Mar 2027\nOpenvista Communications Telephony and messaging 96 Aug 2027\nPixelCraft Studio Marketing design 41 Rolling\n14.3 Vendor Onboarding\nBefore a new vendor is approved, they must complete a security questionnaire, provide proof of insurance, and\nsign the data processing addendum if they will handle personal data. High-risk vendors receive an annual"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#47",
+      "chunkIndex": 47,
+      "textLength": 635,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 47
+      },
+      "text": "sign the data processing addendum if they will handle personal data. High-risk vendors receive an annual\nreassessment. Payment terms are net 45 days from invoice receipt unless negotiated otherwise, and payments\nare released every Friday.\n14.4 Travel and Expense Policy\n• Domestic flights are booked in economy class at least 7 days in advance through the company travel portal.\n• Hotel limits are INR 7,500 per night in metro cities and INR 5,000 elsewhere.\n• Daily meal allowance during travel is INR 1,500 domestic and USD 60 international.\n• Expense claims must be submitted within 30 days with receipts for any item above INR 500."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#48",
+      "chunkIndex": 48,
+      "textLength": 762,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 48
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 15\n15. Internal Project Portfolio — Active Initiatives\nThe Program Management Office tracks strategic initiatives. Each project below is documented with owner,\nobjective, status and key dates for retrieval testing.\n15.1 Project Atlas — Multi-Region Data Residency\nOwner: Ishita Kulkarni (sponsor), Vikram Joshi (program lead)\nObjective: Allow customers to store their data in India, Singapore or the United States with tenant-level control.\nStatus: On track; Singapore region live since 12 June 2026, United States region planned for 30 November 2026.\nBudget: INR 18.5 crore\n15.2 Project Beacon — Sahayak 2.0"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#49",
+      "chunkIndex": 49,
+      "textLength": 781,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 49
+      },
+      "text": "Budget: INR 18.5 crore\n15.2 Project Beacon — Sahayak 2.0\nOwner: Meera Raghavan (sponsor), Nandini Rao (product lead)\nObjective: Introduce agentic workflows so the assistant can build and run automations from natural language,\nwith mandatory human approval for any action that changes customer data.\nStatus: Beta with 24 design partners; general availability targeted for 15 January 2027.\nBudget: INR 22.0 crore\n15.3 Project Cobalt — Billing Platform Migration\nOwner: Rohan Bhatt (sponsor), Tarun Malhotra (program lead)\nObjective: Replace the legacy invoicing system with a usage-based billing platform supporting multiple\ncurrencies and automated tax calculation.\nStatus: At risk; delayed by six weeks because of tax engine integration issues. New go-live date is 1 December\n2026."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#50",
+      "chunkIndex": 50,
+      "textLength": 735,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 50
+      },
+      "text": "Status: At risk; delayed by six weeks because of tax engine integration issues. New go-live date is 1 December\n2026.\nBudget: INR 9.2 crore\n15.4 Project Delta — Mobile App Rewrite\nOwner: Ishita Kulkarni (sponsor), Aditi Verma (engineering manager)\nObjective: Rewrite the iOS and Android apps with a shared codebase to reduce release effort by 40 percent.\nStatus: In development; internal beta released 3 September 2026.\nBudget: INR 6.4 crore\n15.5 Project Echo — Zero Trust Network\nOwner: Kavya Nair (sponsor), Rahul Bansal (program lead)\nObjective: Remove the corporate VPN and enforce identity-aware access to all internal applications.\nStatus: Phase 2 of 3 complete; VPN decommission scheduled for 31 March 2027.\nBudget: INR 7.8 crore"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#51",
+      "chunkIndex": 51,
+      "textLength": 744,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 51
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 16\n16. Product Roadmap & Objectives (OKRs) — FY2026-27\nThe following roadmap and objectives were approved by the executive team on 5 August 2026. Dates are targets\nand may change through the Change Advisory process.\n16.1 Roadmap by Quarter\nQuarter Milestone Product Owner\nQ2 FY27 (Jul-Sep 2026) Sahayak Hindi and Marathi voice input Sahayak Nandini Rao\nQ2 FY27 (Jul-Sep 2026) FlowForge parallel branches in designer FlowForge Karan Oberoi\nQ3 FY27 (Oct-Dec 2026) US data residency region Platform Vikram Joshi\nQ3 FY27 (Oct-Dec 2026) InsightBoard forecasting module InsightBoard Shreya Pillai"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#52",
+      "chunkIndex": 52,
+      "textLength": 755,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 52
+      },
+      "text": "Q3 FY27 (Oct-Dec 2026) InsightBoard forecasting module InsightBoard Shreya Pillai\nQ4 FY27 (Jan-Mar 2027) Sahayak 2.0 general availability Sahayak Nandini Rao\nQ4 FY27 (Jan-Mar 2027) Usage-based billing for all plans Platform Tarun Malhotra\n16.2 Company Objectives and Key Results\nObjective 1: Grow recurring revenue profitably.\n• KR1: Reach ARR of INR 660 crore by 31 March 2027.\n• KR2: Keep net revenue retention at or above 115 percent.\n• KR3: Maintain gross margin at or above 74 percent.\nObjective 2: Make Sahayak the reason customers choose Nexora.\n• KR1: Reach 250 customers using Sahayak in production.\n• KR2: Achieve a faithfulness score of at least 0.94 on the regression suite.\n• KR3: Reduce assistant p95 latency from 2.1 seconds to 1.6 seconds."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#53",
+      "chunkIndex": 53,
+      "textLength": 609,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 53
+      },
+      "text": "• KR2: Achieve a faithfulness score of at least 0.94 on the regression suite.\n• KR3: Reduce assistant p95 latency from 2.1 seconds to 1.6 seconds.\nObjective 3: Deliver a reliable and secure platform.\n• KR1: Zero SEV1 incidents caused by configuration changes.\n• KR2: Complete SOC 2 Type II report with no qualified opinions.\n• KR3: Reduce critical vulnerability remediation time to 5 days.\nObjective 4: Build a great place to work.\n• KR1: Reduce voluntary attrition to 10 percent.\n• KR2: Reach an engagement survey score of 82 or higher.\n• KR3: Fill 90 percent of planned hires within 60 days of role opening."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#54",
+      "chunkIndex": 54,
+      "textLength": 785,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 54
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 17\n17. Compliance Obligations & Enterprise Risk Register\nThe Finance and Legal department and the Security Steering Group jointly maintain the enterprise risk register.\nRisks are scored by likelihood and impact on a 1 to 5 scale, and the risk score is the product of the two.\nID Risk Likelihoo\nd\nImpact Score Owner Mitigation\nR-01 Cloud provider regional\noutage\n2 5 10 CTO Warm standby in Singapore,\nquarterly failover drills\nR-02 Data breach of customer\ndata\n2 5 10 CISO Encryption, zero trust, bug bounty\nR-03 Key engineer attrition in AI\nteam\n3 4 12 CPO\n(People)\nRetention grants, career paths\nR-04 Slippage of billing\nmigration"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#55",
+      "chunkIndex": 55,
+      "textLength": 781,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 55
+      },
+      "text": "R-03 Key engineer attrition in AI\nteam\n3 4 12 CPO\n(People)\nRetention grants, career paths\nR-04 Slippage of billing\nmigration\n4 3 12 CFO Weekly steering, vendor\nescalation\nR-05 LLM provider price\nincrease\n3 3 9 CTO Multi-provider gateway,\nself-hosted fallback\nR-06 Regulatory change on AI\nuse\n3 3 9 General\nCounsel\nPolicy tracking, audit trail features\nR-07 Customer concentration 2 4 8 CRO Top 10 customers held below 22%\nof ARR\n17.1 Regulatory and Contractual Compliance\n• Data protection: personal data is processed under documented purposes; breaches are notified to the\nregulator and affected customers within 72 hours.\n• Tax: GST returns are filed monthly by the 20th; TDS returns quarterly.\n• Statutory audit: annual audit completed by 30 September for the prior fiscal year."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#56",
+      "chunkIndex": 56,
+      "textLength": 773,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 56
+      },
+      "text": "• Statutory audit: annual audit completed by 30 September for the prior fiscal year.\n• Export controls: the legal team screens new customers against sanctions lists before contract signature.\n• Open-source use: only approved licenses (MIT, Apache 2.0, BSD) are allowed in shipped code; copyleft\nlicenses require legal review.\n17.2 Business Continuity\nRecovery time objective for the FlowForge production platform is 60 minutes and the recovery point objective is 5\nminutes. Disaster recovery is tested twice a year, and the last full test on 19 July 2026 achieved a recovery time of\n47 minutes.\n17.3 Data Retention\nData Type Retention Period Disposal Method\nCustomer production data Contract term plus 90 days Cryptographic erasure\nApplication logs 30 days Automatic expiry"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#57",
+      "chunkIndex": 57,
+      "textLength": 264,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 57
+      },
+      "text": "Customer production data Contract term plus 90 days Cryptographic erasure\nApplication logs 30 days Automatic expiry\nAudit logs (Compliance Vault) 8 years Automatic expiry\nEmployee records 7 years after exit Secure deletion\nFinancial records 8 years Secure deletion"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#58",
+      "chunkIndex": 58,
+      "textLength": 798,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 58
+      },
+      "text": "NEXORA DYNAMICS — INTERNAL OPERATIONS KNOWLEDGE BASE | Corporate Knowledge Repository — NDK-2026.09\nConfidential — Internal Use Only | NDK-2026.09 | Page 18\n18. Frequently Asked Questions & Executive Summary\n18.1 Retrieval Evaluation Questions\nThe following questions and answers can be used as a ground truth set to evaluate retrieval accuracy against this\ndocument.\nQ1. When was Nexora Dynamics founded and where is its headquarters?\nFounded on 14 March 2016; headquartered in Pune, India.\nQ2. Who is the Chief Information Security Officer?\nKavya Nair, who joined in 2023 and reports to the CTO.\nQ3. What was total revenue in FY2025-26?\nINR 486 crore, growth of 30.5 percent over FY2024-25.\nQ4. How many days of earned leave do employees get?\n18 days per year, with up to 30 days carried forward."
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#59",
+      "chunkIndex": 59,
+      "textLength": 785,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 59
+      },
+      "text": "Q4. How many days of earned leave do employees get?\n18 days per year, with up to 30 days carried forward.\nQ5. What caused incident INC-2026-0417?\nA Kafka consumer group rebalance loop after the session timeout was lowered to 6 seconds.\nQ6. What is the first response target for a P1 ticket on the Premier plan?\n15 minutes.\nQ7. How long may privileged production access last?\nA maximum of 4 hours, granted just-in-time and fully logged.\nQ8. Which project is currently at risk?\nProject Cobalt, the billing platform migration, delayed six weeks to 1 December 2026.\nQ9. What is the chunk size used by the Sahayak RAG pipeline?\nAbout 500 tokens with 80 tokens of overlap.\nQ10. Which customer has the highest annual contract value?\nVeridian Logistics at INR 9.8 crore.\n18.2 Executive Summary"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#60",
+      "chunkIndex": 60,
+      "textLength": 766,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 60
+      },
+      "text": "Q10. Which customer has the highest annual contract value?\nVeridian Logistics at INR 9.8 crore.\n18.2 Executive Summary\nNexora Dynamics Pvt. Ltd. is a fictional enterprise software company founded in 2016 in Pune with 612\nemployees, INR 486 crore in FY2025-26 revenue and 1,184 customers. Its product suite consists of FlowForge for\nworkflow automation, InsightBoard for analytics and Sahayak, an AI assistant built on a hybrid\nretrieval-augmented generation architecture. The company is profitable, holds ISO 27001 and SOC 2 controls,\nand is investing in multi-region data residency, agentic AI and a new billing platform.\n18.3 Synthetic Data Disclaimer\nAll content in this document is fictional and was generated for RAG evaluation purposes only. Any resemblance to"
+    },
+    {
+      "id": "e0610845-1207-48a0-89ff-35b64462b613#61",
+      "chunkIndex": 61,
+      "textLength": 310,
+      "metadata": {
+        "source": "Nexora_Internal_KB_RAG.pdf",
+        "docId": "e0610845-1207-48a0-89ff-35b64462b613",
+        "chunkIndex": 61
+      },
+      "text": "18.3 Synthetic Data Disclaimer\nAll content in this document is fictional and was generated for RAG evaluation purposes only. Any resemblance to\nreal companies, people, products or figures is coincidental.\nEnd of Document — Nexora Dynamics Internal Knowledge Base NDK-2026.09 | Confidential — Internal Use\nOnly."
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+[
+  {
+    "id": "q01",
+    "query": "When was Nexora Dynamics founded and where is its headquarters?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#4": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#58": 1,
+      "e0610845-1207-48a0-89ff-35b64462b613#60": 1
+    }
+  },
+  {
+    "id": "q02",
+    "query": "Who is the Chief Information Security Officer?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#8": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#58": 1
+    }
+  },
+  {
+    "id": "q03",
+    "query": "What was total revenue in FY2025-26?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#22": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#4": 1,
+      "e0610845-1207-48a0-89ff-35b64462b613#58": 1,
+      "e0610845-1207-48a0-89ff-35b64462b613#60": 1
+    }
+  },
+  {
+    "id": "q04",
+    "query": "How many days of earned leave do employees get?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#29": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#58": 1,
+      "e0610845-1207-48a0-89ff-35b64462b613#59": 1
+    }
+  },
+  {
+    "id": "q05",
+    "query": "What caused incident INC-2026-0417?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#40": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#59": 1
+    }
+  },
+  {
+    "id": "q06",
+    "query": "What is the first response target for a P1 ticket on the Premier plan?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#42": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#59": 1
+    }
+  },
+  {
+    "id": "q07",
+    "query": "How long may privileged production access last?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#35": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#36": 1,
+      "e0610845-1207-48a0-89ff-35b64462b613#59": 1
+    }
+  },
+  {
+    "id": "q08",
+    "query": "Which project is currently at risk?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#49": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#50": 1,
+      "e0610845-1207-48a0-89ff-35b64462b613#59": 1
+    }
+  },
+  {
+    "id": "q09",
+    "query": "What is the chunk size used by the Sahayak RAG pipeline?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#18": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#59": 1
+    }
+  },
+  {
+    "id": "q10",
+    "query": "Which customer has the highest annual contract value?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#25": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#59": 1,
+      "e0610845-1207-48a0-89ff-35b64462b613#60": 1
+    }
+  },
+  {
+    "id": "q11",
+    "query": "When is a medical certificate needed for sick leave?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#29": 2
+    }
+  },
+  {
+    "id": "q12",
+    "query": "How many days of paternity leave are allowed and by when must it be taken?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#29": 2
+    }
+  },
+  {
+    "id": "q13",
+    "query": "How many days per week must employees be in the office under the hybrid policy?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#28": 2
+    }
+  },
+  {
+    "id": "q14",
+    "query": "How do ESOP stock options vest?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#34": 2
+    }
+  },
+  {
+    "id": "q15",
+    "query": "What is the minimum password length required?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#36": 2
+    }
+  },
+  {
+    "id": "q16",
+    "query": "Within how many days must critical vulnerabilities be fixed?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#37": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#53": 1
+    }
+  },
+  {
+    "id": "q17",
+    "query": "What is the response time for a SEV1 incident?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#39": 2
+    }
+  },
+  {
+    "id": "q18",
+    "query": "Who must approve a sales discount above 20 percent?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#27": 2
+    }
+  },
+  {
+    "id": "q19",
+    "query": "Who approves a purchase between 50 lakh and 2 crore rupees?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#45": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#46": 1,
+      "e0610845-1207-48a0-89ff-35b64462b613#8": 1
+    }
+  },
+  {
+    "id": "q20",
+    "query": "What is the pricing model for the Sahayak AI assistant?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#15": 2
+    }
+  },
+  {
+    "id": "q21",
+    "query": "Which languages does Sahayak support?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#15": 2
+    }
+  },
+  {
+    "id": "q22",
+    "query": "Which primary database does the Nexora platform use?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#17": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#18": 1
+    }
+  },
+  {
+    "id": "q23",
+    "query": "How long does Kafka retain events?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#17": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#18": 1
+    }
+  },
+  {
+    "id": "q24",
+    "query": "How many chunks does the reranker pass into the prompt in the Sahayak pipeline?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#19": 2
+    }
+  },
+  {
+    "id": "q25",
+    "query": "What is Nexora's net revenue retention?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#23": 2
+    }
+  },
+  {
+    "id": "q26",
+    "query": "When was the ISO 27001 certification renewed?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#38": 2
+    }
+  },
+  {
+    "id": "q27",
+    "query": "When is the United States region for Project Atlas planned to go live?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#48": 2
+    }
+  },
+  {
+    "id": "q28",
+    "query": "When is general availability of Sahayak 2.0 targeted?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#49": 2,
+      "e0610845-1207-48a0-89ff-35b64462b613#52": 1
+    }
+  },
+  {
+    "id": "q29",
+    "query": "Within how many hours must a data breach be notified to the regulator?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#55": 2
+    }
+  },
+  {
+    "id": "q30",
+    "query": "What is the recovery time objective for the FlowForge production platform?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#56": 2
+    }
+  },
+  {
+    "id": "q31",
+    "query": "How much is the annual learning budget per employee?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#33": 2
+    }
+  },
+  {
+    "id": "q32",
+    "query": "What was voluntary attrition in FY2025-26?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#12": 2
+    }
+  },
+  {
+    "id": "q33",
+    "query": "What service credit do customers get if availability falls between 99.0 and 99.9 percent?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#44": 2
+    }
+  },
+  {
+    "id": "q34",
+    "query": "What is the headcount of the Singapore office?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#6": 2
+    }
+  },
+  {
+    "id": "q35",
+    "query": "What is the hotel limit per night for travel in metro cities?",
+    "relevant": {
+      "e0610845-1207-48a0-89ff-35b64462b613#47": 2
+    }
+  }
+]

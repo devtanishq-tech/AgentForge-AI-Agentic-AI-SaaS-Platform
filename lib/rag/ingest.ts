@@ -3,7 +3,10 @@ import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { pineconeINdex, pineconeSparseIndex, userNamespace } from "./pineconeD";
 import { denseEmbedder, sparsedEmbedder } from "./embeeding";
 import { v4 as uuidv4 } from "uuid";
-
+//=======================================================//
+import { writeFile, mkdir } from "node:fs/promises";
+import path from "node:path";
+//=====================================================//
 export type VectorDatabaseType = {
   id: string;
   values: number[];
@@ -70,6 +73,56 @@ export async function ingestion({ file, fileName, userId }: ingestFileType) {
       sparseRecords,
     ),
   ]);
+
+  //=================================================//
+  const evaluationData = {
+    docId,
+    fileName,
+    namespace: nameSpace,
+    totalChunks: chunks.length,
+    chunks: chunks.map((chunk, i) => ({
+      id: `${docId}#${i}`,
+      chunkIndex: i,
+      textLength: chunk.length,
+      metadata: {
+        source: fileName,
+        docId,
+        chunkIndex: i,
+      },
+      text: chunk,
+    })),
+  };
+
+  // 3. Print every chunk and its metadata in the terminal.
+  console.log("\n========== RAG INGESTION REPORT ==========");
+  console.log(`File: ${fileName}`);
+  console.log(`Document ID: ${docId}`);
+  console.log(`Namespace: ${nameSpace}`);
+  console.log(`Total chunks: ${chunks.length}`);
+  console.log("==========================================\n");
+
+  for (const chunk of evaluationData.chunks) {
+    console.log(`\n========== CHUNK ${chunk.chunkIndex} ==========`);
+    console.log(`ID: ${chunk.id}`);
+    console.log(`Text Length: ${chunk.textLength}`);
+    console.log("Metadata:", chunk.metadata);
+    console.log("Text:\n", chunk.text);
+  }
+
+  // 4. Export all chunks to a JSON file.
+  const exportDir = path.join(process.cwd(), "rag-evaluation");
+
+  await mkdir(exportDir, { recursive: true });
+
+  const exportPath = path.join(exportDir, `chunks-${docId}.json`);
+
+  await writeFile(exportPath, JSON.stringify(evaluationData, null, 2), "utf-8");
+
+  console.log("\n========== EXPORT COMPLETED ==========");
+  console.log(`Exported ${chunks.length} chunks`);
+  console.log(`JSON file: ${exportPath}`);
+  console.log("======================================\n");
+  //=================================================//
   return { docId, fileName, chunks: chunks.length };
   // this retun will going to be used in uploads.route.ts file where
   // file data comes from backend side
