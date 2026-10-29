@@ -153,15 +153,26 @@ The application reads the following environment variables in the current impleme
 | `TAVILY_SEARCH_API` | Tavily web search |
 | `WEATHER_API_KEY` | WeatherAPI current-weather lookup |
 | `SERP_API_KEY` | SerpApi Google Shopping search |
+| `POLAR_ACCESS_TOKEN` | Polar usage, checkout, and customer integration |
 | `MCP_SERVER_URL` | URL used by the application MCP client |
 
-If you plan to use Polar usage tracking and checkout, also configure the Polar credentials and product settings used in `lib/auth.ts` and `lib/polar/`. Do not commit `.env` or paste API tokens into source control.
+Configure `POLAR_ACCESS_TOKEN` and the Polar product settings used in `lib/auth.ts` and `lib/polar/` for the current Polar integration. Do not commit `.env` or paste API tokens into source control.
 
 Set `MCP_SERVER_URL` to the MCP endpoint URL ending in `/services`. For local access without a tunnel, this is typically `http://localhost:8080/services`. When using ngrok, use the generated HTTPS domain with `/services` appended.
 
 > Note: The repository does not currently include an `.env.example` file. The table above is based on the environment variables referenced in the source code; check the relevant files if you change providers or integrations.
 
-### 4. Start the MCP server
+### 4. Prepare the database
+
+Make sure the PostgreSQL database referenced by `DATABASE_URL` exists and is reachable. Apply the repository's Drizzle migrations:
+
+```bash
+pnpm run migration:migrate
+```
+
+The chat graph also uses LangGraph's PostgreSQL checkpointer. In the current code, the `PostgresSaver.setup()` call in `app/api/chat/graph.ts` is commented out. If the checkpointer tables have not been initialized in your database, initialize them once before using chat persistence.
+
+### 5. Start the MCP server
 
 Open a terminal in the project directory and run:
 
@@ -171,7 +182,7 @@ pnpm run mcp:dev
 
 This runs `lib/mcp/server.ts` on port `8080`. Keep this terminal open while using the application.
 
-### 5. Expose the MCP server with ngrok
+### 6. Expose the MCP server with ngrok
 
 If your application needs to connect to the MCP server through a remote HTTPS endpoint:
 
@@ -199,7 +210,7 @@ If your application needs to connect to the MCP server through a remote HTTPS en
 
 Keep the ngrok terminal open as well. The forwarding URL may change between sessions, so update `MCP_SERVER_URL` when it changes.
 
-### 6. Start the main application
+### 7. Start the main application
 
 Open another terminal in the project directory and run:
 
@@ -207,9 +218,9 @@ Open another terminal in the project directory and run:
 pnpm run dev
 ```
 
-Open [http://localhost:8080](http://localhost:8080) in your browser, then sign in or create an account.
+Open [http://localhost:3000](http://localhost:3000) in your browser, then sign in or create an account.
 
-**Port note:** The current repository scripts start Next.js with its default development port, which is normally `3000`, while the MCP server is configured to use `8080`. If Next.js is running on its default port, open [http://localhost:3000](http://localhost:3000). Use `http://localhost:8080` for the main application only if you have explicitly configured Next.js to use that port and moved the MCP server to a different port. These two services cannot both listen on port `8080` at the same time.
+**Port note:** The current `pnpm run dev` script starts Next.js on its default development port, normally `3000`. The MCP server separately listens on `8080`, so open `http://localhost:3000` for the app and keep `http://localhost:8080/services` for the MCP endpoint. If you specifically need the app on port `8080`, change one service's port first so they do not conflict.
 
 ## Using AgentForge
 
