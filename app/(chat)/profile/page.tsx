@@ -15,42 +15,64 @@ import { Button } from "@/components/ui/button";
 import { CalendarDays, ShieldCheck, Sparkles, Zap } from "lucide-react";
 import { authClient } from "@/lib/auth-client";
 import { useQuery } from "@tanstack/react-query";
-import { getPolarMeters } from "@/lib/polar/polar_ingestion";
+import {
+  getPolarMeters,
+  getPolarSubscription,
+} from "@/lib/polar/polar_ingestion";
 
 export default function ChatbotUserProfile() {
   // ── Static user data (replace with auth session later) ──
-  const { data: session, isPending } = authClient.useSession();
-  console.log(`Data printed below`, session, isPending);
-  const { data, isSuccess } = useQuery({
+  const { data: session, isPending: isSessionPending } =
+    authClient.useSession();
+  //===========tanstack query for getsubscription /.================
+  const {
+    data: subscriptionData,
+    isPending: isSubscriptionPending,
+    isError: isSubscriptionError,
+  } = useQuery({
+    queryKey: ["polar-subscription", session?.user.id],
+    queryFn: getPolarSubscription,
+    enabled: !!session?.user?.id, // this thing coverts the statement into true or false , check
+    // does this thing exist or not ? if not wait then -
+  });
+  const isProSubscription = subscriptionData?.hasActiveSubscription === true;
+  //======================customer -meter tanstack query =====================
+  const {
+    data: usageData,
+    isPending: isUsagePending,
+    isError: isUsageError,
+  } = useQuery({
     queryKey: ["customer-meters"],
     queryFn: () => {
       return getPolarMeters();
     },
+    enabled:
+      !!session?.user.id && subscriptionData?.hasActiveSubscription === true,
   });
-  if (!session) {
-    return <></>;
+
+  //======================Need to Loading UI there ==========================
+  if (isSessionPending) {
+    return <div>Loading your profile...</div>;
   }
+
+  if (!session) {
+    return <div>Please log in to view your profile.</div>;
+  }
+
+  if (isSubscriptionPending) {
+    return <div>Checking your subscription...</div>;
+  }
+
+  if (isSubscriptionError || !subscriptionData) {
+    return <div>Unable to load subscription information.</div>;
+  }
+
   const user = session.user;
-  //   const user = {
-  //     name: "Jane Doe",
-  //     email: "jane.doe@example.com",
-  //     image: "/logo.png",
-  //   };
-
-  // ── Static subscription state (replace with API call later) ──
-  // we need to check does the user have subsriptio have or not-
-  const isProSubscription = true;
-
-  // ── Static usage/meter data (replace with API call later) ──
-  const usageData = {
-    creditedUnits: 100000,
-    consumedUnits: 42500,
-    balance: 57500,
-    createdAt: "2025-11-15T00:00:00.000Z",
-  };
 
   const usagePercent =
-    (usageData.consumedUnits / usageData.creditedUnits) * 100;
+    usageData && usageData.creditedUnits > 0
+      ? (usageData.consumedUnits / usageData.creditedUnits) * 100
+      : 0;
 
   return (
     <div className="w-full max-w-5xl mx-auto space-y-6 p-4">
@@ -132,7 +154,11 @@ export default function ChatbotUserProfile() {
                   <CalendarDays className="h-4 w-4" /> Purchased
                 </div>
                 <span>
-                  {new Date(usageData.createdAt).toLocaleDateString()}
+                  {subscriptionData.subscription?.startedAt
+                    ? new Date(
+                        subscriptionData.subscription.startedAt,
+                      ).toLocaleDateString()
+                    : "Not subscribed"}
                 </span>
               </div>
             </div>
@@ -140,50 +166,108 @@ export default function ChatbotUserProfile() {
         </Card>
 
         {/* Usage Overview */}
-        <Card className="rounded-2xl border shadow-sm lg:col-span-2">
-          <CardHeader>
-            <CardTitle className="text-lg">Token Usage</CardTitle>
-            <CardDescription>Monthly AI consumption overview</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-4 rounded-2xl bg-muted/40 border">
-                <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                  <Zap className="h-4 w-4" /> Monthly Limit
+
+        {/* Usage Overview / Upgrade UI */}
+
+        {isProSubscription ? (
+          isUsagePending ? (
+            <Card className="rounded-2xl border shadow-sm lg:col-span-2">
+              <CardContent className="p-6">Loading token usage...</CardContent>
+            </Card>
+          ) : isUsageError || !usageData ? (
+            <Card className="rounded-2xl border shadow-sm lg:col-span-2">
+              <CardContent className="p-6 space-y-2">
+                <h3 className="font-semibold">Token usage unavailable</h3>
+                <p className="text-sm text-muted-foreground">
+                  Your subscription is active, but usage data is not available
+                  yet.
+                </p>
+              </CardContent>
+            </Card>
+          ) : (
+            <Card className="rounded-2xl border shadow-sm lg:col-span-2">
+              <CardHeader>
+                <CardTitle className="text-lg">Token Usage</CardTitle>
+                <CardDescription>
+                  Monthly AI consumption overview
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="p-4 rounded-2xl bg-muted/40 border">
+                    <p className="text-sm text-muted-foreground">
+                      Credited Units
+                    </p>
+                    <p className="text-xl font-semibold pt-2">
+                      {usageData.creditedUnits.toLocaleString()}
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-muted/40 border">
+                    <p className="text-sm text-muted-foreground">
+                      Current Usage
+                    </p>
+                    <p className="text-xl font-semibold pt-2">
+                      {usageData.consumedUnits.toLocaleString()}
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-2xl bg-muted/40 border">
+                    <p className="text-sm text-muted-foreground">Balance</p>
+                    <p className="text-xl font-semibold pt-2">
+                      {usageData.balance.toLocaleString()}
+                    </p>
+                  </div>
                 </div>
-                <p className="text-xl font-semibold pt-2">
-                  {usageData.creditedUnits}
-                </p>
-              </div>
 
-              <div className="p-4 rounded-2xl bg-muted/40 border">
-                <div className="text-muted-foreground text-sm">
-                  Current Usage
+                <div className="space-y-3">
+                  <Progress
+                    value={Math.min(100, Math.max(0, usagePercent))}
+                    className="h-3 rounded-xl"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    {usagePercent.toFixed(1)}% of credited units used
+                  </p>
                 </div>
-                <p className="text-xl font-semibold pt-2">
-                  {usageData.consumedUnits}
+              </CardContent>
+            </Card>
+          )
+        ) : (
+          <Card className="rounded-2xl border shadow-sm lg:col-span-2">
+            <CardContent className="p-8 flex flex-col items-center text-center gap-4">
+              <div className="rounded-full bg-[#373669]/15 p-4">
+                <Sparkles className="h-8 w-8 text-[#7775dc]" />
+              </div>
+
+              <div className="space-y-2">
+                <h2 className="text-xl font-semibold">
+                  Upgrade to AgentForge AI Pro
+                </h2>
+                <p className="text-sm text-muted-foreground max-w-md">
+                  Get access to your Pro plan and track your AI token usage and
+                  available credits.
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl bg-muted/40 border">
-                <div className="text-muted-foreground text-sm">Remaining</div>
-                <p className="text-xl font-semibold pt-2">
-                  {usageData.balance}
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              <Progress value={usagePercent} className="h-3 rounded-xl" />
-              <div className="flex justify-between text-sm">
-                <span className="text-muted-foreground">
-                  {usagePercent.toFixed(1)}% of monthly quota used
-                </span>
-                <span className="font-medium">Resets on Month End</span>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+              <Button
+                className="bg-[#373669] text-white hover:bg-[#373669]/90"
+                onClick={async () => {
+                  await authClient.checkout({
+                    // Polar Product IDs
+                    products: ["63c6a229-166c-4e75-8291-a9cbfd429c86"],
+                    // OR
+                    // if "products" in passed in the checkout plugin's config, you may pass the slug
+                    slug: "Pro",
+                  });
+                }}
+              >
+                <Sparkles className="mr-2 h-4 w-4" />
+                Upgrade to Pro
+              </Button>
+            </CardContent>
+          </Card>
+        )}
       </div>
     </div>
   );

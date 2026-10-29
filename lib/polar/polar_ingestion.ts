@@ -8,6 +8,7 @@ type ingestionData = {
   outputToken: number;
   totalToken: number;
 };
+//=======todo create getPolarEvent function to fetch the model name //====
 
 export async function getPolarMeters() {
   const isloggedin = await auth.api.getSession({
@@ -20,10 +21,32 @@ export async function getPolarMeters() {
     //not using orinization id , using application main user id ,
     externalCustomerId: isloggedin.user.id,
   });
-  console.log(`--`.repeat(100));
-  console.log(`Meter info ----`, getmeter.result.items);
-  console.log(`--`.repeat(100));
-  return getmeter.result.items;
+  return getmeter.result.items[0];
+}
+
+export async function getPolarSubscription() {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+
+  if (!session) {
+    throw new Error("You must log in first.");
+  }
+  const response = await polarClient.subscriptions.list({
+    externalCustomerId: session.user.id,
+    limit: 10,
+  });
+  const subscriptions = response.result.items;
+  console.log();
+  const activeSubscription = subscriptions.find(
+    (subscription) =>
+      subscription.status === "active" || subscription.status === "trialing",
+  );
+
+  return {
+    hasActiveSubscription: Boolean(activeSubscription),
+    subscription: activeSubscription ?? null,
+  };
 }
 
 export async function PolarINgestion(data: ingestionData) {
