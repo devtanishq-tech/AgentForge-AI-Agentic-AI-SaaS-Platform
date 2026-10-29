@@ -53,7 +53,7 @@ export default function SignupForm() {
     onSubmit: async ({ value }) => {
       console.log(`form has been Submitted  `);
 
-      console.log(value);
+      // console.log(value);
       const { data, error } = await authClient.signUp.email(
         {
           email: value.email,

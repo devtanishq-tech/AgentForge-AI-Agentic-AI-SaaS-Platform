@@ -21,6 +21,7 @@ type Thread = {
 };
 
 export function ThreadsLists() {
+  // =================== here we are using tanstack useQuery ================================
   const { data, error, isError, isLoading } = useQuery<Thread[]>({
     queryKey: ["thread"],
     queryFn: getThreads,
