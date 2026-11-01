@@ -12,7 +12,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { CalendarDays, ShieldCheck, Sparkles, Zap } from "lucide-react";
+import { CalendarDays, ShieldCheck, Sparkles } from "lucide-react";
 import { authClient } from "@/lib/auth-client";
 import { useQuery } from "@tanstack/react-query";
 import {
@@ -42,6 +42,7 @@ export default function ChatbotUserProfile() {
     data: usageData,
     isPending: isUsagePending,
     isError: isUsageError,
+    refetch: refetchUsuage,
   } = useQuery({
     queryKey: ["customer-meters"],
     queryFn: () => {
@@ -49,6 +50,9 @@ export default function ChatbotUserProfile() {
     },
     enabled:
       !!session?.user.id && subscriptionData?.hasActiveSubscription === true,
+    refetchOnMount: "always",
+    refetchOnWindowFocus: true,
+    refetchInterval: 5000,
   });
   //========================Polar event -tanstack query //===================
   const { data: modelName, isPending } = useQuery({
@@ -123,7 +127,17 @@ export default function ChatbotUserProfile() {
                 Pro Member
               </Button>
             ) : (
-              <Button>
+              <Button
+                onClick={async () => {
+                  await authClient.checkout({
+                    // Polar Product IDs
+                    // products: ["63c6a229-166c-4e75-8291-a9cbfd429c86"],
+                    // OR
+                    // if "products" in passed in the checkout plugin's config, you may pass the slug
+                    slug: "Pro",
+                  });
+                }}
+              >
                 <Sparkles />
                 Upgrade to Pro
               </Button>
@@ -261,7 +275,7 @@ export default function ChatbotUserProfile() {
                 onClick={async () => {
                   await authClient.checkout({
                     // Polar Product IDs
-                    products: ["63c6a229-166c-4e75-8291-a9cbfd429c86"],
+                    // products: ["63c6a229-166c-4e75-8291-a9cbfd429c86"],
                     // OR
                     // if "products" in passed in the checkout plugin's config, you may pass the slug
                     slug: "Pro",

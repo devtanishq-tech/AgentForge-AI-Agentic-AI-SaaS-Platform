@@ -63,6 +63,7 @@ export async function getPolarEvent() {
     name: "llm_tokens",
     limit: 100,
   });
+  // this set allow us to not repeat the same model again-
   const modelName = new Set(
     polarevent.items.map((current) => current.metadata.model),
   );
