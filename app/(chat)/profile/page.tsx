@@ -16,6 +16,7 @@ import { CalendarDays, ShieldCheck, Sparkles, Zap } from "lucide-react";
 import { authClient } from "@/lib/auth-client";
 import { useQuery } from "@tanstack/react-query";
 import {
+  getPolarEvent,
   getPolarMeters,
   getPolarSubscription,
 } from "@/lib/polar/polar_ingestion";
@@ -48,6 +49,11 @@ export default function ChatbotUserProfile() {
     },
     enabled:
       !!session?.user.id && subscriptionData?.hasActiveSubscription === true,
+  });
+  //========================Polar event -tanstack query //===================
+  const { data: modelName, isPending } = useQuery({
+    queryKey: ["polar-event", session?.user.id],
+    queryFn: getPolarEvent,
   });
 
   //======================Need to Loading UI there ==========================
@@ -142,7 +148,7 @@ export default function ChatbotUserProfile() {
             <div className="flex items-center justify-between">
               <span className="text-sm text-muted-foreground">Plan</span>
               <Badge className="rounded-xl">
-                {isProSubscription ? "CodersGPT Pro" : "Inactive"}
+                {isProSubscription ? modelName : "Inactive"}
               </Badge>
             </div>
 

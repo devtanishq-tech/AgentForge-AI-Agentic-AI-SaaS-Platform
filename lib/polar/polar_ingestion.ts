@@ -1,6 +1,8 @@
 "use server";
 import { auth, polarClient } from "../auth";
 import { headers } from "next/headers";
+import { authClient } from "../auth-client";
+import { string } from "better-auth";
 type ingestionData = {
   model: string;
   userID: string;
@@ -47,6 +49,27 @@ export async function getPolarSubscription() {
     hasActiveSubscription: Boolean(activeSubscription),
     subscription: activeSubscription ?? null,
   };
+}
+export async function getPolarEvent() {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+
+  if (!session) {
+    throw new Error("You must log in first.");
+  }
+  const polarevent = await polarClient.events.list({
+    externalCustomerId: session.user.id,
+    name: "llm_tokens",
+    limit: 100,
+  });
+  const modelName = new Set(
+    polarevent.items.map((current) => current.metadata.model),
+  );
+  if (!modelName) {
+    return "openai/gpt-oss-120b";
+  }
+  return modelName;
 }
 
 export async function PolarINgestion(data: ingestionData) {
