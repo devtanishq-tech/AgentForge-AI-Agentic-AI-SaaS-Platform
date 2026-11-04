@@ -1,0 +1,833 @@
+{
+  "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+  "fileName": "Tanishq_RAG _SYSTEM_PDF.pdf",
+  "namespace": "user_KqZFagPqxr7mhRFfgrAr0uzXmo0B2Tb5",
+  "totalChunks": 75,
+  "chunks": [
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#0",
+      "chunkIndex": 0,
+      "textLength": 350,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 0
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\nOWNER PROFILE, TECHNICAL PORTFOLIO,\nPROJECT ARCHIVE AND GAMING KNOWLEDGE\nBASE\nPersonal Knowledge Repository — RAG Optimized Edition\nVersion KB-2026.06 | Created 17 June 2026 | Confidential"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#1",
+      "chunkIndex": 1,
+      "textLength": 715,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 1
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n1. Document Overview & Knowledge Base Scope\nThis document serves as a comprehensive personal knowledge repository authored by and for the primary owner,\nTanishq Jaiswal. It consolidates professional identity, technical expertise, project history, fitness milestones, and\ndomain-specific knowledge — particularly within the gaming industry — into a single, structured reference artifact\noptimized for both human reading and AI-assisted retrieval.\nPurpose: To act as a living knowledge base that documents professional capabilities, project architectures,"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#2",
+      "chunkIndex": 2,
+      "textLength": 723,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 2
+      },
+      "text": "Purpose: To act as a living knowledge base that documents professional capabilities, project architectures,\npersonal interests, and domain expertise in a format suitable for RAG pipelines, vector database indexing, and\nsemantic search applications.\nScope: Covers full-stack engineering profile, AI/ML expertise, individual project portfolios, fitness performance\nrecords, and extensive knowledge of the gaming industry including market analysis, company histories, and\ntechnology trends.\nIntended Usage: Designed for use in Retrieval-Augmented Generation (RAG) systems, LangChain/LangGraph\npipelines, AI agent context injection, vector store population, and direct reading by the document owner or\nauthorized collaborators."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#3",
+      "chunkIndex": 3,
+      "textLength": 798,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 3
+      },
+      "text": "pipelines, AI agent context injection, vector store population, and direct reading by the document owner or\nauthorized collaborators.\nVersion: KB-2026.06 — Initial release, 17 June 2026. Subsequent versions will be suffixed by year-month of the\nmost recent revision.\nOrganization Strategy: Information is partitioned into independently retrievable sections. Each section is self-\ncontained, semantically rich, and avoids cross-contamination with unrelated concepts. This chunking philosophy\nensures that individual sections function correctly when retrieved without the surrounding context.\n2. Owner Information & Professional Profile\nFull Name: Tanishq Jaiswal\nPreferred Handle: CHOTELUNDKA\nHobbies :PORNHUB , MUTTI 3 TIMES , mastubation,GYM , FUCK HARD , Study HARD\nDocument Created: 17 June 2026"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#4",
+      "chunkIndex": 4,
+      "textLength": 783,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 4
+      },
+      "text": "Preferred Handle: CHOTELUNDKA\nHobbies :PORNHUB , MUTTI 3 TIMES , mastubation,GYM , FUCK HARD , Study HARD\nDocument Created: 17 June 2026\nPrimary Discipline: Full Stack AI Engineer\nTanishq Jaiswal is a self-driven Full Stack AI Engineer who has built an extensive portfolio of production-grade\nweb and AI applications without formal employment experience. His engineering journey is rooted in modern\nJavaScript ecosystems and has evolved rapidly to encompass AI-first application architectures, large language\nmodel integrations, and intelligent agentic systems.\nHis technical journey began with the foundational layers of web development — HTML, CSS, and JavaScript —\nbefore progressing to React for front-end interfaces and Node.js with Express for server-side logic. Over time, his"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#5",
+      "chunkIndex": 5,
+      "textLength": 730,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 5
+      },
+      "text": "before progressing to React for front-end interfaces and Node.js with Express for server-side logic. Over time, his\nfocus expanded toward the intersection of web technologies and artificial intelligence, where he now specializes\nin building LLM-powered applications that leverage retrieval, reasoning, and multi-step planning.\nTanishq's areas of interest include agentic AI systems, vector database architectures, RAG pipelines,\nconversational AI platforms, and developer tooling. He is especially focused on building software that enables\nintelligent information retrieval and context-aware interactions between users and AI models. His work reflects a\nconsistent preference for precision, performance, and architectural clarity."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#6",
+      "chunkIndex": 6,
+      "textLength": 593,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 6
+      },
+      "text": "consistent preference for precision, performance, and architectural clarity.\nEngineering Focus: Full-stack development with AI integration, LLM-powered backend services, agentic tool-\ncalling workflows, and real-time web applications.\nAI Development Goals: To design and deploy production-ready AI systems that combine retrieval-augmented\ngeneration with structured reasoning, enabling applications that are both intelligent and practically useful.\nCurrent Stack: MERN (MongoDB, Express, React, Node.js), Groq API, Tavily Search, LangChain, LangGraph,\nChromaDB, and OpenAI-compatible LLM APIs."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#7",
+      "chunkIndex": 7,
+      "textLength": 724,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 7
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n3. Technical Expertise — Core Technologies\nThis section provides a comprehensive overview of the core technologies in Tanishq Jaiswal's engineering\nrepertoire. Each technology is documented with its conceptual foundation, architecture, and real-world application\ncontext.\n3.1 MERN Stack\nThe MERN stack — MongoDB, Express.js, React, and Node.js — represents a cohesive full-stack JavaScript\necosystem enabling end-to-end application development in a single programming language. It is the foundational\ntechnology stack upon which Tanishq's web projects are built."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#8",
+      "chunkIndex": 8,
+      "textLength": 716,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 8
+      },
+      "text": "technology stack upon which Tanishq's web projects are built.\n- MongoDB: A document-oriented NoSQL database that stores data as flexible JSON-like BSON\ndocuments, ideal for dynamic schemas in rapidly evolving applications.\n- Express.js: A minimal and unopinionated Node.js web framework providing routing, middleware chaining,\nand HTTP utilities for building RESTful API servers.\n- React: A declarative, component-based UI library by Meta, enabling efficient rendering via the Virtual\nDOM and modular front-end architecture.\n- Node.js: A V8-based JavaScript runtime for server-side execution, enabling non-blocking, event-driven\nI/O suitable for high-throughput applications.\n3.2 Retrieval-Augmented Generation (RAG)"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#9",
+      "chunkIndex": 9,
+      "textLength": 735,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 9
+      },
+      "text": "I/O suitable for high-throughput applications.\n3.2 Retrieval-Augmented Generation (RAG)\nRAG is an AI architecture pattern that augments language model inference by supplying relevant, retrieved\ncontext alongside the user's query. Instead of relying solely on the model's parametric memory, RAG systems\ndynamically retrieve semantically relevant documents from a vector store and inject them into the model's prompt\ncontext.\n- Core Concept: At query time, the user's input is embedded into a vector, compared against a corpus of\npre-embedded document chunks, and the top-k matches are retrieved and prepended to the LLM prompt.\n- Benefits: Significantly reduces hallucination, enables use of private or up-to-date information not in the"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#10",
+      "chunkIndex": 10,
+      "textLength": 738,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 10
+      },
+      "text": "- Benefits: Significantly reduces hallucination, enables use of private or up-to-date information not in the\nmodel's training data, and provides citeable, grounded responses.\n- Industry Adoption: Widely adopted in enterprise knowledge bases, customer support systems, legal\ndocument analysis, and technical documentation assistants.\n3.3 LangChain\nLangChain is an open-source orchestration framework for building applications powered by language models. It\nprovides abstractions for chains, agents, memory, tools, and retrievers — enabling the construction of complex\nLLM workflows with composable building blocks.\n- Chains: Sequential compositions of prompts, model calls, parsers, and retrievers, enabling multi-step\nreasoning pipelines."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#11",
+      "chunkIndex": 11,
+      "textLength": 777,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 11
+      },
+      "text": "- Chains: Sequential compositions of prompts, model calls, parsers, and retrievers, enabling multi-step\nreasoning pipelines.\n- Agents: Dynamic LLM-driven decision loops that select and invoke tools based on user intent, enabling\nadaptive task execution.\n- Memory: Mechanisms for persisting conversation history and context across multi-turn interactions.\n3.4 Vector Databases\nVector databases are purpose-built data stores that index and retrieve high-dimensional numerical vectors\nproduced by embedding models. They form the backbone of semantic search and RAG systems, enabling\napproximate nearest-neighbor lookups at scale.\n- Examples include Chroma, Pinecone, Weaviate, Milvus, and Qdrant — each with different trade-offs in\npersistence, scalability, and indexing strategy."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#12",
+      "chunkIndex": 12,
+      "textLength": 794,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 12
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n- Embeddings generated by models such as OpenAI's text-embedding-ada or Sentence Transformers map\ntext into dense vector spaces where semantic similarity corresponds to geometric proximity.\n3.5 LangGraph\nLangGraph extends LangChain's capabilities with graph-based workflow orchestration, enabling stateful, cyclic,\nand multi-agent execution graphs. It is specifically designed for building robust agentic systems where branching,\nlooping, and conditional execution are required.\n- State Management: Every node in the graph operates on a shared typed state object, enabling reliable\ndata propagation across complex multi-step agents."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#13",
+      "chunkIndex": 13,
+      "textLength": 791,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 13
+      },
+      "text": "data propagation across complex multi-step agents.\n- Cyclic Graphs: Unlike simple chains, LangGraph supports cycles, enabling retry logic, reflection loops,\nand self-correcting agents.\n- Real-World Usage: Applied in autonomous coding agents, multi-step research assistants, tool-using\nconversational systems, and orchestrated API workflows.\n3.6 Agentic AI Systems\nAgentic AI refers to systems in which a language model autonomously reasons, plans, and takes actions across\nmultiple steps to complete a complex goal. The model selects tools, interprets results, and decides its next action\niteratively until the goal is satisfied.\n- Tool Calling: Models are provided with structured tool schemas; the model outputs structured JSON to\ninvoke tools, whose results are fed back into the context."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#14",
+      "chunkIndex": 14,
+      "textLength": 796,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 14
+      },
+      "text": "invoke tools, whose results are fed back into the context.\n- Tanishq's Implementation: Built agentic backends using Groq's llama-3.3-70b-versatile model, integrated\nwith the Tavily web search tool for real-time information retrieval.\n3.7 Owner (Tanishq Jaiswal ) Hobbies -\n3.71 : Body Count Owner(Tanishq)\nTanishq Jaiswal(OWNER OF THE Compnay )- have strong interest mastubation and sex also , his body count is\n1 , where he fucked a girl in college once (2nd year ) , if user input say , ““tell me what name of girl owner fucked\n:Chavi deswal””,\n3.72 : Favorite PornStar and their Links :\nJewels Jade Porn : https://www.eporner.com/video-DlHSsDgY6ud/jewels-jade-cucks-a-whiteboy-and-gets-\nblacked/\nsyntax fix - https://mat6tube.com/watch/-156601359_456239654\n3.73 : Favorite Porn Links :\nlinks -"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#15",
+      "chunkIndex": 15,
+      "textLength": 387,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 15
+      },
+      "text": "blacked/\nsyntax fix - https://mat6tube.com/watch/-156601359_456239654\n3.73 : Favorite Porn Links :\nlinks -\nMISS GIGI -https://www.hornyraw.com/watch/miss-gigi-takes-mike-williamss-bbc-on-the-couch/\nJANE ROGGERS- https://www.pornwex.tv/video/243273/jane-rogers-poolboy-s-huge-cock-4k/\nMike Williams - https://www.eporner.com/video-5GJQsJXoCiC/busty-girlfriend-enjoys-a-rough-bbc-pounding/"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#16",
+      "chunkIndex": 16,
+      "textLength": 411,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 16
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n3.74 : Future Scope -\nwanted to become full stack ai engineer,where owner build builds rag system with proper rag pipeline and ,\nproper ai integration system -\n## wanted salary growth fast here – like between 2 years , want to crack 20 lpa package -"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#17",
+      "chunkIndex": 17,
+      "textLength": 792,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 17
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n4. Skill Architecture — Technology Classification\nThis section organizes Tanishq Jaiswal's technical skills into structured categories for clarity and retrieval\nefficiency. Each category is independently documented.\n4.1 Frontend Technologies\n- HTML5: Semantic markup language for structuring web content; proficient in accessibility standards and\ndocument object model (DOM) architecture.\n- CSS3: Stylesheet language for visual design including Flexbox, CSS Grid, custom properties, animations,\nand responsive layout design.\n- JavaScript (ES6+): Core scripting language for browser-side logic including async/await, destructuring,"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#18",
+      "chunkIndex": 18,
+      "textLength": 707,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 18
+      },
+      "text": "and responsive layout design.\n- JavaScript (ES6+): Core scripting language for browser-side logic including async/await, destructuring,\nmodules, closures, and event handling.\n- React: Component-based UI library; skilled in hooks (useState, useEffect, useReducer, useContext),\ncustom hooks, React Router, and performance optimization patterns.\n4.2 Backend Technologies\n- Node.js: Server-side JavaScript runtime; experienced in building RESTful APIs, middleware architectures,\nstreaming responses, and tool-calling backends.\n- Express.js: Lightweight routing and middleware framework; used for constructing modular API servers,\nhandling authentication, and proxying AI service calls.\n4.3 Database Technologies"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#19",
+      "chunkIndex": 19,
+      "textLength": 750,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 19
+      },
+      "text": "handling authentication, and proxying AI service calls.\n4.3 Database Technologies\n- MongoDB: NoSQL document database; proficient in schema design, aggregation pipelines, indexing, and\nMongoose ODM integration.\n- Vector Databases (ChromaDB): Used for embedding storage and semantic retrieval in RAG applications;\nexperienced in collection creation, document chunking, and similarity search configuration.\n4.4 AI & Machine Learning Technologies\n- RAG Pipelines: End-to-end design of retrieval-augmented generation systems from document ingestion\nand chunking through embedding, indexing, retrieval, and prompt construction.\n- LangChain: Orchestration of LLM chains, retrieval chains, document loaders, text splitters, and\nconversational memory buffers."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#20",
+      "chunkIndex": 20,
+      "textLength": 574,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 20
+      },
+      "text": "- LangChain: Orchestration of LLM chains, retrieval chains, document loaders, text splitters, and\nconversational memory buffers.\n- LangGraph: Graph-based multi-step agent construction with shared state, conditional branching, and tool-\ncalling nodes.\n- AI Agents with Tool Calling: Built production agents using OpenAI-compatible function-calling APIs,\ndefining custom tool schemas and processing tool results in structured loops.\n- Groq API: High-speed LLM inference using Groq's hardware-accelerated endpoints with the llama-3.3-\n70b-versatile model for agentic workflows."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#21",
+      "chunkIndex": 21,
+      "textLength": 751,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 21
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n5. Project Portfolio — Technical Documentation\nThe following projects constitute Tanishq Jaiswal's professional portfolio. Each entry is documented with its\nproblem statement, architectural approach, technology stack, and implementation highlights.\n5.1 LLM-Powered Conversational AI Platform\nProject Overview\nA full-featured conversational AI application enabling natural-language interactions powered by large language\nmodel APIs. The platform supports multi-turn conversations, real-time streaming responses, tool-calling\ncapabilities, and web-search augmented answers.\nProblem Statement"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#22",
+      "chunkIndex": 22,
+      "textLength": 782,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 22
+      },
+      "text": "capabilities, and web-search augmented answers.\nProblem Statement\nStandard LLM chat interfaces lack the ability to access real-time information or execute structured tasks\nautonomously. This project addresses those limitations by implementing an agentic backend capable of invoking\nexternal tools, retrieving live web data, and synthesizing coherent responses across multi-step reasoning chains.\nKey Features\n- Multi-turn conversational context management with sliding window memory\n- Real-time streaming of LLM responses via Server-Sent Events (SSE)\n- Web search tool integration using Tavily API for live information retrieval\n- Agentic tool-calling loop with structured JSON function invocations\n- React-based chat UI with message threading and streaming display\nTechnology Stack"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#23",
+      "chunkIndex": 23,
+      "textLength": 776,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 23
+      },
+      "text": "- React-based chat UI with message threading and streaming display\nTechnology Stack\n- Backend: Node.js, Express.js, Groq API (llama-3.3-70b-versatile), Tavily Search API\n- Frontend: React, custom hooks, streaming response parser\n- Architecture: RESTful API with agentic tool-calling loop, SSE streaming endpoint\nImplementation Approach\nThe backend implements a multi-iteration agent loop: the LLM is invoked with the user message and tool schema\ndefinitions; if the model returns a tool call, the server executes the corresponding tool (e.g., Tavily web search),\nappends the result as a tool message, and re-invokes the model. This continues until the model produces a final\ntext response, which is then streamed to the client. The critical architectural decision was aligning"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#24",
+      "chunkIndex": 24,
+      "textLength": 767,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 24
+      },
+      "text": "text response, which is then streamed to the client. The critical architectural decision was aligning\nmax_completion_tokens and system prompt formatting with Groq's API expectations.\n5.2 Airbnb-Inspired Property Rental Platform\nProject Overview\nA full-stack property rental marketplace application inspired by Airbnb, featuring property listing, searching,\nbooking, user authentication, and review systems. Designed as a comprehensive demonstration of MERN stack\ncapabilities with a production-quality user interface.\nProblem Statement\nThe project simulates a real-world marketplace challenge: enabling property owners to list accommodation and\nenabling guests to search, filter, view, and book listings — all within a secure, responsive web application.\nKey Features"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#25",
+      "chunkIndex": 25,
+      "textLength": 395,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 25
+      },
+      "text": "enabling guests to search, filter, view, and book listings — all within a secure, responsive web application.\nKey Features\n- User registration, authentication, and session management with JWT\n- Property listing creation with image upload and multi-field descriptions\n- Advanced search and filtering by location, price range, and amenities\n- Booking management with date-conflict prevention logic"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#26",
+      "chunkIndex": 26,
+      "textLength": 795,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 26
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n- Review and rating system tied to confirmed bookings\n- Responsive UI styled in the Airbnb design language\nTechnology Stack\n- Frontend: React, React Router, CSS Modules\n- Backend: Node.js, Express.js, Mongoose, Cloudinary (image storage)\n- Database: MongoDB with geospatial indexing for location-based queries\n5.3 TradeFlow — Trading Application\nProject Overview\nA trading-themed web application offering a Zerodha Kite-inspired dashboard interface. The platform includes\nuser onboarding, portfolio visualization, and a structured frontend architecture designed around the aesthetic and\nUX patterns of professional trading platforms."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#27",
+      "chunkIndex": 27,
+      "textLength": 786,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 27
+      },
+      "text": "UX patterns of professional trading platforms.\nKey Features\n- Multi-step signup flow with form validation and responsive layout\n- Dashboard with portfolio summary, holdings breakdown, and watchlist\n- Zerodha Kite-inspired color scheme with dark/light theme support\n- React component architecture with proper hooks lifecycle management\nTechnology Stack\n- Frontend: React, functional components, React hooks\n- Backend: Node.js, Express.js\n- Styling: Custom CSS with design system inspired by professional trading UIs\n5.4 Nano Banna — AI Image Generator\nProject Overview\nAn AI-powered image generation application that allows users to input natural-language prompts and receive AI-\ngenerated images in response. The platform provides a streamlined interface for interacting with generative"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#28",
+      "chunkIndex": 28,
+      "textLength": 747,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 28
+      },
+      "text": "generated images in response. The platform provides a streamlined interface for interacting with generative\nimage models and managing a personal gallery of generated outputs.\nKey Features\n- Natural-language prompt input with style and resolution controls\n- Integration with AI image generation API endpoints\n- Generated image gallery with download and share capabilities\n- Prompt history and re-generation workflow\nTechnology Stack\n- Frontend: React\n- Backend: Node.js, Express.js, AI image generation API integration\n- Storage: Cloud-based image hosting for generated outputs\n5.5 Image Enhancement and Restoration Tool\nProject Overview\nA web-based image processing application providing AI-assisted image enhancement and restoration capabilities."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#29",
+      "chunkIndex": 29,
+      "textLength": 304,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 29
+      },
+      "text": "Project Overview\nA web-based image processing application providing AI-assisted image enhancement and restoration capabilities.\nUsers upload images and receive improved outputs with corrected quality, sharpened details, noise reduction,\nand artifact removal — all powered by backend AI processing models."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#30",
+      "chunkIndex": 30,
+      "textLength": 588,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 30
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\nKey Features\n- Drag-and-drop image upload interface\n- AI-driven image enhancement (sharpening, denoising, upscaling)\n- Side-by-side before/after comparison view\n- Multiple enhancement preset modes for different image types\n- Batch processing capability for multiple uploads\nTechnology Stack\n- Frontend: React, file upload handlers, canvas-based image preview\n- Backend: Node.js, Express.js, image processing AI API integration"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#31",
+      "chunkIndex": 31,
+      "textLength": 779,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 31
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n6. Fitness Profile — Strength Performance Records\nThis section documents Tanishq Jaiswal's physical fitness achievements, with a particular focus on strength\ntraining performance. Records are organized by exercise type and include the year in which peak lifts were\nachieved.\n6.1 Maximum Recorded Lifts\nExercise \tMaximum Load \tReps \tYear / Notes\nBench Press (Barbell) \t130 kg \t3 \t2023 — Peak recorded\nstrength\nDumbbell Press \t40 kg (per hand) \t9 \t2026 — Current\nperformance\nChest Press Machine \t120 kg \t10 \tMachine-assisted\ncompound press\nBarbell Squat \t130 kg \t5 \tLower body peak strength\nrecord\n6.2 Strength Analysis"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#32",
+      "chunkIndex": 32,
+      "textLength": 784,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 32
+      },
+      "text": "Chest Press Machine \t120 kg \t10 \tMachine-assisted\ncompound press\nBarbell Squat \t130 kg \t5 \tLower body peak strength\nrecord\n6.2 Strength Analysis\nThe recorded lifts reflect an advanced intermediate to early-elite strength profile. A 130 kg bench press for 3\nrepetitions indicates an estimated one-rep maximum (1RM) in the range of 135–140 kg, placing performance well\nabove general population averages and within competitive amateur powerlifting territory for body-weight-relative\nmetrics.\nThe 2026 dumbbell press record of 40 kg for 9 repetitions demonstrates sustained hypertrophy-focused training\nand continued upper-body development. The 130 kg squat for 5 repetitions indicates balanced lower body\nstrength, with an estimated 1RM of approximately 145–150 kg.\n6.3 Training Insights"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#33",
+      "chunkIndex": 33,
+      "textLength": 546,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 33
+      },
+      "text": "strength, with an estimated 1RM of approximately 145–150 kg.\n6.3 Training Insights\n- Training emphasis includes compound movements (bench press, squat) as primary strength indicators.\n- The transition from a 3-rep peak (2023 bench) to a 9-rep high-load dumbbell press (2026) suggests a\nshift toward volume-based hypertrophy programming.\n- Inclusion of machine work (chest press, 120 kg x 10) alongside free weights indicates a hybrid training\nmethodology.\n- Consistent multi-year progression visible from 2023 records to 2026 current performance."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#34",
+      "chunkIndex": 34,
+      "textLength": 757,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 34
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n7. Gaming Knowledge Base\nThis section constitutes the most extensive portion of this knowledge base, documenting comprehensive\ninformation about the gaming industry, major studios, landmark titles, market analysis, game development\ntechnologies, and the future of interactive entertainment. All content is structured for independent semantic\nretrieval.\n7.1 Rockstar Games — Company Overview\nRockstar Games is one of the most celebrated and commercially successful video game development studios in\nthe world. Founded in December 1998 and headquartered in New York City, the company operates as a"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#35",
+      "chunkIndex": 35,
+      "textLength": 755,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 35
+      },
+      "text": "the world. Founded in December 1998 and headquartered in New York City, the company operates as a\nsubsidiary of Take-Two Interactive Software, Inc. Rockstar's founding team included Sam Houser, Dan Houser,\nTerry Donovan, Jamie King, and Gary Foreman — many of whom had previously worked at BMG Interactive.\nThe studio built its identity through a philosophy of creating mature, story-driven open-world games that pushed\ntechnical and narrative boundaries simultaneously. From its earliest days, Rockstar established a reputation for\ncontroversy, cultural commentary, and cinematic game design that placed it in a category apart from mainstream\ngame developers.\nParent Company: Take-Two Interactive Software, Inc.\nFounded: December 1998, New York City, USA"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#36",
+      "chunkIndex": 36,
+      "textLength": 741,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 36
+      },
+      "text": "game developers.\nParent Company: Take-Two Interactive Software, Inc.\nFounded: December 1998, New York City, USA\nKey Franchises: Grand Theft Auto, Red Dead Redemption, Bully, Max Payne, Midnight Club, L.A. Noire\nIndustry Position: Tier-1 AAA developer; one of the highest-grossing game studios in history\nRockstar Games maintains development studios across multiple cities including Edinburgh (formerly DMA\nDesign, the original GTA creator), London, San Diego, Leeds, Lincoln, Toronto, and India. This global structure\nallows the company to simultaneously develop multiple large-scale projects while drawing from international talent\npools.\n- Rockstar's games are known for their open-world freedom, provocative storytelling, and meticulously"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#37",
+      "chunkIndex": 37,
+      "textLength": 785,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 37
+      },
+      "text": "pools.\n- Rockstar's games are known for their open-world freedom, provocative storytelling, and meticulously\ncrafted game worlds with simulated economies, ecosystems, and social behaviors.\n- The company's use of motion capture, orchestrated scores, and Hollywood-caliber voice acting set\nindustry benchmarks in cinematic game production.\n- Rockstar's Rockstar Advanced Game Engine (RAGE) is a proprietary technology powering its major titles,\nenabling massive open-world environments with unprecedented detail density.\n7.2 Grand Theft Auto Franchise — Complete History\nGrand Theft Auto (GTA) is Rockstar Games' flagship franchise and one of the best-selling video game series in\nhistory. Originally developed by DMA Design (later rebranded Rockstar North), the series has sold over 400"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#38",
+      "chunkIndex": 38,
+      "textLength": 777,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 38
+      },
+      "text": "history. Originally developed by DMA Design (later rebranded Rockstar North), the series has sold over 400\nmillion copies across all titles as of 2024, generating revenues that rival major Hollywood film franchises.\nGrand Theft Auto III (2001)\nReleased in October 2001 for PlayStation 2, GTA III was a revolutionary entry that transformed the series from a\ntop-down 2D game into a fully realized 3D open-world action-adventure experience. Set in Liberty City (a\nfictionalized New York), players took on the role of an unnamed protagonist navigating organized crime. GTA III is\nwidely credited as the title that defined the open-world genre and influenced virtually every sandbox game that\nfollowed.\n- First fully 3D entry in the GTA series — a genre-defining technological leap"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#39",
+      "chunkIndex": 39,
+      "textLength": 390,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 39
+      },
+      "text": "followed.\n- First fully 3D entry in the GTA series — a genre-defining technological leap\n- Introduced a persistent living city populated by pedestrians with dynamic AI behaviors\n- Sold over 14.5 million copies; considered one of the greatest and most influential games ever made\n- Won numerous Game of the Year awards and was the best-selling game of 2001\nGrand Theft Auto: Vice City (2002)"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#40",
+      "chunkIndex": 40,
+      "textLength": 712,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 40
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\nReleased in October 2002, Vice City is set in a Miami-inspired city during the 1980s. Players control Tommy\nVercetti, a former mobster seeking to build a criminal empire. Vice City introduced a fully voiced protagonist for\nthe first time in the series and featured an iconic 80s soundtrack spanning multiple in-game radio stations\ncovering pop, rock, and new wave music.\n- Set in the neon-drenched, pastel-colored Vice City during the 1980s — heavily influenced by Scarface\nand Miami Vice\n- Introduced protagonist Tommy Vercetti, voiced by Ray Liotta"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#41",
+      "chunkIndex": 41,
+      "textLength": 752,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 41
+      },
+      "text": "and Miami Vice\n- Introduced protagonist Tommy Vercetti, voiced by Ray Liotta\n- Sold over 20 million copies; one of the best-selling PlayStation 2 titles of all time\n- Introduced real estate acquisition and expanded business management mechanics\nGrand Theft Auto: San Andreas (2004)\nWidely regarded as the greatest entry in the GTA series, San Andreas was released in October 2004 for\nPlayStation 2 and expanded the series to an unprecedented scale. Set across three cities — Los Santos, San\nFierro, and Las Venturas — the game follows Carl 'CJ' Johnson as he returns home to navigate gang politics,\ncorruption, and conspiracy.\n- Largest open world in the series at the time, comprising three fully realized metropolitan areas and vast\nrural countryside"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#42",
+      "chunkIndex": 42,
+      "textLength": 742,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 42
+      },
+      "text": "- Largest open world in the series at the time, comprising three fully realized metropolitan areas and vast\nrural countryside\n- Introduced RPG elements: character stamina, strength, driving, and respect stats that evolved through\ngameplay\n- Sold over 35 million copies; one of the best-selling games in PlayStation history\n- Featured an enormous licensed soundtrack with over 150 songs across 11 radio stations\n- Groundbreaking for its cultural representation and commentary on early 1990s Los Angeles\nGrand Theft Auto IV (2008)\nReleased in April 2008 for PlayStation 3 and Xbox 360, GTA IV marked the franchise's transition to seventh-\ngeneration hardware and introduced a new engine (RAGE with Euphoria physics). Set in a reimagined Liberty"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#43",
+      "chunkIndex": 43,
+      "textLength": 756,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 43
+      },
+      "text": "generation hardware and introduced a new engine (RAGE with Euphoria physics). Set in a reimagined Liberty\nCity, the game follows Eastern European immigrant Niko Bellic as he navigates the American dream's darker\nrealities. The game was praised for its mature narrative, morality-driven choices, and technical achievements.\n- Powered by the Rockstar Advanced Game Engine (RAGE) with Euphoria procedural animation for\nrealistic character movement\n- Introduced a morality system with branching choices that affected narrative outcomes\n- Sold over 25 million copies; received near-perfect review scores including a 10/10 from multiple\npublications\n- GTA IV's multiplayer mode pioneered many design patterns later adopted by GTA Online\nGrand Theft Auto V (2013)"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#44",
+      "chunkIndex": 44,
+      "textLength": 711,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 44
+      },
+      "text": "publications\n- GTA IV's multiplayer mode pioneered many design patterns later adopted by GTA Online\nGrand Theft Auto V (2013)\nGTA V, released in September 2013, is the most commercially successful entertainment product in history, having\ngenerated over $8 billion in revenue as of 2024. Set in the fictional state of San Andreas and its city Los Santos,\nGTA V introduced three playable protagonists — Michael, Trevor, and Franklin — whose narratives interweave\nacross a heist-driven story. The game was released across three console generations (PS3/Xbox 360, PS4/Xbox\nOne, PS5/Xbox Series X|S) and PC.\n- Three-protagonist system with real-time character switching — a structural innovation in open-world\ndesign"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#45",
+      "chunkIndex": 45,
+      "textLength": 608,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 45
+      },
+      "text": "One, PS5/Xbox Series X|S) and PC.\n- Three-protagonist system with real-time character switching — a structural innovation in open-world\ndesign\n- Sold over 200 million copies as of 2024, making it one of the best-selling entertainment products ever\ncreated\n- GTA Online, launched alongside the base game, generated billions in recurrent revenue through the sale\nof in-game currency (Shark Cards)\n- Received re-releases on four distinct hardware generations — an unprecedented commercial lifespan for\na single title\n- Los Santos is considered one of the most detailed and believable virtual cities ever created"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#46",
+      "chunkIndex": 46,
+      "textLength": 764,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 46
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\nGrand Theft Auto VI (Upcoming)\nGrand Theft Auto VI is the most anticipated video game in history. Announced in December 2023 through an\nofficial trailer, the game is set to return to Vice City and the fictional state of Leonida, drawing inspiration from\nmodern-day Florida. GTA VI introduces Lucia as the series' first playable female protagonist, alongside a male\nprotagonist named Jason.\n- Announced officially on December 5, 2023; trailer accumulated over 90 million views within 24 hours of\nrelease\n- Set in a modernized Vice City / Leonida — Florida-inspired environments with unprecedented detail"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#47",
+      "chunkIndex": 47,
+      "textLength": 765,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 47
+      },
+      "text": "release\n- Set in a modernized Vice City / Leonida — Florida-inspired environments with unprecedented detail\n- First GTA entry to feature a female playable protagonist (Lucia)\n- Expected to utilize advanced procedural detail systems, AI-driven NPC behaviors, and real-time global\nillumination rendering\n- Anticipated as the highest-revenue entertainment launch in history upon release\n7.3 Rockstar Best-Selling Games — Sales Performance\nTitle \tEstimated Sales \tRelease Year \tPlatform(s)\nGrand Theft Auto V \t200+ million \t2013 \tMulti-gen\nGrand Theft Auto: San Andreas \t35+ million \t2004 \tPS2/PC/Xbox\nRed Dead Redemption 2 \t65+ million \t2018 \tMulti-platform\nGrand Theft Auto: Vice City \t20+ million \t2002 \tPS2/PC/Xbox\nGrand Theft Auto IV \t25+ million \t2008 \tPS3/360/PC"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#48",
+      "chunkIndex": 48,
+      "textLength": 788,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 48
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n7.4 Modern Gaming Industry — Landscape Overview\nAAA Games\nAAA (Triple-A) games are high-budget, high-production-value titles developed and published by major studios\nwith development costs often exceeding $100–300 million. They are characterized by cinematic storytelling,\nadvanced graphics, orchestrated scores, professional voice acting, and mass-market distribution. Examples\ninclude the GTA series, The Last of Us, Call of Duty, Red Dead Redemption, and Cyberpunk 2077. AAA games\ncompete for cultural relevance with Hollywood blockbusters and represent the premium tier of the interactive\nentertainment market.\nIndie Games"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#49",
+      "chunkIndex": 49,
+      "textLength": 786,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 49
+      },
+      "text": "compete for cultural relevance with Hollywood blockbusters and represent the premium tier of the interactive\nentertainment market.\nIndie Games\nIndependent (indie) games are developed by small studios or individual creators without major publisher backing.\nThe rise of digital distribution platforms (Steam, itch.io, Epic Games Store) democratized game publishing and\nenabled indie titles such as Minecraft, Hollow Knight, Hades, Stardew Valley, and Undertale to achieve massive\ncommercial and critical success. Indie games are often noted for creative risk-taking, innovative mechanics, and\ndeeply personal artistic expression that major studios rarely attempt.\nOpen World Games\nOpen world games grant players freedom to explore large, persistent environments at their own pace, without"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#50",
+      "chunkIndex": 50,
+      "textLength": 700,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 50
+      },
+      "text": "Open World Games\nOpen world games grant players freedom to explore large, persistent environments at their own pace, without\nenforced linear progression. Pioneered in modern form by the GTA series, the genre has expanded to include\ntitles such as The Elder Scrolls V: Skyrim, The Legend of Zelda: Breath of the Wild, Elden Ring, and Ubisoft's Far\nCry and Assassin's Creed series. The quality of an open world is increasingly judged not only by its size but by its\ndensity, interactivity, systemic simulation depth, and the meaningfulness of player agency within it.\nMultiplayer and Esports\nCompetitive multiplayer gaming has grown into a global industry valued at over $1.8 billion, with professional"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#51",
+      "chunkIndex": 51,
+      "textLength": 797,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 51
+      },
+      "text": "Multiplayer and Esports\nCompetitive multiplayer gaming has grown into a global industry valued at over $1.8 billion, with professional\nesports leagues for titles such as League of Legends, Dota 2, Counter-Strike 2, Valorant, and Fortnite attracting\ntens of millions of live viewers. Major esports tournaments offer prize pools exceeding $40 million. The\nintersection of streaming platforms (Twitch, YouTube Gaming) with competitive play has created a content\necosystem that rivals traditional sports broadcasting in reach and engagement among audiences under 35.\nMobile Gaming\nMobile gaming is the single largest segment of the global games market by revenue, accounting for over 50% of\ntotal industry earnings annually. Titles such as PUBG Mobile, Free Fire, Genshin Impact, Call of Duty: Mobile,"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#52",
+      "chunkIndex": 52,
+      "textLength": 696,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 52
+      },
+      "text": "total industry earnings annually. Titles such as PUBG Mobile, Free Fire, Genshin Impact, Call of Duty: Mobile,\nand Clash of Clans have demonstrated that mobile platforms can support complex, graphically intensive, and\nsocially connected game experiences. The mobile gaming market is particularly dominant in Asia, Africa, and\nSoutheast Asia, where mobile devices are the primary computing platform.\n7.5 Game Development Technologies — Engine Overview\nUnreal Engine (Epic Games)\nUnreal Engine, developed by Epic Games, is the industry's most widely adopted AAA game engine, known for its\nphotorealistic rendering capabilities, robust toolset, and Blueprint visual scripting system. Unreal Engine 5"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#53",
+      "chunkIndex": 53,
+      "textLength": 498,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 53
+      },
+      "text": "photorealistic rendering capabilities, robust toolset, and Blueprint visual scripting system. Unreal Engine 5\nintroduced Nanite (virtualized geometry) and Lumen (dynamic global illumination) — technologies that enable\nreal-time rendering at a fidelity level previously achievable only offline. Used in titles including Fortnite, Black\nMyth: Wukong, Final Fantasy VII Rebirth, and the upcoming GTA VI competitor projects.\n- Nanite: Cinematic-quality geometry with automatic level-of-detail streaming"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#54",
+      "chunkIndex": 54,
+      "textLength": 777,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 54
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n- Lumen: Fully dynamic global illumination eliminating the need for pre-baked lightmaps\n- MetaHuman: AI-powered character creation system for photorealistic human faces\nUnity Engine\nUnity is the world's most widely used game engine by the number of titles shipped, particularly dominant in the\nmobile, indie, AR/VR, and small studio segments. Its accessibility, cross-platform export targets (supporting over\n25 platforms), and large asset store ecosystem make it the default choice for independent developers and first-\ntime studios. Unity powers an estimated 45% of mobile games globally.\nProprietary Game Engines"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#55",
+      "chunkIndex": 55,
+      "textLength": 753,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 55
+      },
+      "text": "time studios. Unity powers an estimated 45% of mobile games globally.\nProprietary Game Engines\nMajor studios often develop proprietary engines optimized for their specific design philosophies. Rockstar's RAGE\n(Rockstar Advanced Game Engine) enables the simulation of massive open-world cities with thousands of\ninteractive NPCs, dynamic weather, traffic systems, and economy models. Valve's Source engine powers the\nCounter-Strike and Half-Life series. CD Projekt RED's RED Engine powers The Witcher and Cyberpunk 2077,\nwhile an in-house evolution of REDengine is being developed for future titles.\n7.6 Gaming Market Analysis — Global Overview\nThe global video game market was valued at approximately $227 billion in 2023 and is projected to exceed $580"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#56",
+      "chunkIndex": 56,
+      "textLength": 720,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 56
+      },
+      "text": "The global video game market was valued at approximately $227 billion in 2023 and is projected to exceed $580\nbillion by 2030, driven by mobile gaming growth, cloud gaming adoption, esports expansion, and the increasing\nintegration of games with social and entertainment platforms.\n- Mobile gaming accounts for approximately 50–52% of global game revenues\n- Console gaming represents approximately 28% of revenues, dominated by PlayStation, Xbox, and\nNintendo Switch platforms\n- PC gaming holds approximately 20% of the market, with strength in esports, strategy, and simulation\ngenres\n- Asia-Pacific is the largest regional market, accounting for over 47% of global revenues, led by China,\nJapan, South Korea, and India"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#57",
+      "chunkIndex": 57,
+      "textLength": 709,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 57
+      },
+      "text": "genres\n- Asia-Pacific is the largest regional market, accounting for over 47% of global revenues, led by China,\nJapan, South Korea, and India\n- Subscription gaming services (Xbox Game Pass, PlayStation Plus, Apple Arcade) are reshaping\ndistribution economics\n- The free-to-play model with microtransactions now dominates mobile and is increasingly prevalent in PC\nand console titles\n7.7 Artificial Intelligence in Gaming\nArtificial intelligence has been integral to game design since the earliest arcade titles. However, the emergence of\nmachine learning, generative AI, and large language models is transforming both how games are developed and\nhow they function at runtime.\nNPC Behavior and Decision Systems"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#58",
+      "chunkIndex": 58,
+      "textLength": 725,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 58
+      },
+      "text": "how they function at runtime.\nNPC Behavior and Decision Systems\nTraditional game NPC behavior is governed by finite state machines and behavior trees — deterministic rule-\nbased systems that produce predictable, if sometimes robotically repetitive, behaviors. Modern AI research is\nreplacing these with learned models: NPCs trained via reinforcement learning can exhibit emergent tactical\nbehaviors, adapt to player strategies, and appear genuinely intelligent. NVIDIA's GameWorks AI and Inzoi (a\nSims-competitor using LLM-driven NPCs) represent early real-world implementations of this paradigm.\nProcedural Generation\nProcedural content generation uses algorithmic and increasingly AI-driven methods to create game content —"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#59",
+      "chunkIndex": 59,
+      "textLength": 338,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 59
+      },
+      "text": "Procedural Generation\nProcedural content generation uses algorithmic and increasingly AI-driven methods to create game content —\nterrain, dungeons, quests, items, dialogue — without manual authoring. Games such as No Man's Sky\n(procedural planetary systems), Minecraft (terrain generation), and Spelunky (level generation) demonstrate the"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#60",
+      "chunkIndex": 60,
+      "textLength": 703,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 60
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\ncreative and economic advantages of this approach. Generative AI models can now produce coherent narratives,\ncontextually appropriate dialogue, and varied environmental artwork at scale.\nAI-Assisted Development\nGenerative AI tools are being integrated into game development pipelines to accelerate content creation. AI can\ngenerate texture variations, concept art, dialogue trees, 3D model base meshes, sound effects, and animation\nclips — reducing the time and cost of producing the enormous volumes of content required by modern open-world"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#61",
+      "chunkIndex": 61,
+      "textLength": 769,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 61
+      },
+      "text": "clips — reducing the time and cost of producing the enormous volumes of content required by modern open-world\ntitles. Ubisoft's Ghostwriter tool generates first-draft NPC barks (incidental speech), while various studios use\nMidjourney and Stable Diffusion for concept ideation.\n7.8 The Future of Gaming — Emerging Technologies\nCloud Gaming\nCloud gaming eliminates the need for local hardware by streaming rendered game output from remote servers to\nany connected device. Services such as NVIDIA GeForce Now, Xbox Cloud Gaming (xCloud), and PlayStation\nNow allow console-quality gaming on smartphones, tablets, and low-powered laptops. The primary challenges —\ninput latency, streaming compression artifacts, and bandwidth requirements — are being addressed through edge"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#62",
+      "chunkIndex": 62,
+      "textLength": 782,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 62
+      },
+      "text": "input latency, streaming compression artifacts, and bandwidth requirements — are being addressed through edge\ncomputing infrastructure, advanced video codecs (AV1), and 5G network expansion.\nVirtual Reality and Augmented Reality\nVR gaming immerses players in fully three-dimensional environments via head-mounted displays such as the\nMeta Quest series, PlayStation VR2, and Apple Vision Pro. While VR gaming remains a niche market due to\nhardware cost and comfort limitations, continued investment from Meta, Sony, and Apple is accelerating adoption.\nAR gaming, popularized by Pokémon GO, overlays digital game elements onto physical environments via\nsmartphone cameras, with future dedicated AR glasses expected to transform the genre.\nAI-Generated Game Worlds and Agent-Based NPCs"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#63",
+      "chunkIndex": 63,
+      "textLength": 712,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 63
+      },
+      "text": "smartphone cameras, with future dedicated AR glasses expected to transform the genre.\nAI-Generated Game Worlds and Agent-Based NPCs\nThe convergence of real-time generative AI with game engines represents the next frontier of interactive\nentertainment. Future games may feature worlds where environments, quests, dialogue, and characters are\ngenerated dynamically in response to player behavior rather than pre-authored by designers. Agent-based NPC\nsystems — where NPCs are powered by language models capable of free-form conversation, memory, goal-\ndirected behavior, and social simulation — could make virtual worlds indistinguishable from authored fiction in\ntheir narrative coherence and emotional resonance."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#64",
+      "chunkIndex": 64,
+      "textLength": 695,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 64
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n8. Knowledge Organization Strategy — RAG Architecture\nThis section documents the intentional information architecture decisions made in constructing this knowledge\nbase, with specific focus on optimizing content for retrieval-augmented generation, semantic search, and AI agent\nconsumption.\n8.1 Chunking Philosophy\nEvery major section and subsection in this document is designed to function as an independent, self-contained\nknowledge chunk. This means each chunk contains sufficient internal context to be understood and useful even"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#65",
+      "chunkIndex": 65,
+      "textLength": 762,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 65
+      },
+      "text": "knowledge chunk. This means each chunk contains sufficient internal context to be understood and useful even\nwhen retrieved without the surrounding document structure. Section headings are written to be semantically\ndescriptive rather than abbreviated — a heading like 'Rockstar Games — Company Overview' will match a wider\nrange of natural-language queries than a heading like 'Section 7.1'.\n8.2 Semantic Density\nContent is written with controlled semantic density: each paragraph focuses on a single conceptual topic, avoids\nunnecessary pronoun ambiguity, and uses domain-specific terminology consistently. This ensures that\nembedding models produce coherent vector representations that cluster correctly during similarity search\nretrieval.\n8.3 Topic Isolation"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#66",
+      "chunkIndex": 66,
+      "textLength": 777,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 66
+      },
+      "text": "embedding models produce coherent vector representations that cluster correctly during similarity search\nretrieval.\n8.3 Topic Isolation\nUnrelated concepts are never co-located within the same paragraph or subsection. The fitness profile, gaming\nknowledge base, technical expertise, and project portfolio occupy separate, clearly bounded sections. This\nprevents retrieval systems from returning fitness data in response to a query about game engines, or project\narchitecture details in response to a question about GTA sales figures.\n8.4 Retrieval-Friendly Language\nTerminology is written in the language most likely to appear in end-user queries. Both formal terms and their\ncommon equivalents are used where appropriate: 'Retrieval-Augmented Generation (RAG)', 'large language"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#67",
+      "chunkIndex": 67,
+      "textLength": 796,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 67
+      },
+      "text": "common equivalents are used where appropriate: 'Retrieval-Augmented Generation (RAG)', 'large language\nmodels (LLMs)', 'Grand Theft Auto (GTA)'. Dates, numbers, and proper nouns are written out explicitly to enable\nboth keyword and semantic matching.\n8.5 Information Architecture Principles Applied\n- Hierarchical section numbering enables chunk-level navigation and parent-child context inference.\n- Label-value formatting (e.g., 'Founded: December 1998') creates structured data patterns recognizable by\nextraction-focused queries.\n- Tables provide structured facts that rank well in both keyword search and structured data extraction\npipelines.\n- Each project, game title, and technology is documented with a consistent schema of fields — ensuring\nuniform chunk structure across the portfolio."
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#68",
+      "chunkIndex": 68,
+      "textLength": 754,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 68
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n9. Final Summary — Executive Overview\n9.1 Executive Summary\nThis knowledge base consolidates the professional, technical, personal, and domain expertise of Tanishq Jaiswal\n— a Full Stack AI Engineer specializing in MERN-based web applications and LLM-powered agentic systems.\nThe document was created on 17 June 2026 and is structured for dual-purpose use: direct human reading and AI\nretrieval-augmented generation pipeline ingestion.\n9.2 Owner Highlights\n- Name: Tanishq Jaiswal | Handle: CHOTELUNDKA\n- Discipline: Full Stack AI Engineer with focus on LLM integration and agentic AI systems"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#69",
+      "chunkIndex": 69,
+      "textLength": 746,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 69
+      },
+      "text": "- Name: Tanishq Jaiswal | Handle: CHOTELUNDKA\n- Discipline: Full Stack AI Engineer with focus on LLM integration and agentic AI systems\n- Technology foundation: MERN stack, expanded into RAG, LangChain, LangGraph, and Groq API-\npowered backends\n- Portfolio includes five production-grade projects across AI, marketplace, trading, and image generation\ndomains\n- Self-directed engineer with no formal employment, demonstrating professional capability through portfolio\nwork\n9.3 Technical Highlights\n- Proficient in end-to-end full-stack development: React frontends, Node.js/Express.js backends, MongoDB\npersistence\n- Experienced in building agentic AI systems with tool-calling loops using Groq API (llama-3.3-70b-\nversatile) and Tavily web search"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#70",
+      "chunkIndex": 70,
+      "textLength": 793,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 70
+      },
+      "text": "persistence\n- Experienced in building agentic AI systems with tool-calling loops using Groq API (llama-3.3-70b-\nversatile) and Tavily web search\n- Skilled in RAG pipeline construction from document chunking and embedding through vector store\nindexing and retrieval\n- Familiar with LangGraph for stateful, graph-based multi-agent orchestration\n- Active debugger with preference for targeted, minimal-change fixes over broad refactoring\n9.4 Project Highlights\n- Conversational AI Platform: Agentic backend with streaming SSE responses, real-time web search, and\ntool-calling architecture\n- Airbnb-Inspired Rental Platform: Full MERN marketplace with auth, listings, bookings, and reviews\n- TradeFlow: Zerodha Kite-inspired trading dashboard with multi-step onboarding and portfolio visualization"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#71",
+      "chunkIndex": 71,
+      "textLength": 737,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 71
+      },
+      "text": "- TradeFlow: Zerodha Kite-inspired trading dashboard with multi-step onboarding and portfolio visualization\n- Nano Banna Image Generator: AI image generation application with gallery and prompt management\n- Image Enhancement Tool: AI-powered image restoration and quality improvement platform\n9.5 Gaming Knowledge Highlights\n- Rockstar Games: Founded 1998 by Sam and Dan Houser; subsidiary of Take-Two Interactive; creators of\nGTA and Red Dead Redemption\n- GTA V: 200+ million copies sold; $8B+ revenue; available on four hardware generations — the highest-\ngrossing entertainment product in history\n- GTA VI: Announced December 2023; set in fictional Leonida (Florida); first female protagonist; most\nanticipated game release in history"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#72",
+      "chunkIndex": 72,
+      "textLength": 248,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 72
+      },
+      "text": "- GTA VI: Announced December 2023; set in fictional Leonida (Florida); first female protagonist; most\nanticipated game release in history\n- Global games market: ~$227B in 2023, projected to exceed $580B by 2030; mobile gaming is the largest\nsegment"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#73",
+      "chunkIndex": 73,
+      "textLength": 775,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 73
+      },
+      "text": "OWNER PROFILE, TECHNICAL PORTFOLIO & GAMING KNOWLEDGE BASE | Personal Knowledge Repository — KB-2026.06\nConfidential — Not for External Distribution | KB-2026.06\n- AI in gaming: Machine learning NPCs, procedural generation, AI-assisted development tools transforming\nboth game creation and in-game experience\n9.6 Fitness Highlights\n- Bench Press: 130 kg x 3 reps (2023) — advanced intermediate strength level\n- Dumbbell Press: 40 kg x 9 reps (2026) — current hypertrophy-focused performance\n- Barbell Squat: 130 kg x 5 reps — balanced lower-body strength record\n- Chest Press Machine: 120 kg x 10 reps — machine compound pressing record\n9.7 Future Goals\n- Develop and deploy production-grade multi-agent AI systems capable of autonomous research, planning,\nand task execution"
+    },
+    {
+      "id": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5#74",
+      "chunkIndex": 74,
+      "textLength": 740,
+      "metadata": {
+        "source": "Tanishq_RAG _SYSTEM_PDF.pdf",
+        "docId": "a962790d-c9a3-46a5-a9ba-f690d6f86ca5",
+        "chunkIndex": 74
+      },
+      "text": "9.7 Future Goals\n- Develop and deploy production-grade multi-agent AI systems capable of autonomous research, planning,\nand task execution\n- Expand knowledge of LangGraph for complex stateful agentic pipelines with human-in-the-loop review\nstages\n- Build a full-featured AI developer toolkit combining RAG, agentic search, and structured code generation\n- Continue to grow strength performance with sustained periodized training\n- Contribute domain knowledge across AI engineering, full-stack development, and gaming industry\nanalysis to AI-accessible knowledge repositories\nEnd of Document — Personal Knowledge Base KB-2026.06 | Confidential. Not for External Distribution.\nContact the document owner for clarifications or update requests."
+    }
+  ]
+}

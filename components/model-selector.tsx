@@ -105,11 +105,9 @@ ModelItem.displayName = "ModelItem";
 
 export const ModelSelectorComponent = () => {
   const [open, setOpen] = useState(false);
-  
-  const selectedModel = "gpt-5-mini"
-  const setSelectedModel = (modelId:string)=>{
 
-  }
+  const selectedModel = "gpt-5-mini";
+  const setSelectedModel = (modelId: string) => {};
   const userHaveProPlan = false;
   const handleModelSelect = useCallback((id: string) => {
     setSelectedModel(id);

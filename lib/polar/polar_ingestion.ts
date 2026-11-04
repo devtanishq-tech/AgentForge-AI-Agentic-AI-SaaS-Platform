@@ -64,6 +64,7 @@ export async function getPolarEvent() {
     limit: 100,
   });
   // this set allow us to not repeat the same model again-
+  // this is where we are fetching model name from polar
   const modelName = new Set(
     polarevent.items.map((current) => current.metadata.model),
   );

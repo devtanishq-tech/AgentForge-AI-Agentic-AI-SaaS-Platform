@@ -24,7 +24,7 @@ export async function hybridSearchFunction({
 }: SearchInput): Promise<Chunk[]> {
   // telling that it will return an array of chunk
   const [[denseVector], [sparseVector]] = await Promise.all([
-    denseEmbedder([query]),
+    denseEmbedder([query], "query"),
     sparsedEmbedder([query], "query"),
   ]);
   const namespace = userNamespace(userId);

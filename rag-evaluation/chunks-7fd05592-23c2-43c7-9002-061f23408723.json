@@ -1,0 +1,41 @@
+{
+  "docId": "7fd05592-23c2-43c7-9002-061f23408723",
+  "fileName": "CoverLetterUPdated.pdf",
+  "namespace": "user_CDCcNiZV92zHjkTPgtJBZAZqOnWjpJar",
+  "totalChunks": 3,
+  "chunks": [
+    {
+      "id": "7fd05592-23c2-43c7-9002-061f23408723#0",
+      "chunkIndex": 0,
+      "textLength": 718,
+      "metadata": {
+        "source": "CoverLetterUPdated.pdf",
+        "docId": "7fd05592-23c2-43c7-9002-061f23408723",
+        "chunkIndex": 0
+      },
+      "text": "Dear Hiring Manager,\nI am writing to express my interest in the Full Stack Developer position at your company. I am\ncurrently a 4th-year B.Tech Computer Science student with hands-on experience in building full\nstack web applications.\nI specialize in developing scalable applications using React.js and have strong command over\nReact for building dynamic and responsive user interfaces. On the backend, I work with Node.js\nand Express.js to design e icient APIs and server-side logic. I have experience in API\nintegration, LLM integration (including working with Claude), and building real-world\napplications with MongoDB and SQL databases. Additionally, I use Python where required for\nbackend logic and integrations."
+    },
+    {
+      "id": "7fd05592-23c2-43c7-9002-061f23408723#1",
+      "chunkIndex": 1,
+      "textLength": 737,
+      "metadata": {
+        "source": "CoverLetterUPdated.pdf",
+        "docId": "7fd05592-23c2-43c7-9002-061f23408723",
+        "chunkIndex": 1
+      },
+      "text": "applications with MongoDB and SQL databases. Additionally, I use Python where required for\nbackend logic and integrations.\nI have built and deployed production-level projects that demonstrate my practical skills:\n• \tWanderlust (Airbnb-inspired platform): https://airbnb-inspired-property-\nrentalplatform.onrender.com/listings\n• \tTradeFlow (Real-time trading dashboard): https://trading-platform-frontend-\ntau.vercel.app/\nThrough these projects, I have gained experience in end-to-end development, from designing UI\nto handling backend architecture and deployment.\nI am passionate about building e \ticient, user-centric applications and continuously\nimproving my problem-solving skills through Data Structures and Algorithms. I am a quick"
+    },
+    {
+      "id": "7fd05592-23c2-43c7-9002-061f23408723#2",
+      "chunkIndex": 2,
+      "textLength": 325,
+      "metadata": {
+        "source": "CoverLetterUPdated.pdf",
+        "docId": "7fd05592-23c2-43c7-9002-061f23408723",
+        "chunkIndex": 2
+      },
+      "text": "improving my problem-solving skills through Data Structures and Algorithms. I am a quick\nlearner, self-motivated, and committed to delivering high-quality work.\nI would welcome the opportunity to contribute to your team and grow as a Full Stack Developer.\nThank you for your time and consideration.\nSincerely,\nTanishq Jaiswal"
+    }
+  ]
+}

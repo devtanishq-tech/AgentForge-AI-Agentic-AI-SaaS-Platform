@@ -1,0 +1,74 @@
+{
+  "docId": "671213b0-9360-48dd-8c06-266a413f5002",
+  "fileName": "TANISHQ-Oct-2026.pdf",
+  "namespace": "user_CDCcNiZV92zHjkTPgtJBZAZqOnWjpJar",
+  "totalChunks": 6,
+  "chunks": [
+    {
+      "id": "671213b0-9360-48dd-8c06-266a413f5002#0",
+      "chunkIndex": 0,
+      "textLength": 786,
+      "metadata": {
+        "source": "TANISHQ-Oct-2026.pdf",
+        "docId": "671213b0-9360-48dd-8c06-266a413f5002",
+        "chunkIndex": 0
+      },
+      "text": "TANISHQ JAISWAL\nNew Delhi, India tanishqcoc24@gmail.com +91-8010035815\nLinkedin | Github | Nhimbhu | Portfolio\nSummary\nSoftware Developer and AI Engineer with experience building full-stack applications and agentic AI systems using Type\nScript, Node.js, React, LangChain, LangGraph, RAG, and LLM APIs. Experienced in building tool-calling agents, real-\ntime applications, REST APIs, and production-oriented backend systems.\nEducation\nDronacharya College of Engineering Gurugram, Haryana, India\nB.Tech in Computer Science and Engineering (CSE) Graduated:2026\nCoursework: DSA, OOP, Web Development, DBMS, Software Engineering, Operating Systems, Computer Networks\nTechnical Projects\nAgentForge-AI-Agentic-AI-SaaS-Platform [GitHub] Next.js, React.js, LangGraph, LangChain, Groq API, Hybrid"
+    },
+    {
+      "id": "671213b0-9360-48dd-8c06-266a413f5002#1",
+      "chunkIndex": 1,
+      "textLength": 794,
+      "metadata": {
+        "source": "TANISHQ-Oct-2026.pdf",
+        "docId": "671213b0-9360-48dd-8c06-266a413f5002",
+        "chunkIndex": 1
+      },
+      "text": "Technical Projects\nAgentForge-AI-Agentic-AI-SaaS-Platform [GitHub] Next.js, React.js, LangGraph, LangChain, Groq API, Hybrid\nRAG, Drizzle ORM,Pinecone\n• Built a router-based agent workflow with LangGraph that classifies user queries into RAG, tool, or general paths\nand routes each request through the appropriate agent workflow.\n• Built a Hybrid RAG pipeline combining 384-dimensional dense embeddings, BM25 sparse retrieval, and Reciprocal\nRank Fusion (RRF); evaluated 35 questions and improved MRR@10 from 0.80 to 0.96 and Recall@5 from 0.90\nto 0.96 using a cross-encoder reranker.\n• Built an MCP-based tool workflow by creating an MCP server to expose tools and connecting it through an MCP\nclient, enabling the agent to dynamically discover and execute tools within the LangGraph workflow."
+    },
+    {
+      "id": "671213b0-9360-48dd-8c06-266a413f5002#2",
+      "chunkIndex": 2,
+      "textLength": 768,
+      "metadata": {
+        "source": "TANISHQ-Oct-2026.pdf",
+        "docId": "671213b0-9360-48dd-8c06-266a413f5002",
+        "chunkIndex": 2
+      },
+      "text": "client, enabling the agent to dynamically discover and execute tools within the LangGraph workflow.\nMCP-Powered GitHub AI Agent [GitHub] TypeScript, MCP, Groq, Hono, Bun, Octokit, Zod\n• Engineered an MCP-based AI agent that dynamically discovers tools and resources, enabling an LLM to\ninteract with GitHub through structured MCP capabilities instead of direct API coupling.\n• Implemented sequential multi-step tool orchestration with iterative tool-result feedback and bounded execution,\nallowing the agent to perform workflows such as repository discovery, code search, issue retrieval, and issue creation.\nTradeFlow-Zerodha-Style Trading Platform (Custom Engine) [GitHub] [Live] React.js, Node.js, Express.js,\nMongoDB, Socket.io,Material UI,Recharts,LLM Integration"
+    },
+    {
+      "id": "671213b0-9360-48dd-8c06-266a413f5002#3",
+      "chunkIndex": 3,
+      "textLength": 795,
+      "metadata": {
+        "source": "TANISHQ-Oct-2026.pdf",
+        "docId": "671213b0-9360-48dd-8c06-266a413f5002",
+        "chunkIndex": 3
+      },
+      "text": "MongoDB, Socket.io,Material UI,Recharts,LLM Integration\n• Built a full-stack trading simulation platform with Zerodha-inspired UI, enabling virtual buy/sell execution, real-time\nportfolio tracking, and PL analytics with secure JWT-based authentication.\n• Developed a custom mock stock engine (no external APIs) using WebSockets to simulate live market behavior, broad-\ncasting price updates every 5 seconds to multiple clients, and integrated a Gemini 2.5 Flash-powered AI trading\nassistant for natural-language market insights and intelligent buy/sell decision support\nAirbnb-Inspired Property Rental Platform [GitHub] [Live] Node.js, Express.js, MongoDB, Cloudinary, Mapbox\n• Engineered a production-ready full-stack rental marketplace with RESTful API architecture supporting property listing"
+    },
+    {
+      "id": "671213b0-9360-48dd-8c06-266a413f5002#4",
+      "chunkIndex": 4,
+      "textLength": 698,
+      "metadata": {
+        "source": "TANISHQ-Oct-2026.pdf",
+        "docId": "671213b0-9360-48dd-8c06-266a413f5002",
+        "chunkIndex": 4
+      },
+      "text": "• Engineered a production-ready full-stack rental marketplace with RESTful API architecture supporting property listing\ncreation, advanced filtering, and seamless booking functionality.\n• Implemented MVC architecture with session-based authentication and integrated Cloudinary for scalable image\nstorage and Mapbox API for geolocation-driven property visualization.\nTechnical Skills\n• Languages: Java, JavaScript, TypeScript, Python, C++, SQL\n• Frontend: React.js, Next.js, Tailwind CSS, shadcn,Vercel AI Component\n• Backend: Node.js, Express.js, REST APIs, WebSockets, MongoDB, PostgreSQL, Drizzle ORM, JWT\n• DevOps & Tools: Git, GitHub, Docker, Kubernetes, CI/CD, Postman, Netlify, Vercel, Render"
+    },
+    {
+      "id": "671213b0-9360-48dd-8c06-266a413f5002#5",
+      "chunkIndex": 5,
+      "textLength": 690,
+      "metadata": {
+        "source": "TANISHQ-Oct-2026.pdf",
+        "docId": "671213b0-9360-48dd-8c06-266a413f5002",
+        "chunkIndex": 5
+      },
+      "text": "• DevOps & Tools: Git, GitHub, Docker, Kubernetes, CI/CD, Postman, Netlify, Vercel, Render\n• AI/ML: Generative AI, Agentic AI, Prompt Engineering, RAG, Hybrid Search, Reranking, RAG Evaluation, Pinecone,\nMCP , Tool Calling, Prompt Engineering\nAchievements / Coding Profiles\n• Solved 100+ DSA problems on LeetCode with Java, covering arrays, linked lists, trees, graphs, and dynamic pro-\ngramming.\n• GitHub: github.com/devtanishq-tech LeetCode: leetcode.com/tanishq Portfolio: tanishq.dev\nLeadership / Activities\n• Actively contributed to peer code reviews and collaborative full-stack development sessions, mentoring peers on system\ndesign, REST API patterns, and deployment best practices."
+    }
+  ]
+}

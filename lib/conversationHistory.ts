@@ -28,8 +28,14 @@ export async function getthreadHistory({
   }
   const config = { configurable: { thread_id: threadID } };
   const getstateData = await graph.getState(config);
-  const messages = getstateData?.values?.messages as BaseMessage[];
+  const messages = getstateData?.values?.messages;
+  if (!Array.isArray(messages) || messages.length === 0) {
+    console.log("No messages found for thread:", threadID);
+    return [];
+  }
   // and this  function used to conver the based Message to StoredMESSAFE , check docs of langchain
-  const storedMessage = mapChatMessagesToStoredMessages(messages);
+  const storedMessage = mapChatMessagesToStoredMessages(
+    messages as BaseMessage[],
+  );
   return storedMessage;
 }

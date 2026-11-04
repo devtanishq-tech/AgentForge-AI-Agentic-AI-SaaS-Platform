@@ -45,7 +45,7 @@ export async function ingestion({ file, fileName, userId }: ingestFileType) {
   // here we are using this promuse.all so that telling we need to execute this function then
   // run parallel manner ashynchronously
   const [dense, sparse] = await Promise.all([
-    denseEmbedder(chunks),
+    denseEmbedder(chunks, "passage"),
     sparsedEmbedder(chunks, "passage"),
   ]);
   const docId = uuidv4();
@@ -67,8 +67,8 @@ export async function ingestion({ file, fileName, userId }: ingestFileType) {
   }));
   const nameSpace = userNamespace(userId);
   await Promise.all([
-    await upsertIndexFunction(pineconeINdex.namespace(nameSpace), denseRecords),
-    await upsertIndexFunction(
+    upsertIndexFunction(pineconeINdex.namespace(nameSpace), denseRecords),
+    upsertIndexFunction(
       pineconeSparseIndex.namespace(nameSpace),
       sparseRecords,
     ),
