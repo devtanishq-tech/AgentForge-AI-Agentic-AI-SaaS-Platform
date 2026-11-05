@@ -19,6 +19,7 @@ function createChat(threadId: string, initialMessages: UIMessage[]) {
         return {
           body: {
             threadID: body?.threadId,
+            selectedModel: body?.selectedModel,
             messaegTextBodyContent: messageContent, // Only send  first message if type if text only
             messageId,
             filename,

@@ -16,6 +16,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { AttachmentChips } from "./attachment-chips";
+import { useModelStore } from "@/store/model-store";
 
 type Thread = { title: string; id: string; createdAt: Date };
 
@@ -122,9 +123,15 @@ function InputContainer({
   const params = useParams();
   const finalThreadIDURL = params.thread_id;
   const [inputText, setinputText] = useState("");
+  const selectedModel = useModelStore((state) => state.selectedModel);
   const queryClient = useQueryClient();
   return (
     <div className="flex flex-col items-center w-full max-w-200 mx-auto pb-6">
+      {/* <ModelSelectorComponent
+        selectedModel={selectedModel}
+        setSelectedModel={setSelectedModel}
+        userHaveProPlan={false}
+      /> */}
       <PromptInput
         className="w-full bg-[#2f2f2f] rounded-3xl [&>div]:h-auto!"
         accept="application/pdf"
@@ -154,6 +161,7 @@ function InputContainer({
           chat.sendMessage(message, {
             body: {
               threadId: threadId,
+              selectedModel,
             },
           });
           // means we are at home page , where id does not exist pass the id to this path

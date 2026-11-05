@@ -2,6 +2,7 @@
 
 import { memo, useCallback, useState } from "react";
 import { CheckIcon, Lock } from "lucide-react";
+import { useModelStore } from "@/store/model-store";
 
 import {
   ModelSelector,
@@ -18,22 +19,23 @@ import {
 } from "@/components/ai-elements/model-selector";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ModelId } from "@/lib/ai/model-types";
 
 const models = [
   {
     chef: "OpenAI",
     chefSlug: "openai",
-    id: "gpt-5-mini",
-    name: "GPT 5 mini",
-    providers: ["openai", "azure"],
+    id: "openai/gpt-oss-120b",
+    name: "GPT OSS 120B",
+    providers: ["groq"],
     isProOnly: false,
   },
   {
     chef: "OpenAI",
     chefSlug: "openai",
-    id: "gpt-5-nano",
-    name: "GPT 5 nano",
-    providers: ["openai", "azure"],
+    id: "openai/gpt-oss-20b",
+    name: "GPT OSS 20B",
+    providers: ["groq"],
     isProOnly: false,
   },
   {
@@ -41,23 +43,16 @@ const models = [
     chefSlug: "google",
     id: "gemini-3.1-pro-preview",
     name: "Gemini 3.1 Pro",
-    providers: ["google", "google-vertex"],
+    providers: ["google"],
     isProOnly: true,
   },
-  {
-    chef: "Anthropic",
-    chefSlug: "anthropic",
-    id: "claude-sonnet-4-20250514",
-    name: "Claude 4 Sonnet",
-    providers: ["anthropic", "azure", "google-vertex", "amazon-bedrock"],
-    isProOnly: true,
-  },
-];
+] as const;
 
+type Model = (typeof models)[number];
 interface ModelItemProps {
-  model: (typeof models)[0];
+  model: Model;
   selectedModel: string;
-  onSelect: (id: string) => void;
+  onSelect: (id: ModelId) => void;
   isLocked: boolean;
 }
 
@@ -102,23 +97,27 @@ const ModelItem = memo(
 );
 
 ModelItem.displayName = "ModelItem";
+interface modelSelectorProp {
+  userHaveProPlan: boolean;
+}
 
-export const ModelSelectorComponent = () => {
+export const ModelSelectorComponent = ({
+  userHaveProPlan,
+}: modelSelectorProp) => {
   const [open, setOpen] = useState(false);
-
-  const selectedModel = "gpt-5-mini";
-  const setSelectedModel = (modelId: string) => {};
-  const userHaveProPlan = false;
-  const handleModelSelect = useCallback((id: string) => {
-    setSelectedModel(id);
-    setOpen(false);
-  }, []);
+  const selectedModel = useModelStore((state) => state.selectedModel);
+  const setSelectedModel = useModelStore((state) => state.setSelectedModel);
+  const handleModelSelect = useCallback(
+    (id: ModelId) => {
+      setSelectedModel(id);
+      setOpen(false);
+    },
+    [setSelectedModel],
+  );
 
   const selectedModelData = models.find((model) => model.id === selectedModel);
 
-  // Get unique chefs in order of appearance
   const chefs = [...new Set(models.map((model) => model.chef))];
-
   return (
     <div className="flex size-full items-center justify-center">
       <ModelSelector onOpenChange={setOpen} open={open}>

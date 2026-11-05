@@ -1,11 +1,20 @@
 import { ChatGroq } from "@langchain/groq";
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 //================================================types ================================================//
-type modelId =
+export type ModelId =
   | "openai/gpt-oss-120b"
   | "gemini-3.1-pro-preview"
-  | "Claude 4 Sonnet"
   | "openai/gpt-oss-20b";
+
+//======================\
+
+export function isModelId(value: unknown): value is ModelId {
+  return (
+    typeof value === "string" &&
+    Object.prototype.hasOwnProperty.call(MODELREGISTRY, value)
+  );
+}
+//======================
 type modelProvider = "groq" | "google" | "anthropic";
 type modelTier = "free" | "subscription";
 type ReasoningEffort = "low" | "high" | "medium";
@@ -19,7 +28,7 @@ type modelConfig = {
   };
 };
 //=================================================Model Registry //=======================================//
-const MODELREGISTRY: Record<modelId, modelConfig> = {
+const MODELREGISTRY: Record<ModelId, modelConfig> = {
   "openai/gpt-oss-120b": {
     provider: "groq",
     tier: "free",
@@ -29,11 +38,6 @@ const MODELREGISTRY: Record<modelId, modelConfig> = {
     provider: "groq",
     tier: "free",
     options: { reasoningEffort: "medium", temperature: 0 },
-  },
-  "Claude 4 Sonnet": {
-    provider: "anthropic",
-    tier: "subscription",
-    options: { reasoningEffort: "low", temperature: 0 },
   },
   "gemini-3.1-pro-preview": {
     provider: "google",
@@ -50,7 +54,7 @@ function getDefault() {
     apiKey: process.env.GROQ_API_KEY,
   });
 }
-function createModel(modelId: modelId, config: modelConfig) {
+function createModel(modelId: ModelId, config: modelConfig) {
   if (config.provider === "groq") {
     return new ChatGroq({
       model: modelId,
@@ -69,19 +73,13 @@ function createModel(modelId: modelId, config: modelConfig) {
     });
   }
 }
-export function getMODEL(modelId: modelId) {
+export function getMODEL(modelId: ModelId) {
   const config = MODELREGISTRY[modelId];
   if (!config) {
-    return getDefault();
+    throw new Error(`Unsupported model: ${modelId}`);
   }
   if (config.tier === "subscription") {
-    // will implement this later
+    throw new Error("Subscription required for this model");
   }
   return createModel(modelId, config);
-}
-// will implement  this later
-function name() {
-  return new ChatGoogleGenerativeAI({
-    model: "",
-  });
 }
