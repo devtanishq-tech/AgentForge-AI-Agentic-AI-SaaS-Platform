@@ -8,7 +8,8 @@ import { createUIMessageStreamResponse } from "ai";
 import { toUIMessageStream } from "@ai-sdk/langchain";
 import { HumanMessage } from "@langchain/core/messages";
 import { trackTokenUsuageFunction } from "@/lib/polar/trackTokenusuage";
-import { isModelId } from "./model";
+import { isModelId, getActualModelId } from "./model";
+import { getPolarSubscription } from "@/lib/polar/polar_ingestion";
 //()start function means , that we are start processing the event
 // controller.enqueue(event);
 // controller is used to control  the new output stream
@@ -55,6 +56,11 @@ export async function POST(request: Request) {
       status: 400,
     });
   }
+  //checking does user Have pro Planor not //=========================
+  const subscriptionData = await getPolarSubscription();
+  const userHaveProPlan = subscriptionData.hasActiveSubscription;
+  const actualModelId = getActualModelId(selectedModel, userHaveProPlan);
+  ///====================================================================//
   //==============// todo need to implement dynamic model that we receieve from frontend side
   //============================================================
   const threadsFromsDB = await db
@@ -107,10 +113,11 @@ export async function POST(request: Request) {
         checkpoint_ns: "",
         userId: userid,
         selectedModel: selectedModel,
+        userHaveProPlan,
       },
     },
   );
-  const trackStream = trackTokenUsuageFunction(streamm, userid, selectedModel);
+  const trackStream = trackTokenUsuageFunction(streamm, userid, actualModelId);
   return createUIMessageStreamResponse({
     stream: toUIMessageStream(hideNODE(trackStream)),
   });

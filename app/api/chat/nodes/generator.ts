@@ -9,12 +9,15 @@ export const generatorNode: GraphNode<typeof messageState> = async (
   state,
   config: RunnableConfig,
 ) => {
+  //=======================things we are fetching from config file //=============
   const selectedModel = config.configurable?.selectedModel as string;
+  const userHaveProPlan = config.configurable?.userHaveProPlan === true;
 
   if (!isModelId(selectedModel)) {
     throw new Error(`Invalid model selected: ${selectedModel}`);
   }
-  const model = getMODEL(selectedModel);
+  const { model, actualModelId } = getMODEL(selectedModel, userHaveProPlan);
+  console.log("Generator Model:", actualModelId);
   const systemText =
     state.route === "rag"
       ? getRagPrompt(state.context ?? "")

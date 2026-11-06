@@ -10,7 +10,7 @@ type Usage = {
 export async function* trackTokenUsuageFunction(
   source: AsyncIterable<any>,
   userID: string,
-  selectedModel: string,
+  actualModelId: string,
 ): AsyncGenerator<any> {
   const usage: Usage = { input: 0, output: 0, total: 0 };
 
@@ -60,7 +60,7 @@ export async function* trackTokenUsuageFunction(
   if (usage.total > 0) {
     try {
       await PolarINgestion({
-        model: selectedModel,
+        model: actualModelId,
         userID,
         inputToken: usage.input,
         outputToken: usage.output,

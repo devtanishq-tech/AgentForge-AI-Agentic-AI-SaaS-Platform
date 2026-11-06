@@ -41,7 +41,7 @@ const MODELREGISTRY: Record<ModelId, modelConfig> = {
   },
   "gemini-3.1-pro-preview": {
     provider: "google",
-    tier: "free",
+    tier: "subscription",
     options: { thinkingBudget: 8192, temperature: 0 },
   },
 };
@@ -73,13 +73,34 @@ function createModel(modelId: ModelId, config: modelConfig) {
     });
   }
 }
-export function getMODEL(modelId: ModelId) {
+// Implementing getActualmode id -
+
+//====================================================================//
+
+const DEFAULT_MODEL_ID: ModelId = "openai/gpt-oss-120b";
+
+export function getActualModelId(
+  modelId: ModelId,
+  userHaveProPlan: boolean,
+): ModelId {
   const config = MODELREGISTRY[modelId];
+
   if (!config) {
     throw new Error(`Unsupported model: ${modelId}`);
   }
-  if (config.tier === "subscription") {
-    throw new Error("Subscription required for this model");
+
+  if (config.tier === "subscription" && !userHaveProPlan) {
+    return DEFAULT_MODEL_ID;
   }
-  return createModel(modelId, config);
+
+  return modelId;
+}
+//====================================================================//
+export function getMODEL(modelId: ModelId, userHaveProPlan: boolean = false) {
+  const actualModelId = getActualModelId(modelId, userHaveProPlan);
+  const config = MODELREGISTRY[actualModelId];
+  return {
+    model: createModel(actualModelId, config),
+    actualModelId,
+  };
 }

@@ -10,7 +10,6 @@ type ingestionData = {
   outputToken: number;
   totalToken: number;
 };
-//=======todo create getPolarEvent function to fetch the model name //====
 
 export async function getPolarMeters() {
   const isloggedin = await auth.api.getSession({

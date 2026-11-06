@@ -22,6 +22,7 @@ import { UpgradeComponent } from "@/components/upgrade-component";
 import { ModelSelectorComponent } from "@/components/model-selector";
 import { auth } from "@/lib/auth";
 import { session } from "@/db/schema/auth-schema";
+import { getPolarSubscription } from "@/lib/polar/polar_ingestion";
 
 export default async function ChatPageLayout({
   children,
@@ -35,6 +36,10 @@ export default async function ChatPageLayout({
     //  means user is not logged in ,then
     redirect("/auth/signin");
   }
+  const subscriptionData = await getPolarSubscription();
+
+  // Check whether the user has an active subscription
+  const userHaveProPlan = subscriptionData.hasActiveSubscription;
 
   return (
     <SidebarProvider>
@@ -69,7 +74,7 @@ export default async function ChatPageLayout({
             <UpgradeComponent />
 
             <div className="flex items-center">
-              <ModelSelectorComponent userHaveProPlan={true} />
+              <ModelSelectorComponent userHaveProPlan={userHaveProPlan} />
             </div>
           </header>
 
