@@ -69,7 +69,7 @@ export default async function ChatPageLayout({
             <UpgradeComponent />
 
             <div className="flex items-center">
-              <ModelSelectorComponent />
+              <ModelSelectorComponent userHaveProPlan={true} />
             </div>
           </header>
 

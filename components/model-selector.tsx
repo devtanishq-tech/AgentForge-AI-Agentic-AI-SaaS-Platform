@@ -46,6 +46,14 @@ const models = [
     providers: ["google"],
     isProOnly: true,
   },
+  {
+    chef: "Anthropic",
+    chefSlug: "anthropic",
+    id: "claude-sonnet-4-20250514",
+    name: "Claude 4 Sonnet",
+    providers: ["anthropic"],
+    isProOnly: true,
+  },
 ] as const;
 
 type Model = (typeof models)[number];
