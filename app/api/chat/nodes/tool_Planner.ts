@@ -10,9 +10,11 @@ export const toolPlannerNode: GraphNode<typeof messageState> = async (
   state,
 ) => {
   const tools = await getTools();
-  const model = getMODEL("openai/gpt-oss-20b").bindTools(tools);
+  const { model } = getMODEL("openai/gpt-oss-20b");
+
+  const modelWithTools = model.bindTools(tools);
   const recentMessage = getRecentTurns(state.messages, 3);
-  const llmresponse = await model.invoke([
+  const llmresponse = await modelWithTools.invoke([
     new SystemMessage(ToolPlannerPrompt),
     ...recentMessage,
   ]);

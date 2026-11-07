@@ -39,7 +39,6 @@ export const weatherTool = tool(
     url.searchParams.set("key", process.env.WEATHER_API_KEY!);
     url.searchParams.set("q", location);
     const response = await fetch(url);
-    console.log(`Weather tools is called `);
     const responseData = await response.json();
     const weatherResponse: WeatherResponse = {
       location: {
@@ -65,7 +64,6 @@ export const weatherTool = tool(
       isDay: responseData.current.is_day,
       lastUpdated: responseData.current.last_updated,
     };
-    console.log(weatherResponse);
     return weatherResponse;
   },
   {

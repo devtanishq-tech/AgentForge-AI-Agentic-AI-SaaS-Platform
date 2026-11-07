@@ -33,22 +33,5 @@ export async function ReRankerFunction(
       score: item.score,
     };
   });
-
-  console.log("\n" + "=".repeat(100));
-  console.log("PINECONE CLOUD RERANKER:", RERANKER_MODEL);
-  console.log("Query:", query);
-  console.log("Input candidates:", chunks.length);
-  console.log("Returned chunks:", rankedChunks.length);
-
-  rankedChunks.forEach((chunk, index) => {
-    console.log(`\n[ RANK ${index + 1} ]`);
-    console.log("ID:", chunk.id);
-    console.log("Score:", chunk.score);
-    console.log("Source:", chunk.source);
-    console.log("Text:", chunk.text);
-  });
-
-  console.log("=".repeat(100));
-
   return rankedChunks;
 }

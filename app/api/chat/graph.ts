@@ -21,7 +21,7 @@ function shouldContinue(state: typeof messageState.State) {
   ) {
     return "mcpToolnode";
   }
-  return "__end__";
+  return "generatorNode";
 }
 //========================temporary Change in the conditions //=========================
 function shouldContinue2(state: typeof messageState.State) {
@@ -56,6 +56,9 @@ const graph = new StateGraph(messageState)
     queryRewritterNode: "queryRewritterNode",
     generatorNode: "generatorNode",
   })
-  .addConditionalEdges("toolPlannerNode", shouldContinue);
+  .addConditionalEdges("toolPlannerNode", shouldContinue, {
+    mcpToolnode: "mcpToolnode",
+    generatorNode: "generatorNode",
+  });
 
 export const finalGraph = graph.compile({ checkpointer });

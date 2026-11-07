@@ -27,17 +27,11 @@ export const routerNode: GraphNode<typeof messageState> = async (state) => {
     })
     .join("\n");
   try {
-    const model =
-      getMODEL("openai/gpt-oss-20b").withStructuredOutput(routeSchema);
-    const response = await model.invoke(
+    const { model } = getMODEL("openai/gpt-oss-20b");
+
+    const structuredModel = model.withStructuredOutput(routeSchema);
+    const response = await structuredModel.invoke(
       `${RouterPrompt}\n\nConversation:\n${recent}`,
-    );
-    console.log(
-      `-------------------------------------------------------------------`,
-    );
-    console.log(`Route response`, response.route);
-    console.log(
-      `---------------------------------------------------------------------`,
     );
     return {
       route: response.route,

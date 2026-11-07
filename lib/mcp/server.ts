@@ -48,10 +48,6 @@ server.registerTool(
           content: current.content.slice(0, 1200),
         }),
       );
-    console.log(`-`.repeat(100));
-    console.log(source);
-    console.log(`-`.repeat(100));
-
     return {
       content: [
         {
@@ -80,9 +76,6 @@ server.registerTool(
   },
   async ({ location }) => {
     const weatherResult = await weatherTool.invoke({ location });
-    console.log(`-`.repeat(80));
-    console.log(weatherResult);
-    console.log(`-`.repeat(80));
     return {
       content: [
         {

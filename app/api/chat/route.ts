@@ -91,12 +91,6 @@ export async function POST(request: Request) {
       status: 403,
     });
   }
-  console.log(`-`.repeat(100));
-  console.log(`Graph Identity `, {
-    thread_id: threadID,
-    userId: userid,
-  });
-  console.log(`-`.repeat(100));
   const streamm = await finalGraph.streamEvents(
     {
       messages: [

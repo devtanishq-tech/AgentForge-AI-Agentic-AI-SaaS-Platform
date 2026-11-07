@@ -29,31 +29,6 @@ export const hYbridretrivalNode: GraphNode<typeof messageState> = async (
   for (const list of results) {
     for (const c of list) if (!pool.has(c.id)) pool.set(c.id, c);
   }
-  console.log();
-  console.log(
-    `Hybrid retrieval: ${pool.size} unique chunks for ${queries.length} queries`,
-  );
-  //===================================================================================
-  //===================================================================================
-  //===================================================================================
   const finalChunks = [...pool.values()];
-
-  console.log("\n" + "=".repeat(100));
-  console.log(`HYBRID RETRIEVAL: ${finalChunks.length} UNIQUE CHUNKS`);
-  console.log("Queries:", queries);
-  console.log("=".repeat(100));
-
-  finalChunks.forEach((chunk, index) => {
-    console.log(`\n[CHUNK ${index + 1}]`);
-    console.log("ID:", chunk.id);
-    console.log("Source:", chunk.source);
-    console.log("Hybrid Score (RRF):", chunk.score);
-    console.log("Text:\n", chunk.text);
-    console.log("-".repeat(100));
-  });
-
-  console.log("\n" + "=".repeat(100));
-  console.log("END OF HYBRID RETRIEVAL");
-  console.log("=".repeat(100));
   return { chunks: [...pool.values()] };
 };

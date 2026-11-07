@@ -34,8 +34,9 @@ export const queryRewriterNode: GraphNode<typeof messageState> = async (
     .join("\n");
 
   try {
-    const model = getMODEL("openai/gpt-oss-20b").withStructuredOutput(schema);
-    const res = await model.invoke(
+    const { model } = getMODEL("openai/gpt-oss-20b");
+    const structuredModel = model.withStructuredOutput(schema);
+    const res = await structuredModel.invoke(
       `${QueryRewriterPrompt}\n\nConversation:\n${recent}`,
     );
     console.log("Rewritten queries:", res.queries);

@@ -38,7 +38,7 @@ export async function getPolarSubscription() {
     limit: 10,
   });
   const subscriptions = response.result.items;
-  console.log();
+
   const activeSubscription = subscriptions.find(
     (subscription) =>
       subscription.status === "active" || subscription.status === "trialing",

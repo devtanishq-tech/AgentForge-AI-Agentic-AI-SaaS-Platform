@@ -33,10 +33,5 @@ export const reRankerNode: GraphNode<typeof messageState> = async (state) => {
         `[${index + 1}] (Source: ${chunk.source})\n${chunk.text}`,
     )
     .join("\n\n");
-
-  console.log("Original query:", originalQuery);
-  console.log("Candidates:", chunks.length);
-  console.log("Final chunks:", finalChunks.length);
-
   return { context };
 };
