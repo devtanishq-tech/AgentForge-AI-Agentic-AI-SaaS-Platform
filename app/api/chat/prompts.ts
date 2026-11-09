@@ -66,9 +66,31 @@ Excerpts:
 ${context || "(none found)"}`;
 
 export const QueryRewriterPrompt = `
-Rewrite the user's latest message into 1-3 short, self-contained search queries for searching their uploaded documents.
-- Fix typos and drop filler such as "from this pdf" or "tell me".
-- Use earlier messages to resolve follow-ups like "what about the second one".
-- If the message asks several things, write one query per thing.
+You convert the user's LATEST message into search queries for a hybrid (keyword + semantic) search over their uploaded documents.
+
+Default: return exactly ONE query. Return two or three only when the latest message explicitly asks for different pieces of information (e.g. "its CIN and address" -> two queries). Never add paraphrases, synonyms, or related angles of the same question.
+
+Rules:
+- If the latest message is already clear and self-contained, return it unchanged as the single query.
+- Resolve references ("it", "its", "that", "what about Level 6?") using the History, so every query names the entity in full.
+- Remove filler such as "from this PDF", "tell me", "please". Never put "document", "PDF", or "file" in a query.
+- Fix obvious typos. Keep names, numbers, IDs, and codes exactly as written.
+- Write short keyword-rich queries, not long sentences.
+- Do not answer the question or add facts that are not in the conversation.
+
+Examples:
+- Latest: "What is the CIN of Nexora Dynamics?" -> {"queries":["CIN of Nexora Dynamics"]}
+- Latest: "From this PDF, tell me the CIN." -> {"queries":["CIN"]}
+- History mentions Nexora Dynamics. Latest: "What is its CIN and address?" -> {"queries":["Nexora Dynamics CIN","Nexora Dynamics address"]}
+- History discusses Level 5 benefits. Latest: "What about Level 6?" -> {"queries":["Level 6 benefits"]}
+
 Return only JSON: {"queries":["..."]}
 `;
+
+// export const QueryRewriterPrompt = `
+// Rewrite the user's latest message into 1-3 short, self-contained search queries for searching their uploaded documents.
+// - Fix typos and drop filler such as "from this pdf" or "tell me".
+// - Use earlier messages to resolve follow-ups like "what about the second one".
+// - If the message asks several things, write one query per thing.
+// Return only JSON: {"queries":["..."]}
+// `;

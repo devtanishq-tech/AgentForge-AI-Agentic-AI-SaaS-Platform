@@ -56,21 +56,17 @@ export async function POST(request: Request) {
       status: 400,
     });
   }
+  //=================================Need to Optimize this part //=======================
   //checking does user Have pro Planor not //=========================
   const subscriptionData = await getPolarSubscription();
   const userHaveProPlan = subscriptionData.hasActiveSubscription;
   const actualModelId = getActualModelId(selectedModel, userHaveProPlan);
-  ///====================================================================//
-  //==============// todo need to implement dynamic model that we receieve from frontend side
-  //============================================================
   const threadsFromsDB = await db
     .select()
     .from(thread)
     .where(eq(thread.id, threadID))
     .limit(1);
-  //=====================================================================//
   let threadDataArray = threadsFromsDB[0];
-  //===================Extracting user id //=== ===========================//
   const getSession = await auth.api.getSession({
     headers: await headers(),
   });

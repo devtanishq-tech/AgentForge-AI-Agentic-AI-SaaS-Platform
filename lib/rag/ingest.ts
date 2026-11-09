@@ -75,32 +75,32 @@ export async function ingestion({ file, fileName, userId }: ingestFileType) {
   ]);
 
   //=================================================//
-  const evaluationData = {
-    docId,
-    fileName,
-    namespace: nameSpace,
-    totalChunks: chunks.length,
-    chunks: chunks.map((chunk, i) => ({
-      id: `${docId}#${i}`,
-      chunkIndex: i,
-      textLength: chunk.length,
-      metadata: {
-        source: fileName,
-        docId,
-        chunkIndex: i,
-      },
-      text: chunk,
-    })),
-  };
+  // const evaluationData = {
+  //   docId,
+  //   fileName,
+  //   namespace: nameSpace,
+  //   totalChunks: chunks.length,
+  //   chunks: chunks.map((chunk, i) => ({
+  //     id: `${docId}#${i}`,
+  //     chunkIndex: i,
+  //     textLength: chunk.length,
+  //     metadata: {
+  //       source: fileName,
+  //       docId,
+  //       chunkIndex: i,
+  //     },
+  //     text: chunk,
+  //   })),
+  // };
 
-  const exportDir = path.join(process.cwd(), "rag-evaluation");
+  // const exportDir = path.join(process.cwd(), "rag-evaluation");
 
-  await mkdir(exportDir, { recursive: true });
+  // await mkdir(exportDir, { recursive: true });
 
-  const exportPath = path.join(exportDir, `chunks-${docId}.json`);
+  // const exportPath = path.join(exportDir, `chunks-${docId}.json`);
 
-  await writeFile(exportPath, JSON.stringify(evaluationData, null, 2), "utf-8");
-  //=================================================//
+  // await writeFile(exportPath, JSON.stringify(evaluationData, null, 2), "utf-8");
+  // //=================================================//
   return { docId, fileName, chunks: chunks.length };
   // this retun will going to be used in uploads.route.ts file where
   // file data comes from backend side

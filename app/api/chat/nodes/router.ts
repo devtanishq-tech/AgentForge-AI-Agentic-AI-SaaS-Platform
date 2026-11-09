@@ -33,6 +33,9 @@ export const routerNode: GraphNode<typeof messageState> = async (state) => {
     const response = await structuredModel.invoke(
       `${RouterPrompt}\n\nConversation:\n${recent}`,
     );
+    console.log(`-`.repeat(100));
+    console.log(`Router Response:${response.route}`);
+    console.log(`-`.repeat(100));
     return {
       route: response.route,
     };

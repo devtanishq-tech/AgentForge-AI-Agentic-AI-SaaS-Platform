@@ -1,0 +1,85 @@
+{
+  "docId": "1a2be16f-04b7-4121-be79-e1aaf4520ba0",
+  "fileName": "November_Tanishq_2026.pdf",
+  "namespace": "user_T6HxoWK89i6dL9oPGpy43UsseH6rK8Ka",
+  "totalChunks": 7,
+  "chunks": [
+    {
+      "id": "1a2be16f-04b7-4121-be79-e1aaf4520ba0#0",
+      "chunkIndex": 0,
+      "textLength": 781,
+      "metadata": {
+        "source": "November_Tanishq_2026.pdf",
+        "docId": "1a2be16f-04b7-4121-be79-e1aaf4520ba0",
+        "chunkIndex": 0
+      },
+      "text": "TANISHQ JAISWAL\nNew Delhi, India tanishqcoc24@gmail.com +91-8010035815\nLinkedin | Github | Nhimbhu | Portfolio\nSummary\nSoftware Developer and AI Engineer with experience building full-stack applications and agentic AI systems using Type\nScript, Node.js, React, LangChain, LangGraph, RAG, and LLM APIs. Experienced in building tool-calling agents, real-\ntime applications, REST APIs, and production-oriented backend systems.\nEducation\nDronacharya College of Engineering Gurugram, Haryana, India\nB.Tech in Computer Science and Engineering (CSE) Graduated:2026\nCoursework: DSA, OOP, Web Development, DBMS, Software Engineering, Operating Systems, Computer Networks\nTechnical Projects\nAgentForge-AI-Agentic-AI-SaaS-Platform [GitHub] Next.js, TypeScript, LangGraph, LangChain, Pinecone,"
+    },
+    {
+      "id": "1a2be16f-04b7-4121-be79-e1aaf4520ba0#1",
+      "chunkIndex": 1,
+      "textLength": 695,
+      "metadata": {
+        "source": "November_Tanishq_2026.pdf",
+        "docId": "1a2be16f-04b7-4121-be79-e1aaf4520ba0",
+        "chunkIndex": 1
+      },
+      "text": "Technical Projects\nAgentForge-AI-Agentic-AI-SaaS-Platform [GitHub] Next.js, TypeScript, LangGraph, LangChain, Pinecone,\nPostgreSQL, Drizzle ORM, MCP, Polar, Docker\n• Architected a multi-route agent workflow using LangGraph, routing queries across general chat, document-based RAG,\nand MCP-powered tool execution, with dynamic LLM selection and subscription-based model access.\n• Engineered a Hybrid RAG pipeline combining 1,024-dimensional dense embeddings using Pinecone Inference (llama-\ntext-embed-v2), sparse retrieval, and Reciprocal Rank Fusion (RRF); improved MRR@10 from 0.80 to 0.96 and\nRecall@5 from 0.90 to 0.96 using cross-encoder reranking across a 35-question evaluation benchmark."
+    },
+    {
+      "id": "1a2be16f-04b7-4121-be79-e1aaf4520ba0#2",
+      "chunkIndex": 2,
+      "textLength": 719,
+      "metadata": {
+        "source": "November_Tanishq_2026.pdf",
+        "docId": "1a2be16f-04b7-4121-be79-e1aaf4520ba0",
+        "chunkIndex": 2
+      },
+      "text": "Recall@5 from 0.90 to 0.96 using cross-encoder reranking across a 35-question evaluation benchmark.\n• Built a multi-user PDF ingestion and retrieval pipeline with batch embeddings and isolated Pinecone namespaces;\ndeveloped an MCP server/client for dynamic discovery and execution of web search, weather, and product search tools.\nMCP-Powered GitHub AI Agent [GitHub] TypeScript, MCP, Groq, Hono, Bun, Octokit, Zod\n• Engineered an MCP-based AI agent that dynamically discovers tools and resources, enabling an LLM to\ninteract with GitHub through structured MCP capabilities instead of direct API coupling.\n• Implemented sequential multi-step tool orchestration with iterative tool-result feedback and bounded execution,"
+    },
+    {
+      "id": "1a2be16f-04b7-4121-be79-e1aaf4520ba0#3",
+      "chunkIndex": 3,
+      "textLength": 706,
+      "metadata": {
+        "source": "November_Tanishq_2026.pdf",
+        "docId": "1a2be16f-04b7-4121-be79-e1aaf4520ba0",
+        "chunkIndex": 3
+      },
+      "text": "• Implemented sequential multi-step tool orchestration with iterative tool-result feedback and bounded execution,\nallowing the agent to perform workflows such as repository discovery, code search, issue retrieval, and issue creation.\nTradeFlow-Zerodha-Style Trading Platform (Custom Engine) [GitHub] [Live] React.js, Node.js, Express.js,\nMongoDB, Socket.io,Material UI,Recharts,LLM Integration\n• Built a full-stack trading simulation platform with Zerodha-inspired UI, enabling virtual buy/sell execution, real-time\nportfolio tracking, and PL analytics with secure JWT-based authentication.\n• Developed a custom mock stock engine (no external APIs) using WebSockets to simulate live market behavior, broad-"
+    },
+    {
+      "id": "1a2be16f-04b7-4121-be79-e1aaf4520ba0#4",
+      "chunkIndex": 4,
+      "textLength": 788,
+      "metadata": {
+        "source": "November_Tanishq_2026.pdf",
+        "docId": "1a2be16f-04b7-4121-be79-e1aaf4520ba0",
+        "chunkIndex": 4
+      },
+      "text": "• Developed a custom mock stock engine (no external APIs) using WebSockets to simulate live market behavior, broad-\ncasting price updates every 5 seconds to multiple clients, and integrated a Gemini 2.5 Flash-powered AI trading\nassistant for natural-language market insights and intelligent buy/sell decision support\nAirbnb-Inspired Property Rental Platform [GitHub] [Live] Node.js, Express.js, MongoDB, Cloudinary, Mapbox\n• Engineered a production-ready full-stack rental marketplace with RESTful API architecture supporting property listing\ncreation, advanced filtering, and seamless booking functionality.\n• Implemented MVC architecture with session-based authentication and integrated Cloudinary for scalable image\nstorage and Mapbox API for geolocation-driven property visualization."
+    },
+    {
+      "id": "1a2be16f-04b7-4121-be79-e1aaf4520ba0#5",
+      "chunkIndex": 5,
+      "textLength": 741,
+      "metadata": {
+        "source": "November_Tanishq_2026.pdf",
+        "docId": "1a2be16f-04b7-4121-be79-e1aaf4520ba0",
+        "chunkIndex": 5
+      },
+      "text": "storage and Mapbox API for geolocation-driven property visualization.\nTechnical Skills\n• Languages: Java, JavaScript, TypeScript, Python, C++, SQL\n• Frontend: React.js, Next.js, Tailwind CSS, shadcn,Vercel AI Component\n• Backend: Node.js, Express.js, REST APIs, WebSockets, MongoDB, PostgreSQL, Drizzle ORM, JWT\n• DevOps & Tools: Git, GitHub, Docker, Kubernetes, CI/CD, Postman, Netlify, Vercel, Render\n• AI/ML: Generative AI, Agentic AI, Semantic Search, Hybrid RAG, Vector Embeeding, Reranking, RAG Evaluation,\nPinecone, MCP , Tool Calling, Prompt Engineering\nAchievements / Coding Profiles\n• Built and evaluated AI-powered applications involving agent orchestration, hybrid retrieval, MCP tool integration, and\nfull-stack backend systems."
+    },
+    {
+      "id": "1a2be16f-04b7-4121-be79-e1aaf4520ba0#6",
+      "chunkIndex": 6,
+      "textLength": 442,
+      "metadata": {
+        "source": "November_Tanishq_2026.pdf",
+        "docId": "1a2be16f-04b7-4121-be79-e1aaf4520ba0",
+        "chunkIndex": 6
+      },
+      "text": "• Built and evaluated AI-powered applications involving agent orchestration, hybrid retrieval, MCP tool integration, and\nfull-stack backend systems.\n• GitHub: github.com/devtanishq-tech LeetCode: leetcode.com/tanishq Portfolio: tanishq.dev\nLeadership / Activities\n• Actively contributed to peer code reviews and collaborative full-stack development sessions, mentoring peers on system\ndesign, REST API patterns, and deployment best practices."
+    }
+  ]
+}

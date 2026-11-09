@@ -27,11 +27,6 @@ export const generatorNode: GraphNode<typeof messageState> = async (
     state.route === "rag"
       ? getRagPrompt(state.context ?? "")
       : getSystemPrompt();
-  // The generator has no tools bound. If tool-call AIMessages / ToolMessages
-  // stay in the history, the model tries to call tools again and Groq rejects it
-  // ("Tool choice is none, but model called a tool"). So:
-  //  1. tool results of the CURRENT turn are passed as plain text in the system prompt
-  //  2. tool-call AIMessages and ToolMessages are removed from the message list
   const lastHumanIndex = state.messages.findLastIndex((m) =>
     HumanMessage.isInstance(m),
   );

@@ -1,0 +1,371 @@
+{
+  "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+  "fileName": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+  "namespace": "user_T6HxoWK89i6dL9oPGpy43UsseH6rK8Ka",
+  "totalChunks": 33,
+  "chunks": [
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#0",
+      "chunkIndex": 0,
+      "textLength": 726,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 0
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 1 of 10\nPage 1: Company Overview\nNexora Dynamics Pvt. Ltd. is a B2B software company founded on 14 March 2014 by Aarav Mehta and Vikram Rao.\nThe company is headquartered at Sector 44, Gurugram, Haryana, and operates three additional offices: Bengaluru\n(Whitefield), Pune (Hinjewadi) and Hyderabad (HITEC City). As of 31 March 2026 the company had 412 employees\nacross eight departments.\nProducts\nNexora sells three products. NexaFlow is a workflow automation platform and the oldest product, launched in 2015.\nNexaSense is an analytics and business-intelligence suite launched in 2018. NexaGuard is a security and zero-trust"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#1",
+      "chunkIndex": 1,
+      "textLength": 733,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 1
+      },
+      "text": "NexaSense is an analytics and business-intelligence suite launched in 2018. NexaGuard is a security and zero-trust\naccess product launched in 2021. NexaFlow contributes 48% of annual revenue, NexaSense 32% and NexaGuard\n20%.\nMission and values\nThe company's stated mission is to help mid-sized enterprises automate repetitive work safely. Its four core values are\nCustomer Obsession, Ownership, Craft, and Candour. The internal motto printed on every employee badge is 'Ship it,\nthen sharpen it.'\nKey facts\nItem Detail\nLegal name Nexora Dynamics Pvt. Ltd.\nFounded 14 March 2014\nHeadquarters Sector 44, Gurugram, Haryana, India\nOther offices Bengaluru (Whitefield), Pune (Hinjewadi), Hyderabad (HITEC City)\nEmployees (31 Mar 2026) 412"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#2",
+      "chunkIndex": 2,
+      "textLength": 718,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 2
+      },
+      "text": "Other offices Bengaluru (Whitefield), Pune (Hinjewadi), Hyderabad (HITEC City)\nEmployees (31 Mar 2026) 412\nFunding Series B of INR 210 crore, August 2023, led by Cedar Peak Ventures\nCompany registration (CIN) U72900HR2014PTC051873\nOfficial website www.nexoradynamics.in\nCloud provider AWS, primary region ap-south-1 (Mumbai)\nFiscal year 1 April to 31 March\nHistory\nIn 2015 the company shipped NexaFlow v1.0 to its first customer, Orbitek Logistics. The Gurugram office moved to its\ncurrent Sector 44 location in 2017. The Bengaluru office opened in 2016, Pune in 2019 and Hyderabad in 2021. In\nAugust 2023 Nexora closed its Series B round. The company has never been acquired and has no plans to go public\nbefore 2029."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#3",
+      "chunkIndex": 3,
+      "textLength": 789,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 3
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 2 of 10\nPage 2: Leadership and Organisation Structure\nNexora is led by an executive team of five, reporting to a Board of Directors chaired by Dr. Meenakshi Iyer, an\nindependent director who joined the board in 2022. The board meets quarterly.\nEmployee ID Name Role Joined Reports to\nEMP-0001 Aarav Mehta Chief Executive Officer and Co-founder 2014-03-14 Board of Directors\nEMP-0002 Ishita Verma Chief Technology Officer 2016-01-11 Aarav Mehta\nEMP-0003 Karan Malhotra Chief Financial Officer 2017-04-03 Aarav Mehta\nEMP-0004 Neha Kapoor Chief Human Resources Officer 2018-02-19 Aarav Mehta\nEMP-0005 Vikram Rao Chief Operating Officer and Co-founder 2014-03-14 Aarav Mehta\nDepartment heads"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#4",
+      "chunkIndex": 4,
+      "textLength": 705,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 4
+      },
+      "text": "EMP-0005 Vikram Rao Chief Operating Officer and Co-founder 2014-03-14 Aarav Mehta\nDepartment heads\nDepartment Head Reports to\nEngineering Ishita Verma (CTO) CEO\nSales Mohit Chauhan, Sales Director COO\nMarketing Ananya Bose, Head of Marketing CEO\nHuman Resources Neha Kapoor (CHRO) CEO\nFinance Karan Malhotra (CFO) CEO\nCustomer Support Farhan Qureshi, Support Manager COO\nLegal and Compliance Siddharth Rao, Compliance Officer CEO\nOperations Vikram Rao (COO) CEO\nGovernance notes\nThe Audit Committee consists of Dr. Meenakshi Iyer, Karan Malhotra and an external member, Rajiv Sethi. The\ncompany's statutory auditor is Bhatnagar and Associates. The Chief Executive Officer has a direct-report span of five."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#5",
+      "chunkIndex": 5,
+      "textLength": 551,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 5
+      },
+      "text": "company's statutory auditor is Bhatnagar and Associates. The Chief Executive Officer has a direct-report span of five.\nIshita Verma has four engineering team managers reporting to her. Vikram Rao oversees both Sales and Customer\nSupport through their respective heads, in addition to running Operations.\nDecision rights: any single expenditure above INR 50 lakh requires approval from both the CEO and the CFO.\nExpenditure above INR 2 crore additionally requires Board approval. Hiring of any employee at level L5 or above must\nbe approved by the CEO."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#6",
+      "chunkIndex": 6,
+      "textLength": 794,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 6
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 3 of 10\nPage 3: Employee Directory (Part 1 of 2)\nDirectory snapshot as of 15 January 2026. Designations may have changed since; see the announcements log on\npage 10. Note that several employees share the same name; the Employee ID is the unique identifier.\nEmp ID Name Department Designation City Joined Ext\nEMP-1042 Rahul Sharma Engineering Senior Backend Engineer Bengaluru 2019-06-17 4112\nEMP-2087 Rahul Sharma Sales Regional Sales Manager Gurugram 2021-02-08 2231\nEMP-1055 Priya Nair Engineering ML Engineer Pune 2022-08-01 4120\nEMP-3011 Priya Menon Human\nResources Talent Acquisition Lead Gurugram 2020-01-13 3305\nEMP-1078 Amit Kumar Engineering DevOps Engineer Hyderabad 2020-11-23 4133"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#7",
+      "chunkIndex": 7,
+      "textLength": 759,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 7
+      },
+      "text": "Resources Talent Acquisition Lead Gurugram 2020-01-13 3305\nEMP-1078 Amit Kumar Engineering DevOps Engineer Hyderabad 2020-11-23 4133\nEMP-4020 Amit Kumar Finance Senior Accountant Gurugram 2018-04-02 3410\nEMP-1101 Sneha Kulkarni Engineering Frontend Lead Pune 2018-09-10 4101\nEMP-1120 Arjun Desai Engineering QA Engineer Bengaluru 2023-03-06 4144\nEMP-2090 Divya Pillai Sales Account Executive Hyderabad 2022-05-16 2240\nEMP-2104 Mohit Chauhan Sales Sales Director Gurugram 2017-07-03 2200\nContact notes for employees with duplicate names\nTo avoid mail mis-delivery, the IT team assigns a numeric suffix to the second person who joins with an identical name.\nThe email of Rahul Sharma (EMP-1042, Engineering) is rahul.sharma@nexoradynamics.in. The email of Rahul"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#8",
+      "chunkIndex": 8,
+      "textLength": 612,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 8
+      },
+      "text": "The email of Rahul Sharma (EMP-1042, Engineering) is rahul.sharma@nexoradynamics.in. The email of Rahul\nSharma (EMP-2087, Sales) is rahul.sharma2@nexoradynamics.in. The email of Amit Kumar (EMP-1078, Engineering)\nis amit.kumar@nexoradynamics.in; Amit Kumar of Finance (EMP-4020) uses amit.kumar2@nexoradynamics.in, and a\nthird Amit Kumar in Customer Support (listed on page 4) uses amit.kumar3@nexoradynamics.in.\nSeating: Engineering staff in Bengaluru sit on floor 3 of the Whitefield campus. Rahul Sharma (EMP-1042) is assigned\ndesk B-3-27. Sales staff in Gurugram sit on floor 2 of the Sector 44 headquarters."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#9",
+      "chunkIndex": 9,
+      "textLength": 720,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 9
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 4 of 10\nPage 4: Employee Directory (Part 2 of 2)\nContinuation of the directory snapshot dated 15 January 2026.\nEmp ID Name Department Designation City Joined Ext\nEMP-3025 Kavita Joshi Human\nResources HR Business Partner Bengaluru 2021-10-04 3312\nEMP-4033 Rohan Gupta Finance FP&A Manager Gurugram 2019-12-02 3422\nEMP-5002 Ananya Bose Marketing Head of Marketing Gurugram 2019-01-21 5100\nEMP-5017 Tarun Saxena Marketing Content Strategist Pune 2023-07-10 5114\nEMP-6008 Farhan Qureshi Customer Support Support Manager Hyderabad 2020-03-16 6001\nEMP-6031 Amit Kumar Customer Support Support Specialist Pune 2024-01-15 6044"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#10",
+      "chunkIndex": 10,
+      "textLength": 784,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 10
+      },
+      "text": "EMP-6031 Amit Kumar Customer Support Support Specialist Pune 2024-01-15 6044\nEMP-1135 Lakshmi Narayanan Engineering Data Engineer Bengaluru 2024-09-02 4150\nEMP-1150 Pooja Reddy Engineering Security Engineer Hyderabad 2022-02-14 4158\nEMP-7003 Siddharth Rao Legal Compliance Officer Gurugram 2021-06-21 7002\nEMP-1166 Meera Iyer Engineering Engineering Manager,\nNexaFlow Bengaluru 2017-05-29 4105\nEMP-1172 Dhruv Anand Engineering Engineering Manager,\nNexaSense Pune 2018-12-03 4107\nEMP-1180 Imran Sheikh Engineering Engineering Manager,\nNexaGuard Hyderabad 2019-08-26 4109\nEMP-1188 Gaurav Tiwari Engineering Engineering Manager, Platform\n& Infra Bengaluru 2020-06-08 4111\nLocation headcount\nOffice Headcount (31 Mar 2026) Office lead\nGurugram (HQ) 168 Vikram Rao\nBengaluru 112 Meera Iyer"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#11",
+      "chunkIndex": 11,
+      "textLength": 547,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 11
+      },
+      "text": "& Infra Bengaluru 2020-06-08 4111\nLocation headcount\nOffice Headcount (31 Mar 2026) Office lead\nGurugram (HQ) 168 Vikram Rao\nBengaluru 112 Meera Iyer\nPune 74 Dhruv Anand\nHyderabad 58 Farhan Qureshi\nName-collision summary: the directory contains two employees named Rahul Sharma, three named Amit Kumar, and\ntwo employees whose first name is Priya (Priya Nair and Priya Menon). There are two employees with the surname\nRao (Vikram and Siddharth) and two with the surname Iyer (Meera Iyer and board chair Dr. Meenakshi Iyer, who is not\nan employee)."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#12",
+      "chunkIndex": 12,
+      "textLength": 736,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 12
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 5 of 10\nPage 5: Departments and Engineering Teams\nHeadcount by department as of 31 March 2026. The total across all departments is 412.\nDepartment Headcount Head\nEngineering 168 Ishita Verma\nCustomer Support 70 Farhan Qureshi\nSales 64 Mohit Chauhan\nMarketing 31 Ananya Bose\nFinance 28 Karan Malhotra\nHuman Resources 22 Neha Kapoor\nOperations 21 Vikram Rao\nLegal and Compliance 8 Siddharth Rao\nEngineering teams\nTeam Manager Headcount Primary stack\nNexaFlow Meera Iyer 54 Java 17, Spring Boot, PostgreSQL, Kafka\nNexaSense Dhruv Anand 47 Python, Apache Spark, ClickHouse, React\nNexaGuard Imran Sheikh 38 Go, Rust, Envoy, HashiCorp Vault"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#13",
+      "chunkIndex": 13,
+      "textLength": 742,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 13
+      },
+      "text": "NexaSense Dhruv Anand 47 Python, Apache Spark, ClickHouse, React\nNexaGuard Imran Sheikh 38 Go, Rust, Envoy, HashiCorp Vault\nPlatform and Infra Gaurav Tiwari 29 Terraform, Kubernetes, AWS, Prometheus\nEngineering practices\nAll engineering teams follow two-week sprints that begin on Mondays. Code reviews require two approvals before\nmerge into the main branch. The minimum unit-test coverage threshold enforced by the CI pipeline is 80%. Production\ndeployments are frozen between 20 December and 2 January each year. The on-call rotation is weekly and on-call\nengineers receive an allowance of INR 6,000 per rotation week.\nCustomer Support operates in three shifts to cover customers in multiple time zones. The first-response SLA for Priority"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#14",
+      "chunkIndex": 14,
+      "textLength": 479,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 14
+      },
+      "text": "Customer Support operates in three shifts to cover customers in multiple time zones. The first-response SLA for Priority\n1 tickets is 30 minutes, for Priority 2 tickets 4 hours, and for Priority 3 tickets 1 business day. Customer Support\nhandled 41,300 tickets in FY2025-26 with a customer satisfaction (CSAT) score of 92.4%.\nSales targets: the Sales department closed 138 new enterprise contracts in FY2025-26 against a target of 120. The\naverage contract value was INR 38 lakh."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#15",
+      "chunkIndex": 15,
+      "textLength": 701,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 15
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 6 of 10\nPage 6: Projects Portfolio\nThe following four strategic projects were active at some point during FY2025-26 or FY2026-27. Budgets are approved\ntotals in Indian rupees.\nProject Product Lead Budget Start Deadline Status\nProject Atlas NexaFlow Meera Iyer INR 4.20 crore 2025-11-03 2026-12-15 In progress (68% complete)\nProject Helios NexaSense Dhruv Anand INR 2.75 crore 2026-01-12 2026-09-30 Delayed\nProject Zephyr NexaGuard Imran Sheikh INR 3.10 crore 2025-06-02 2026-03-28 Completed\nProject Orion Support\nplatform Priya Nair INR 95 lakh 2026-04-20 2026-10-31 Pilot phase\nProject descriptions"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#16",
+      "chunkIndex": 16,
+      "textLength": 775,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 16
+      },
+      "text": "Project Orion Support\nplatform Priya Nair INR 95 lakh 2026-04-20 2026-10-31 Pilot phase\nProject descriptions\nProject Atlas migrates the monolithic NexaFlow application into microservices running on Kubernetes. It is the largest\nproject by budget. The project team has 22 engineers. Its main risk is data-migration downtime for customers on legacy\non-premise installations.\nProject Helios builds a real-time analytics engine for NexaSense, targeting sub-second query latency on datasets of\nup to 5 billion rows. The project was originally due on 30 September 2026 but fell behind because of delays in\nprovisioning ClickHouse clusters. The team has 17 engineers.\nProject Zephyr rolled out zero-trust network access for NexaGuard enterprise clients. It was completed on 28 March"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#17",
+      "chunkIndex": 17,
+      "textLength": 694,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 17
+      },
+      "text": "Project Zephyr rolled out zero-trust network access for NexaGuard enterprise clients. It was completed on 28 March\n2026, two days ahead of schedule and under budget, with final spend of INR 2.94 crore against INR 3.10 crore\napproved.\nProject Orion is an LLM-powered customer support chatbot. It uses retrieval-augmented generation (RAG) with a\nhybrid of keyword and vector search over the company's help-centre articles, and a nine-person team. During the pilot\nthe chatbot resolved 31% of tickets without human handover. The target resolution rate for general release is 45%.\nCombined approved budget of the four projects is INR 11.00 crore. Atlas and Orion are both scheduled to finish before"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#18",
+      "chunkIndex": 18,
+      "textLength": 223,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 18
+      },
+      "text": "Combined approved budget of the four projects is INR 11.00 crore. Atlas and Orion are both scheduled to finish before\nthe end of calendar year 2026; Helios's revised timeline is recorded in the announcements log on page 10."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#19",
+      "chunkIndex": 19,
+      "textLength": 790,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 19
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 7 of 10\nPage 7: HR Policy Handbook (Version 3.0, effective 1 January\n2025)\nLeave policy\nEvery full-time employee is entitled to 24 days of paid leave per calendar year, made up of 18 days of earned leave and\n6 days of casual leave. Sick leave is separate and is 10 days per year with a medical certificate required for absences\nlonger than two consecutive days. Up to 12 days of earned leave may be carried forward to the next year; unused\ncasual leave lapses on 31 December. Maternity leave is 26 weeks and paternity leave is 10 working days.\nWorking hours and remote work\nStandard working hours are 9:30 AM to 6:30 PM, Monday to Friday, with core collaboration hours of 11:00 AM to 4:00"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#20",
+      "chunkIndex": 20,
+      "textLength": 767,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 20
+      },
+      "text": "Working hours and remote work\nStandard working hours are 9:30 AM to 6:30 PM, Monday to Friday, with core collaboration hours of 11:00 AM to 4:00\nPM. Under the hybrid policy in this version, employees may work from home up to 2 days per week with prior manager\napproval. Employees who work remotely receive an internet reimbursement of INR 1,000 per month.\nNotice period and probation\nNew hires serve a probation period of 6 months. An employee who resigns must serve a notice period of 60 days if\nbelow Manager level, or 90 days if at Manager level or above. The company may waive part of the notice period at the\ndiscretion of the department head and the CHRO. Outstanding leave is not encashable during probation.\nTravel and expense reimbursement\nExpense type Limit"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#21",
+      "chunkIndex": 21,
+      "textLength": 678,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 21
+      },
+      "text": "Travel and expense reimbursement\nExpense type Limit\nFlights Economy class only; business class needs\nCEO approval\nHotel, metro cities (Delhi NCR, Mumbai, Bengaluru, Chennai, Hyderabad, Pune) INR 6,500 per night\nHotel, other cities INR 4,500 per night\nMeal per diem while travelling INR 800 per day\nClaim submission deadline Within 30 days of the expense\nLocal cab for client visits Reimbursed at actuals with receipt\nCode of conduct and grievances\nHarassment of any kind is a terminable offence. Concerns can be reported confidentially to ethics@nexoradynamics.in\nor the 24x7 helpline 1800-555-0142. Retaliation against a person who raises a concern in good faith is prohibited."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#22",
+      "chunkIndex": 22,
+      "textLength": 731,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 22
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 8 of 10\nPage 8: Compensation and Benefits\nSalary bands (annual cost to company, in lakh per annum)\nLevel Typical roles Band (INR LPA) Annual bonus target\nL1 Associate, Trainee 4 to 7 Up to 15% of base\nL2 Engineer, Executive 7 to 14 Up to 15% of base\nL3 Senior Engineer, Senior Executive 14 to 24 Up to 15% of base\nL4 Staff Engineer, Lead, Manager 24 to 40 Up to 20% of base\nL5 Director, Head of Department 40 to 70 Up to 30% of base\nL6 Vice President and above Above 70 Up to 30% of base plus ESOP refresh\nBenefits\nHealth insurance: every employee is covered under a group health policy with a family floater sum insured of INR 5"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#23",
+      "chunkIndex": 23,
+      "textLength": 730,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 23
+      },
+      "text": "Benefits\nHealth insurance: every employee is covered under a group health policy with a family floater sum insured of INR 5\nlakh. Employees may add parents or parents-in-law for an additional INR 3 lakh of cover at their own cost. An\naccidental death and disability cover of INR 25 lakh applies to all staff.\nProvident fund: both employer and employee contribute 12% of basic salary.\nLearning budget: each employee gets INR 40,000 per financial year for courses, books and certifications, and may\ncarry no unused balance forward.\nESOP: employees become eligible for stock options after completing 2 years of service. Options vest over 4 years with\na 1-year cliff, meaning no options vest before the first anniversary of the grant."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#24",
+      "chunkIndex": 24,
+      "textLength": 740,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 24
+      },
+      "text": "a 1-year cliff, meaning no options vest before the first anniversary of the grant.\nReferral bonus: INR 30,000 for a successful referral into any role, and INR 50,000 for referrals into engineering roles,\npaid after the referred hire completes 6 months of service.\nWellness: a monthly wellness allowance of INR 1,500 is paid to every employee and may be used for gym\nmemberships, yoga classes or mental-health counselling. The company also provides free lunch on Wednesdays in all\nfour offices.\nAppraisal cycle\nAppraisals happen twice a year. The mid-year review takes place in October and the annual review in April, with\nrevised salaries effective from 1 May. Ratings use a five-point scale: 1 (Needs Improvement), 2 (Developing), 3 (Meets"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#25",
+      "chunkIndex": 25,
+      "textLength": 249,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 25
+      },
+      "text": "revised salaries effective from 1 May. Ratings use a five-point scale: 1 (Needs Improvement), 2 (Developing), 3 (Meets\nExpectations), 4 (Exceeds Expectations), 5 (Outstanding). Individual salaries are confidential and are not part of this\ndata book."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#26",
+      "chunkIndex": 26,
+      "textLength": 776,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 26
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 9 of 10\nPage 9: Financial Summary and Customers\nQuarterly performance, FY2025-26 (April 2025 to March 2026), in INR crore\nQuarter Revenue Net profit\nQ1 (Apr-Jun 2025) 41.2 5.1\nQ2 (Jul-Sep 2025) 44.8 6.0\nQ3 (Oct-Dec 2025) 47.9 6.8\nQ4 (Jan-Mar 2026) 52.5 8.4\nFull year 186.4 26.3\nThe full-year revenue of INR 186.4 crore represents 29% growth over FY2024-25. The board-approved revenue target\nfor FY2026-27 is INR 230 crore. Q4 was the strongest quarter by both revenue and profit.\nTop five customers by annual revenue\nCustomer Industry Annual revenue (INR crore) Products used\nOrbitek Logistics Logistics 22.6 NexaFlow, NexaSense\nHalcyon Bank Banking 18.9 NexaGuard, NexaFlow"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#27",
+      "chunkIndex": 27,
+      "textLength": 698,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 27
+      },
+      "text": "Orbitek Logistics Logistics 22.6 NexaFlow, NexaSense\nHalcyon Bank Banking 18.9 NexaGuard, NexaFlow\nMedAxis Healthcare Healthcare 14.3 NexaSense\nVeridian Retail Retail 11.7 NexaFlow\nSkylark Airlines Aviation 9.4 NexaGuard\nOperational incident report\nOn 9 May 2026 a major outage affected NexaFlow customers hosted in the ap-south-1 region. The outage lasted 3\nhours and 42 minutes, beginning at 02:17 IST. The root cause was an expired TLS certificate on an internal API\ngateway. 61 customers were affected and service credits totalling INR 18.4 lakh were issued. As a corrective action,\nPlatform and Infra (led by Gaurav Tiwari) introduced automated certificate expiry alerts 30 days before expiry."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#28",
+      "chunkIndex": 28,
+      "textLength": 323,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 28
+      },
+      "text": "Platform and Infra (led by Gaurav Tiwari) introduced automated certificate expiry alerts 30 days before expiry.\nCompliance: Nexora holds ISO 27001 certification, first obtained in 2021 and renewed in November 2025, and a SOC 2\nType II report covering NexaGuard. The next ISO surveillance audit is planned for November 2026."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#29",
+      "chunkIndex": 29,
+      "textLength": 715,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 29
+      },
+      "text": "Nexora Dynamics Pvt. Ltd. | Internal Data Book | FICTIONAL DATA - generated for RAG testing only Page 10 of 10\nPage 10: Announcements, Policy Revisions and Meeting\nMinutes (2026)\nPolicy revision HR-2026-01 (effective 1 February 2026)\nFollowing employee feedback, the hybrid work policy has been revised. Employees may now work from home up to 3\ndays per week with prior manager approval. This supersedes the 2-day limit in HR Policy Handbook version 3.0. All\nother provisions of version 3.0, including notice periods and leave entitlements, remain unchanged.\nSteering committee minutes, 18 August 2026\nAttendees: Ishita Verma, Karan Malhotra, Dhruv Anand, Meera Iyer. The committee approved a deadline extension for"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#30",
+      "chunkIndex": 30,
+      "textLength": 793,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 30
+      },
+      "text": "Attendees: Ishita Verma, Karan Malhotra, Dhruv Anand, Meera Iyer. The committee approved a deadline extension for\nProject Helios from 30 September 2026 to 30 November 2026. No additional budget was approved; the project stays at\nINR 2.75 crore. The committee noted that Project Atlas remains on track for its 15 December 2026 deadline.\nPeople announcements log\nDate Announcement\n2026-04-30 April appraisal cycle promotions: Rahul Sharma (EMP-1042) promoted from Senior Backend Engineer to Staff Engineer\n(L4); Divya Pillai promoted to Senior Account Executive; Arjun Desai promoted to Senior QA Engineer.\n2026-05-04 Amit Kumar (EMP-6031, Customer Support) moved to Project Orion as a Conversation Designer.\n2026-06-30 Tarun Saxena (EMP-5017, Marketing) resigned; last working day 30 June 2026."
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#31",
+      "chunkIndex": 31,
+      "textLength": 713,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 31
+      },
+      "text": "2026-06-30 Tarun Saxena (EMP-5017, Marketing) resigned; last working day 30 June 2026.\n2026-07-15 Priya Menon (EMP-3011) appointed Head of Talent Acquisition for all four offices.\n2026-09-01 Pune office capacity expanded by 40 seats.\nUpcoming events\nThe company-wide offsite, Nexora Summit 2026, will be held in Goa from 5 to 7 December 2026. The mid-year\nappraisal window opens on 1 October 2026. The next quarterly town hall is scheduled for 21 October 2026 at 4:00 PM\nIST.\nEmployee FAQ\nCan I work from my home town for a month? Remote work is limited to the weekly cap. A full-time relocation of work\nlocation needs written approval from the department head and the CHRO. What happens to my unused leave when I"
+    },
+    {
+      "id": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923#32",
+      "chunkIndex": 32,
+      "textLength": 363,
+      "metadata": {
+        "source": "Nexora_Dynamics_RAG_Test_Data_1.pdf",
+        "docId": "d50fcc2c-9a02-467c-bc1b-c3f3ac457923",
+        "chunkIndex": 32
+      },
+      "text": "location needs written approval from the department head and the CHRO. What happens to my unused leave when I\nleave? Earned leave up to the carry-forward limit may be encashed at exit, subject to the probation rule. Who do I\ncontact for payroll issues? Write to payroll@nexoradynamics.in; the payroll desk is managed by Finance under\nRohan Gupta.\nEnd of document."
+    }
+  ]
+}
