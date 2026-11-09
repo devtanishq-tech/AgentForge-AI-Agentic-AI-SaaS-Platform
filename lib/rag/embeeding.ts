@@ -2,26 +2,7 @@ import { pipeline } from "@xenova/transformers";
 import { pinecone } from "./pineconeD";
 
 export type sparseVectorType = { indices: number[]; values: number[] };
-// let embeederPromise: Promise<any> | null = null;
-// function getEmbeeder() {
-//   embeederPromise ??= pipeline("feature-extraction", "Xenova/all-MiniLM-L6-v2");
-//   return embeederPromise;
-// }
 const DENSE_MODEL = "llama-text-embed-v2";
-// export async function denseEmbedder(texts: string[]): Promise<number[][]> {
-//   // text is array of chunks that already get splitted into pieces and stored in an array -
-//   const embedder = await getEmbeeder();
-//   const result: number[][] = [];
-//   for (let i = 0; i < texts.length; i += 32) {
-//     const output = await embedder(texts.slice(i, i + 32), {
-//       pooling: "mean",
-//       normalize: true,
-//     });
-//     result.push(...(output.tolist() as number[][]));
-//   }
-//   return result;
-// }
-
 export async function denseEmbedder(
   texts: string[],
   inputType: "passage" | "query",

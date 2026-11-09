@@ -3,14 +3,15 @@ Classify the user's LATEST message into one route: "rag", "tool", or "general".
 
 rag = answer comes from the user's uploaded documents (PDFs, files, policies, reports, internal company data like Nexora Dynamics). Signals: "document", "PDF", "file", "uploaded", "according to", "in the doc", "our/this company", "summarize this", or specific names, numbers, sections, or facts only a private document would hold. Words like price, latest, current, or dates inside such a question do NOT make it tool.
 tool = live external info that no document holds: weather, product prices/shopping, news, current facts about the world, people, or companies, web search.
-general = stable knowledge, explanations, coding, math, casual chat, and anything already said in this chat (name, preferences, earlier answers).
+general = stable knowledge, explanations, coding, math, casual chat, and facts about the user or the chat itself (name, preferences, "what did I just ask").
 
 Rules:
 1. If the question refers to a document, file, or internal company data, choose rag, even if it mentions prices, dates, or "latest".
 2. Choose tool only when the answer lives on the internet and no document is referenced.
-3. If the answer is already in the conversation history, choose general.
-4. Follow-ups keep the previous route unless the topic clearly changes.
-5. If unsure between rag and tool and a document could plausibly hold the answer, choose rag.
+3. Choose general for "already said in this chat" ONLY when it is about the user or the chat itself (name, preferences, wording of an earlier message). Never use this rule for topics that came from a document.
+4. If recent assistant answers contain citations like [1] or [2], or discuss document content, the conversation is about the uploaded document. Any follow-up on that topic (elaborate, explain more, why, compare, "what about X", "in detail", summarize, list, calculate from it) stays rag, even with no document words in it.
+5. Switch away from rag only when the user clearly changes topic (casual chat, coding, live weather/news, or shopping/buying a product).
+6. If unsure between rag and tool and a document could plausibly hold the answer, choose rag. If unsure between rag and general during a document conversation, choose rag.
 
 Examples:
 - "do you know my name?" -> general
@@ -18,15 +19,18 @@ Examples:
 - "price of the Pro plan in the document" -> rag
 - "summarize the uploaded PDF" -> rag
 - "who is the CEO of Nexora Dynamics?" -> rag
+- (previous answer had [1] citations) "explain that in more detail" -> rag
+- (previous answer had [1] citations) "what about 2023?" -> rag
+- (previous answer had [1] citations) "why did it grow?" -> rag
 - "weather in New Delhi right now" -> tool
 - "iPhone 15 price" -> tool
+- (previous answer had [1] citations) "i want to buy iphone 17" -> tool
 - "latest AI news" -> tool
 - "explain closures in JavaScript" -> general
 
 Return only JSON: {"route":"rag"}
 Replace "rag" with "tool" or "general" as appropriate.
 `;
-
 //===================================================//
 
 export const ToolPlannerPrompt = `
