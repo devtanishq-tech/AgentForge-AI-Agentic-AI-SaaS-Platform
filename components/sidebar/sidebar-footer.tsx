@@ -8,6 +8,7 @@ import {
   LogOut,
   Sparkles,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -27,15 +28,27 @@ import {
 } from "@/components/ui/sidebar";
 import { Skeleton } from "../ui/skeleton";
 import { Spinner } from "../ui/spinner";
+import { authClient } from "@/lib/auth-client";
 export function SidebarFooterComponent() {
+  const router = useRouter();
   const { isMobile } = useSidebar();
-
   const isPending = false;
-
+  const { data: session, isPending: isSessionPending } =
+    authClient.useSession();
+  const userDATA = session?.user;
   const user = {
-    name: "Tanishq Jaiswal",
-    email: "tanishqcoc24@gmail.com",
+    name: userDATA?.name,
+    email: userDATA?.email,
     image: "/logo.png",
+  };
+  const handleLogout = async () => {
+    const { error } = await authClient.signOut();
+    if (error) {
+      console.error("Logout failed:", error.message);
+      return;
+    }
+    router.replace("/auth/signin");
+    router.refresh();
   };
 
   return (
@@ -113,7 +126,7 @@ export function SidebarFooterComponent() {
                 </DropdownMenuItem>
               </DropdownMenuGroup>
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={() => {}}>
+              <DropdownMenuItem onClick={() => void handleLogout()}>
                 <LogOut />
                 Log out
               </DropdownMenuItem>

@@ -12,7 +12,7 @@ import {
 } from "./metrics";
 
 // userNamespace(userId) -> "user_<userId>", so this is the part after "user_"
-const USER_ID = process.env.EVAL_USER_ID ?? "P6tBj3LslPWelvFZ2blbghKU1H1y7vZS";
+const USER_ID = process.env.EVAL_USER_ID ?? "T6HxoWK89i6dL9oPGpy43UsseH6rK8Ka";
 
 const questions: EvalQuestion[] = JSON.parse(
   fs.readFileSync(path.join(process.cwd(), "eval", "questions.json"), "utf8"),

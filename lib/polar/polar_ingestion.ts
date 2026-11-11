@@ -62,15 +62,22 @@ export async function getPolarEvent() {
     name: "llm_tokens",
     limit: 100,
   });
-  // this set allow us to not repeat the same model again-
-  // this is where we are fetching model name from polar
-  const modelName = new Set(
-    polarevent.items.map((current) => current.metadata.model),
+  const modelNames = new Set(
+    polarevent.items
+      .map((event) => event.metadata.model)
+      .filter(
+        (model): model is string =>
+          typeof model === "string" && model.trim().length > 0,
+      ),
   );
-  if (!modelName) {
-    return "openai/gpt-oss-120b";
+
+  // Convert Set into an array
+  if (!modelNames) {
+    return "PRO";
   }
-  return modelName;
+  const models = [...modelNames];
+
+  return models;
 }
 
 export async function PolarINgestion(data: ingestionData) {

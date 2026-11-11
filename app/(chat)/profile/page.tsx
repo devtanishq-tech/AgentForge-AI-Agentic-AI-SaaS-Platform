@@ -59,6 +59,7 @@ export default function ChatbotUserProfile() {
     queryKey: ["polar-event", session?.user.id],
     queryFn: getPolarEvent,
   });
+  console.log(JSON.stringify(modelName));
 
   //======================Need to Loading UI there ==========================
   if (isSessionPending) {
@@ -84,6 +85,16 @@ export default function ChatbotUserProfile() {
       ? (usageData.consumedUnits / usageData.creditedUnits) * 100
       : 0;
 
+  //===============================//
+
+  const userInitials =
+    user.name
+      ?.trim()
+      .split(/\s+/)
+      .slice(0, 2)
+      .map((part) => part.charAt(0).toUpperCase())
+      .join("") || "U";
+
   return (
     <div className="w-full max-w-5xl mx-auto space-y-6 p-4">
       {/* Profile Header */}
@@ -91,12 +102,16 @@ export default function ChatbotUserProfile() {
         <CardContent className="p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div className="flex items-center gap-5">
             <Avatar className="h-24 w-24 rounded-2xl">
-              <AvatarImage src={user.image} alt={user.name} />
+              {user.image && (
+                <AvatarImage
+                  src={user.image}
+                  alt={user.name || "User"}
+                  referrerPolicy="no-referrer"
+                />
+              )}
+
               <AvatarFallback className="rounded-2xl text-lg">
-                {user.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .join("")}
+                {userInitials}
               </AvatarFallback>
             </Avatar>
 

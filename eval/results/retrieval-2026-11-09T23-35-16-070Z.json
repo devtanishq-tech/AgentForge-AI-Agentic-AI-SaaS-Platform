@@ -1,0 +1,2154 @@
+{
+  "rows": [
+    {
+      "id": "q01",
+      "query": "What was the total purchase price of the Activision Blizzard acquisition?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#339",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#340",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#341",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#342",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#428",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#169",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#200",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#197",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#347",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#351",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#436",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#25"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#339",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#341",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#340",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#347",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#342",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#25",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#351",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#197"
+        ]
+      }
+    },
+    {
+      "id": "q02",
+      "query": "On what date did Microsoft complete its acquisition of Activision Blizzard?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.631251450669265,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#339",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#428",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#342",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#340",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#436",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#25",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#169",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#72",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#355",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#347",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#197",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#339",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#428",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#72",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#436",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#25",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#355",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#347",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#342",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#169"
+        ]
+      }
+    },
+    {
+      "id": "q03",
+      "query": "What was the total purchase price paid for Nuance Communications?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#344",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#345",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#346",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#341",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#339",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#69",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#340",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#342",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#68",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#107",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#367",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#409",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#344",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#345",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#346",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#341",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#367",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#339",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#340",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#342"
+        ]
+      }
+    },
+    {
+      "id": "q04",
+      "query": "When was the Nuance acquisition completed and which segment reports its results?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#345",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#344",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#346",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#339",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#69",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#404",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#169",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#367",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#340",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#401",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#68"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#345",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#344",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#346",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#339",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#169",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#69",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#367",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#404",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168"
+        ]
+      }
+    },
+    {
+      "id": "q05",
+      "query": "What did IRS Notice 2023-55 do?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.8213137146137828,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#363",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#203",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#362",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#206",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#371",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#364",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#360",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#424",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#355",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#312",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#313"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#203",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#363",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#362",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#206",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#371",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#313",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#364",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#360",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#312",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392"
+        ]
+      }
+    },
+    {
+      "id": "q06",
+      "query": "How many registered holders of record of common stock were there on July 25, 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 0.5,
+        "ndcg10": 0.6309297535714574,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#46",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#315",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#314",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#450",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#389",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#47",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#50",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#400",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#46",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#400",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#314",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#315",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#47",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#389"
+        ]
+      }
+    },
+    {
+      "id": "q07",
+      "query": "How much remained under the $60.0 billion share repurchase program as of June 30, 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#47",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#389",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#48",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#46",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#390",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#347",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#338",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#353"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.8213137146137828,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#389",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#47",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#46",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#390",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#347",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#48",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374"
+        ]
+      }
+    },
+    {
+      "id": "q08",
+      "query": "When did the Board approve the $40.0 billion share repurchase program?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.631251450669265,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#47",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#389",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#46",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#48",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#390",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#391",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#283",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#311",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#46",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#389",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#47",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#390",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#48",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#311",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#391"
+        ]
+      }
+    },
+    {
+      "id": "q09",
+      "query": "At what price can employees buy stock under the Employee Stock Purchase Plan?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#291",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#395",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#396",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#400",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#290",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#451",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#90",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#344",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#345",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#46",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#342",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#395",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#291",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#400",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#396",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#46",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#290"
+        ]
+      }
+    },
+    {
+      "id": "q10",
+      "query": "Over what periods do executive RSUs and PSUs vest?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#396",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#291",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#290",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#375",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#395",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#445",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#433",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#223",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#401",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#211",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#448",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#400"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#396",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#291",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#290",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#399",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#395",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#223",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#211",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#375"
+        ]
+      }
+    },
+    {
+      "id": "q11",
+      "query": "How many people did Microsoft employ full-time as of June 30, 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#87",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#438",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#85",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#0",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#164",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#165",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#375",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#220",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#395",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#450"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#87",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#85",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#220",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#375",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#395",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414"
+        ]
+      }
+    },
+    {
+      "id": "q12",
+      "query": "What were gross unrecognized tax benefits as of June 30, 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#369",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#370",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#365",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#371",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#335",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#359",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#437",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#367",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#357",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#366",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#350"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#369",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#370",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#371",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#357",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#359",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#365",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#366"
+        ]
+      }
+    },
+    {
+      "id": "q13",
+      "query": "Which Microsoft board member is a co-founder of Inflection AI?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#310",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#311",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#165",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#1",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#446",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#72",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#12",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#55",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#8",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#69",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#0",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#132",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#85",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#9"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.9639404333166532,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#310",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#446",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#311",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#1",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#85",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#55",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#72",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#0",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#165"
+        ]
+      }
+    },
+    {
+      "id": "q14",
+      "query": "Who is Microsoft's Executive Vice President and Chief Financial Officer?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 0.5,
+        "ndcg10": 0.58688267143572,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#446",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#448",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#246",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#45",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#401",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#396",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#449",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#438",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#433",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#165",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#164"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 0.5,
+        "ndcg10": 0.6278397607958708,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#446",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#246",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#45",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#448",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#449",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#165",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#396",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#438"
+        ]
+      }
+    },
+    {
+      "id": "q15",
+      "query": "Who is the Chief Accounting Officer?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#246",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#448",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#446",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#401",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#433",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#415",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#244",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#416",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#434",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#441",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#227",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#245",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#439",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#437"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#246",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#433",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#401",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#446",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#448",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#245",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#415",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#244",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#416"
+        ]
+      }
+    },
+    {
+      "id": "q16",
+      "query": "Who is the Vice Chair and President of Microsoft?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 0.5,
+        "ndcg10": 0.58688267143572,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#446",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#448",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#45",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#449",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#453",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#0",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#381",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#246",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#165",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#1",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 0.3333333333333333,
+        "ndcg10": 0.4935456744811716,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#446",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#45",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#448",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#246",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#449",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#165",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#1",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#0"
+        ]
+      }
+    },
+    {
+      "id": "q17",
+      "query": "What was total revenue for fiscal year 2024?",
+      "before": {
+        "recall5": 0.3333333333333333,
+        "mrr10": 0.5,
+        "ndcg10": 0.45819933371607996,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#175",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#221",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#203",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49"
+        ]
+      },
+      "after": {
+        "recall5": 0.3333333333333333,
+        "mrr10": 0.3333333333333333,
+        "ndcg10": 0.3631143808977028,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198"
+        ]
+      }
+    },
+    {
+      "id": "q18",
+      "query": "What was operating income in fiscal year 2024 and how much did it grow?",
+      "before": {
+        "recall5": 0.3333333333333333,
+        "mrr10": 0.2,
+        "ndcg10": 0.09364787839833931,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#175",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#367",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#362",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#361",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#0"
+        ]
+      },
+      "after": {
+        "recall5": 0.3333333333333333,
+        "mrr10": 0.25,
+        "ndcg10": 0.10425656783464912,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#367"
+        ]
+      }
+    },
+    {
+      "id": "q19",
+      "query": "What was net income in fiscal year 2024?",
+      "before": {
+        "recall5": 0,
+        "mrr10": 0.16666666666666666,
+        "ndcg10": 0.08622930147869444,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#370",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#201",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#367",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#360",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#362",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#361"
+        ]
+      },
+      "after": {
+        "recall5": 0.3333333333333333,
+        "mrr10": 1,
+        "ndcg10": 0.24207625393180188,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#201",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#360",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#370",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392"
+        ]
+      }
+    },
+    {
+      "id": "q20",
+      "query": "What was diluted earnings per share for fiscal year 2024?",
+      "before": {
+        "recall5": 0.25,
+        "mrr10": 0.3333333333333333,
+        "ndcg10": 0.10961051126301759,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#314",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#315",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#391",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#186",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217"
+        ]
+      },
+      "after": {
+        "recall5": 0.5,
+        "mrr10": 1,
+        "ndcg10": 0.7520764230169481,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#186",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#314",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#315",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#391",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217"
+        ]
+      }
+    },
+    {
+      "id": "q21",
+      "query": "What was Intelligent Cloud segment revenue in fiscal year 2024?",
+      "before": {
+        "recall5": 0.6666666666666666,
+        "mrr10": 1,
+        "ndcg10": 0.8472668887613066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#175",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#404",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#103",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198"
+        ]
+      },
+      "after": {
+        "recall5": 0.6666666666666666,
+        "mrr10": 1,
+        "ndcg10": 0.878961873034099,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#103",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#404",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411"
+        ]
+      }
+    },
+    {
+      "id": "q22",
+      "query": "What was Productivity and Business Processes segment revenue in fiscal year 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.9832184408687481,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#401",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#402",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#91",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#92",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#175",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#409",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#179"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.9832184408687481,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#92",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#402",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#409",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#91"
+        ]
+      }
+    },
+    {
+      "id": "q23",
+      "query": "What was More Personal Computing segment revenue in fiscal year 2024?",
+      "before": {
+        "recall5": 0.6666666666666666,
+        "mrr10": 0.5,
+        "ndcg10": 0.6556040163013276,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#175",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#184",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#200",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#404"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7094472026641538,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#404",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#184",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410"
+        ]
+      }
+    },
+    {
+      "id": "q24",
+      "query": "How much revenue came from the United States in fiscal year 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#175",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#362",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#221",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#179",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#203"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199"
+        ]
+      }
+    },
+    {
+      "id": "q25",
+      "query": "What were total long-lived assets as of June 30, 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#413",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#378",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#334",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#365",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#282",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#335",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#437",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#281",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#366",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#350",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#357",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#333"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#413",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#281",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#334",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#282",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#357",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#366",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#335",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#378",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#365"
+        ]
+      }
+    },
+    {
+      "id": "q26",
+      "query": "How much were cash dividends paid in fiscal year 2024?",
+      "before": {
+        "recall5": 0,
+        "mrr10": 0,
+        "ndcg10": 0,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#391",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#48",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#201",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#50",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#221",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#315"
+        ]
+      },
+      "after": {
+        "recall5": 0,
+        "mrr10": 0,
+        "ndcg10": 0,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#224",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#391",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#397",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#48",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#201",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#50",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392"
+        ]
+      }
+    },
+    {
+      "id": "q27",
+      "query": "What was net cash used in financing activities in fiscal year 2024?",
+      "before": {
+        "recall5": 0.5,
+        "mrr10": 1,
+        "ndcg10": 0.27541155237618664,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#317",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#370",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#282",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#0",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#201",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#221",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#360",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#376",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#316"
+        ]
+      },
+      "after": {
+        "recall5": 0.5,
+        "mrr10": 1,
+        "ndcg10": 0.27541155237618664,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#376",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#282",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#221",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#370",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#317",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#360"
+        ]
+      }
+    },
+    {
+      "id": "q28",
+      "query": "What was total stockholders' equity at June 30, 2024?",
+      "before": {
+        "recall5": 0,
+        "mrr10": 0,
+        "ndcg10": 0,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#317",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#50",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#437",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#212",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#252",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#315",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#325",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#333"
+        ]
+      },
+      "after": {
+        "recall5": 0,
+        "mrr10": 0,
+        "ndcg10": 0,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#259",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#388",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#50",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#212",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#315",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#317",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250"
+        ]
+      }
+    },
+    {
+      "id": "q29",
+      "query": "How much cash, cash equivalents and short-term investments did Microsoft hold at June 30, 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#212",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#317",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#334",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#438",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#256",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#331",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#164",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#320",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#355",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#293",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#353"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#212",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#317",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#334",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#320",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#355",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#343",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#331",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#414",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374"
+        ]
+      }
+    },
+    {
+      "id": "q30",
+      "query": "What was the total remaining performance obligation as of June 30, 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.6885288809404666,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#375",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#379",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#378",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#50",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#338",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#253",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#357",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#325",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#352",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#376",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#437",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#282"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#375",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#357",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#50",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#392",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#352",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#379",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#282",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#325"
+        ]
+      }
+    },
+    {
+      "id": "q31",
+      "query": "How much of the remaining performance obligation is expected to be recognized in the next 12 months?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#375",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#220",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#180",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#420",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#269",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#221",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#352",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#207",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#280",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#273",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#379",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#372",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#229"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#375",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#180",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#372",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#207",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#398",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#273",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#220",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#229",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#269"
+        ]
+      }
+    },
+    {
+      "id": "q32",
+      "query": "How much did cost of revenue increase in fiscal 2024?",
+      "before": {
+        "recall5": 0,
+        "mrr10": 0,
+        "ndcg10": 0,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#175",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#200",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#338",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#290",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374"
+        ]
+      },
+      "after": {
+        "recall5": 0,
+        "mrr10": 0,
+        "ndcg10": 0,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#217",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#198",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#200",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410"
+        ]
+      }
+    },
+    {
+      "id": "q33",
+      "query": "What share of foreign income before tax did the Ireland operating center generate in fiscal 2024?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#362",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#361",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#204",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#360",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#358",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#370",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#223",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#359",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#205",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#363",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#203",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#365"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 0.5,
+        "ndcg10": 0.58688267143572,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#204",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#362",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#361",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#205",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#358",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#223",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#368",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#203",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#202",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#187"
+        ]
+      }
+    },
+    {
+      "id": "q34",
+      "query": "How fast did Microsoft Cloud revenue grow and what was it?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.9327783893101107,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#181",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#182",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#180",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#63",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#179",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#189",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#406"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.9327783893101107,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#189",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#179",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193"
+        ]
+      }
+    },
+    {
+      "id": "q35",
+      "query": "How many Microsoft 365 Consumer subscribers were there?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#182",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#95",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#179",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#402",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#92",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#61",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#17",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#181",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#94",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#59",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#24",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#3"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#179",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#182",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#3",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#181",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#95",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#402",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#92"
+        ]
+      }
+    },
+    {
+      "id": "q36",
+      "query": "How much did LinkedIn revenue grow?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.944847956559586,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#183",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#98",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#22",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#266",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#96",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#279",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#102",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#133"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#98",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#22",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#183",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#102",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191"
+        ]
+      }
+    },
+    {
+      "id": "q37",
+      "query": "By how much did Dynamics 365 revenue grow?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#99",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#182",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#179",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#279",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#100",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#60"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#99",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#182"
+        ]
+      }
+    },
+    {
+      "id": "q38",
+      "query": "How much did Azure and other cloud services revenue grow?",
+      "before": {
+        "recall5": 0.5,
+        "mrr10": 0.3333333333333333,
+        "ndcg10": 0.41311732856427996,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#194",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#105",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#266",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#183",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#10",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#104"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#194",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#166",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#183"
+        ]
+      }
+    },
+    {
+      "id": "q39",
+      "query": "How much did Server products revenue grow?",
+      "before": {
+        "recall5": 0.5,
+        "mrr10": 1,
+        "ndcg10": 0.5697222754831122,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#194",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#106",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#107",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#183",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#114",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#182",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#267",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#191"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.6885288809404666,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#194",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#183",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#107",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#412",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#192",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#106",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188"
+        ]
+      }
+    },
+    {
+      "id": "q40",
+      "query": "How much did Gaming revenue increase?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 0.25,
+        "ndcg10": 0.4306765580733931,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#25",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#266",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#185",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#197",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#406",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#123",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#267"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 0.5,
+        "ndcg10": 0.6309297535714574,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#197",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#25",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#123"
+        ]
+      }
+    },
+    {
+      "id": "q41",
+      "query": "What happened to Xbox hardware revenue?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.944847956559586,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#185",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#123",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#266",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#406",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#374",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#271",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#279",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#115",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#25"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.944847956559586,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#123",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#185",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#25",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#406",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#279",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#115",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#266"
+        ]
+      }
+    },
+    {
+      "id": "q42",
+      "query": "How much did search and news advertising revenue excluding TAC grow?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.5950427489208391,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#186",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#185",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#406",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#124",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#116",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#127",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#266",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#199",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#271",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#190",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#193"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#185",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#186",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#124",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#127",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#406",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#116",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#271"
+        ]
+      }
+    },
+    {
+      "id": "q43",
+      "query": "How much did Windows OEM revenue increase?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 0.3333333333333333,
+        "ndcg10": 0.531730627995306,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#117",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#184",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#118",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#185",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#142",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#119",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#285",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#194",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#143",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#195",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#167",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#117",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#168",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#194",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#196",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#184",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#188",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#118",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411"
+        ]
+      }
+    },
+    {
+      "id": "q44",
+      "query": "Into which business divisions does the company split its financial reporting?",
+      "before": {
+        "recall5": 0.6666666666666666,
+        "mrr10": 1,
+        "ndcg10": 0.6815571904488514,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#177",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#415",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#90",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#437",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#245",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#440",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#443",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#401",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#91",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#416",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#413",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#434",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#410",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#250",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#435"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#90",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#401",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#177",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#91",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#245",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#443",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#437",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#434",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#440",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#415"
+        ]
+      }
+    },
+    {
+      "id": "q45",
+      "query": "What strategic priorities does the CEO outline for the coming years?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#4",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#3",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#139",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#11",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#226",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#45",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#306",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#225",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#352",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#288",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#74",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#73",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#206"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.9327783893101107,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#4",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#45",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#226",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#225",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#3",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#447",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#49",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#73",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#74",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#11"
+        ]
+      }
+    },
+    {
+      "id": "q46",
+      "query": "Which cities host the back-office service centers for the Asia-Pacific region?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#128",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#127",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#229",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#18",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#273",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#94",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#114",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#279",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#10",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#95",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#155",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#172",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#266"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#128",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#127",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#408",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#10",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#94",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#155",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#172",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#95",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#279"
+        ]
+      }
+    },
+    {
+      "id": "q47",
+      "query": "Which product streams a full desktop from the cloud to any device?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 0.5,
+        "ndcg10": 0.6309297535714574,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#57",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#70",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#229",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#273",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#147",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#74",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#119",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#91",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#181",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#404",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#272",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#71",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#104",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#286"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#70",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#229",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#273",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#119",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#181",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#71",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#104",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#411",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#57",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#404"
+        ]
+      }
+    },
+    {
+      "id": "q48",
+      "query": "What is special about the new Windows PCs with a neural processing unit?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#71",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#21",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#119",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#6",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#70",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#8",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#117",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#120",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#405",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#115",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#125",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#127",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#237",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#24",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#142"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#71",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#21",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#119",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#120",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#117",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#70",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#125",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#115",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#405",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#8"
+        ]
+      }
+    },
+    {
+      "id": "q49",
+      "query": "Which Australian supermarket chain uses AI for daily predictions?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#2",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#1",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#67",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#21",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#64",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#18",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#12",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#56",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#9",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#55",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#66",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#3",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#6",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#132",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#24"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 0.7967075809905066,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#2",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#1",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#3",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#64",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#55",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#56",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#9",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#12",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#18",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#67"
+        ]
+      }
+    },
+    {
+      "id": "q50",
+      "query": "How does the pace of AI progress compare to Moore's Law?",
+      "before": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#6",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#5",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#172",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#31",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#2",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#1",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#9",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#36",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#69",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#29",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#10",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#37",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#44",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#28",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#14"
+        ]
+      },
+      "after": {
+        "recall5": 1,
+        "mrr10": 1,
+        "ndcg10": 1,
+        "ids": [
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#6",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#5",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#36",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#44",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#172",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#29",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#37",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#1",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#69",
+          "2ea5fc50-f2ee-41e4-8d1a-4a74819e09e5#31"
+        ]
+      }
+    }
+  ]
+}
